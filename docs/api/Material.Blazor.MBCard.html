@@ -90,12 +90,16 @@
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a></div>
-    <div class="level1"><a class="xref" href="Material.Blazor.Internal.ComponentFoundation.html">ComponentFoundation</a></div>
-    <div class="level2"><span class="xref">MBCard</span></div>
+    <div class="level1"><a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.aspnetcore.components.componentbase">ComponentBase</a></div>
+    <div class="level2"><a class="xref" href="Material.Blazor.Internal.ComponentFoundation.html">ComponentFoundation</a></div>
+    <div class="level3"><span class="xref">MBCard</span></div>
   </div>
   <div classs="implements">
     <h5>Implements</h5>
-    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.aspnetcore.components.icomponent">IComponent</a></div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.aspnetcore.components.ihandleevent">IHandleEvent</a></div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.aspnetcore.components.ihandleafterrender">IHandleAfterRender</a></div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iasyncdisposable">IAsyncDisposable</a></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -112,10 +116,10 @@
       <a class="xref" href="Material.Blazor.Internal.ComponentFoundation.html#Material_Blazor_Internal_ComponentFoundation_Tooltip">ComponentFoundation.Tooltip</a>
     </div>
     <div>
-      <a class="xref" href="Material.Blazor.Internal.ComponentFoundation.html#Material_Blazor_Internal_ComponentFoundation_Dispose_System_Boolean_">ComponentFoundation.Dispose(Boolean)</a>
+      <a class="xref" href="Material.Blazor.Internal.ComponentFoundation.html#Material_Blazor_Internal_ComponentFoundation_DisposeAsync_System_Boolean_">ComponentFoundation.DisposeAsync(Boolean)</a>
     </div>
     <div>
-      <a class="xref" href="Material.Blazor.Internal.ComponentFoundation.html#Material_Blazor_Internal_ComponentFoundation_Dispose">ComponentFoundation.Dispose()</a>
+      <a class="xref" href="Material.Blazor.Internal.ComponentFoundation.html#Material_Blazor_Internal_ComponentFoundation_DisposeAsync">ComponentFoundation.DisposeAsync()</a>
     </div>
     <div>
       <a class="xref" href="Material.Blazor.Internal.ComponentFoundation.html#Material_Blazor_Internal_ComponentFoundation_OnParametersSet">ComponentFoundation.OnParametersSet()</a>
@@ -130,10 +134,10 @@
       <a class="xref" href="Material.Blazor.Internal.ComponentFoundation.html#Material_Blazor_Internal_ComponentFoundation_OnAfterRenderAsync_System_Boolean_">ComponentFoundation.OnAfterRenderAsync(Boolean)</a>
     </div>
     <div>
-      <a class="xref" href="Material.Blazor.Internal.ComponentFoundation.html#Material_Blazor_Internal_ComponentFoundation_LogMBCritical_EventId_System_String_System_Object___">ComponentFoundation.LogMBCritical(EventId, String, Object[])</a>
+      <a class="xref" href="Material.Blazor.Internal.ComponentFoundation.html#Material_Blazor_Internal_ComponentFoundation_LogMBCritical_Microsoft_Extensions_Logging_EventId_System_String_System_Object___">ComponentFoundation.LogMBCritical(EventId, String, Object[])</a>
     </div>
     <div>
-      <a class="xref" href="Material.Blazor.Internal.ComponentFoundation.html#Material_Blazor_Internal_ComponentFoundation_LogMBCritical_EventId_System_Exception_System_String_System_Object___">ComponentFoundation.LogMBCritical(EventId, Exception, String, Object[])</a>
+      <a class="xref" href="Material.Blazor.Internal.ComponentFoundation.html#Material_Blazor_Internal_ComponentFoundation_LogMBCritical_Microsoft_Extensions_Logging_EventId_System_Exception_System_String_System_Object___">ComponentFoundation.LogMBCritical(EventId, Exception, String, Object[])</a>
     </div>
     <div>
       <a class="xref" href="Material.Blazor.Internal.ComponentFoundation.html#Material_Blazor_Internal_ComponentFoundation_LogMBCritical_System_String_System_Object___">ComponentFoundation.LogMBCritical(String, Object[])</a>
@@ -142,10 +146,10 @@
       <a class="xref" href="Material.Blazor.Internal.ComponentFoundation.html#Material_Blazor_Internal_ComponentFoundation_LogMBCritical_System_Exception_System_String_System_Object___">ComponentFoundation.LogMBCritical(Exception, String, Object[])</a>
     </div>
     <div>
-      <a class="xref" href="Material.Blazor.Internal.ComponentFoundation.html#Material_Blazor_Internal_ComponentFoundation_LogMBDebug_EventId_System_String_System_Object___">ComponentFoundation.LogMBDebug(EventId, String, Object[])</a>
+      <a class="xref" href="Material.Blazor.Internal.ComponentFoundation.html#Material_Blazor_Internal_ComponentFoundation_LogMBDebug_Microsoft_Extensions_Logging_EventId_System_String_System_Object___">ComponentFoundation.LogMBDebug(EventId, String, Object[])</a>
     </div>
     <div>
-      <a class="xref" href="Material.Blazor.Internal.ComponentFoundation.html#Material_Blazor_Internal_ComponentFoundation_LogMBDebug_EventId_System_Exception_System_String_System_Object___">ComponentFoundation.LogMBDebug(EventId, Exception, String, Object[])</a>
+      <a class="xref" href="Material.Blazor.Internal.ComponentFoundation.html#Material_Blazor_Internal_ComponentFoundation_LogMBDebug_Microsoft_Extensions_Logging_EventId_System_Exception_System_String_System_Object___">ComponentFoundation.LogMBDebug(EventId, Exception, String, Object[])</a>
     </div>
     <div>
       <a class="xref" href="Material.Blazor.Internal.ComponentFoundation.html#Material_Blazor_Internal_ComponentFoundation_LogMBDebug_System_String_System_Object___">ComponentFoundation.LogMBDebug(String, Object[])</a>
@@ -154,10 +158,10 @@
       <a class="xref" href="Material.Blazor.Internal.ComponentFoundation.html#Material_Blazor_Internal_ComponentFoundation_LogMBDebug_System_Exception_System_String_System_Object___">ComponentFoundation.LogMBDebug(Exception, String, Object[])</a>
     </div>
     <div>
-      <a class="xref" href="Material.Blazor.Internal.ComponentFoundation.html#Material_Blazor_Internal_ComponentFoundation_LogMBDebugVerbose_EventId_System_String_System_Object___">ComponentFoundation.LogMBDebugVerbose(EventId, String, Object[])</a>
+      <a class="xref" href="Material.Blazor.Internal.ComponentFoundation.html#Material_Blazor_Internal_ComponentFoundation_LogMBDebugVerbose_Microsoft_Extensions_Logging_EventId_System_String_System_Object___">ComponentFoundation.LogMBDebugVerbose(EventId, String, Object[])</a>
     </div>
     <div>
-      <a class="xref" href="Material.Blazor.Internal.ComponentFoundation.html#Material_Blazor_Internal_ComponentFoundation_LogMBDebugVerbose_EventId_System_Exception_System_String_System_Object___">ComponentFoundation.LogMBDebugVerbose(EventId, Exception, String, Object[])</a>
+      <a class="xref" href="Material.Blazor.Internal.ComponentFoundation.html#Material_Blazor_Internal_ComponentFoundation_LogMBDebugVerbose_Microsoft_Extensions_Logging_EventId_System_Exception_System_String_System_Object___">ComponentFoundation.LogMBDebugVerbose(EventId, Exception, String, Object[])</a>
     </div>
     <div>
       <a class="xref" href="Material.Blazor.Internal.ComponentFoundation.html#Material_Blazor_Internal_ComponentFoundation_LogMBDebugVerbose_System_String_System_Object___">ComponentFoundation.LogMBDebugVerbose(String, Object[])</a>
@@ -166,10 +170,10 @@
       <a class="xref" href="Material.Blazor.Internal.ComponentFoundation.html#Material_Blazor_Internal_ComponentFoundation_LogMBDebugVerbose_System_Exception_System_String_System_Object___">ComponentFoundation.LogMBDebugVerbose(Exception, String, Object[])</a>
     </div>
     <div>
-      <a class="xref" href="Material.Blazor.Internal.ComponentFoundation.html#Material_Blazor_Internal_ComponentFoundation_LogMBError_EventId_System_String_System_Object___">ComponentFoundation.LogMBError(EventId, String, Object[])</a>
+      <a class="xref" href="Material.Blazor.Internal.ComponentFoundation.html#Material_Blazor_Internal_ComponentFoundation_LogMBError_Microsoft_Extensions_Logging_EventId_System_String_System_Object___">ComponentFoundation.LogMBError(EventId, String, Object[])</a>
     </div>
     <div>
-      <a class="xref" href="Material.Blazor.Internal.ComponentFoundation.html#Material_Blazor_Internal_ComponentFoundation_LogMBError_EventId_System_Exception_System_String_System_Object___">ComponentFoundation.LogMBError(EventId, Exception, String, Object[])</a>
+      <a class="xref" href="Material.Blazor.Internal.ComponentFoundation.html#Material_Blazor_Internal_ComponentFoundation_LogMBError_Microsoft_Extensions_Logging_EventId_System_Exception_System_String_System_Object___">ComponentFoundation.LogMBError(EventId, Exception, String, Object[])</a>
     </div>
     <div>
       <a class="xref" href="Material.Blazor.Internal.ComponentFoundation.html#Material_Blazor_Internal_ComponentFoundation_LogMBError_System_String_System_Object___">ComponentFoundation.LogMBError(String, Object[])</a>
@@ -178,10 +182,10 @@
       <a class="xref" href="Material.Blazor.Internal.ComponentFoundation.html#Material_Blazor_Internal_ComponentFoundation_LogMBError_System_Exception_System_String_System_Object___">ComponentFoundation.LogMBError(Exception, String, Object[])</a>
     </div>
     <div>
-      <a class="xref" href="Material.Blazor.Internal.ComponentFoundation.html#Material_Blazor_Internal_ComponentFoundation_LogMBInformation_EventId_System_String_System_Object___">ComponentFoundation.LogMBInformation(EventId, String, Object[])</a>
+      <a class="xref" href="Material.Blazor.Internal.ComponentFoundation.html#Material_Blazor_Internal_ComponentFoundation_LogMBInformation_Microsoft_Extensions_Logging_EventId_System_String_System_Object___">ComponentFoundation.LogMBInformation(EventId, String, Object[])</a>
     </div>
     <div>
-      <a class="xref" href="Material.Blazor.Internal.ComponentFoundation.html#Material_Blazor_Internal_ComponentFoundation_LogMBInformation_EventId_System_Exception_System_String_System_Object___">ComponentFoundation.LogMBInformation(EventId, Exception, String, Object[])</a>
+      <a class="xref" href="Material.Blazor.Internal.ComponentFoundation.html#Material_Blazor_Internal_ComponentFoundation_LogMBInformation_Microsoft_Extensions_Logging_EventId_System_Exception_System_String_System_Object___">ComponentFoundation.LogMBInformation(EventId, Exception, String, Object[])</a>
     </div>
     <div>
       <a class="xref" href="Material.Blazor.Internal.ComponentFoundation.html#Material_Blazor_Internal_ComponentFoundation_LogMBInformation_System_String_System_Object___">ComponentFoundation.LogMBInformation(String, Object[])</a>
@@ -190,10 +194,10 @@
       <a class="xref" href="Material.Blazor.Internal.ComponentFoundation.html#Material_Blazor_Internal_ComponentFoundation_LogMBInformation_System_Exception_System_String_System_Object___">ComponentFoundation.LogMBInformation(Exception, String, Object[])</a>
     </div>
     <div>
-      <a class="xref" href="Material.Blazor.Internal.ComponentFoundation.html#Material_Blazor_Internal_ComponentFoundation_LogMBTrace_EventId_System_String_System_Object___">ComponentFoundation.LogMBTrace(EventId, String, Object[])</a>
+      <a class="xref" href="Material.Blazor.Internal.ComponentFoundation.html#Material_Blazor_Internal_ComponentFoundation_LogMBTrace_Microsoft_Extensions_Logging_EventId_System_String_System_Object___">ComponentFoundation.LogMBTrace(EventId, String, Object[])</a>
     </div>
     <div>
-      <a class="xref" href="Material.Blazor.Internal.ComponentFoundation.html#Material_Blazor_Internal_ComponentFoundation_LogMBTrace_EventId_System_Exception_System_String_System_Object___">ComponentFoundation.LogMBTrace(EventId, Exception, String, Object[])</a>
+      <a class="xref" href="Material.Blazor.Internal.ComponentFoundation.html#Material_Blazor_Internal_ComponentFoundation_LogMBTrace_Microsoft_Extensions_Logging_EventId_System_Exception_System_String_System_Object___">ComponentFoundation.LogMBTrace(EventId, Exception, String, Object[])</a>
     </div>
     <div>
       <a class="xref" href="Material.Blazor.Internal.ComponentFoundation.html#Material_Blazor_Internal_ComponentFoundation_LogMBTrace_System_String_System_Object___">ComponentFoundation.LogMBTrace(String, Object[])</a>
@@ -202,10 +206,10 @@
       <a class="xref" href="Material.Blazor.Internal.ComponentFoundation.html#Material_Blazor_Internal_ComponentFoundation_LogMBTrace_System_Exception_System_String_System_Object___">ComponentFoundation.LogMBTrace(Exception, String, Object[])</a>
     </div>
     <div>
-      <a class="xref" href="Material.Blazor.Internal.ComponentFoundation.html#Material_Blazor_Internal_ComponentFoundation_LogMBWarning_EventId_System_String_System_Object___">ComponentFoundation.LogMBWarning(EventId, String, Object[])</a>
+      <a class="xref" href="Material.Blazor.Internal.ComponentFoundation.html#Material_Blazor_Internal_ComponentFoundation_LogMBWarning_Microsoft_Extensions_Logging_EventId_System_String_System_Object___">ComponentFoundation.LogMBWarning(EventId, String, Object[])</a>
     </div>
     <div>
-      <a class="xref" href="Material.Blazor.Internal.ComponentFoundation.html#Material_Blazor_Internal_ComponentFoundation_LogMBWarning_EventId_System_Exception_System_String_System_Object___">ComponentFoundation.LogMBWarning(EventId, Exception, String, Object[])</a>
+      <a class="xref" href="Material.Blazor.Internal.ComponentFoundation.html#Material_Blazor_Internal_ComponentFoundation_LogMBWarning_Microsoft_Extensions_Logging_EventId_System_Exception_System_String_System_Object___">ComponentFoundation.LogMBWarning(EventId, Exception, String, Object[])</a>
     </div>
     <div>
       <a class="xref" href="Material.Blazor.Internal.ComponentFoundation.html#Material_Blazor_Internal_ComponentFoundation_LogMBWarning_System_String_System_Object___">ComponentFoundation.LogMBWarning(String, Object[])</a>
@@ -213,21 +217,72 @@
     <div>
       <a class="xref" href="Material.Blazor.Internal.ComponentFoundation.html#Material_Blazor_Internal_ComponentFoundation_LogMBWarning_System_Exception_System_String_System_Object___">ComponentFoundation.LogMBWarning(Exception, String, Object[])</a>
     </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.aspnetcore.components.componentbase.buildrendertree#Microsoft_AspNetCore_Components_ComponentBase_BuildRenderTree_Microsoft_AspNetCore_Components_Rendering_RenderTreeBuilder_">ComponentBase.BuildRenderTree(RenderTreeBuilder)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.aspnetcore.components.componentbase.oninitialized#Microsoft_AspNetCore_Components_ComponentBase_OnInitialized">ComponentBase.OnInitialized()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.aspnetcore.components.componentbase.statehaschanged#Microsoft_AspNetCore_Components_ComponentBase_StateHasChanged">ComponentBase.StateHasChanged()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.aspnetcore.components.componentbase.shouldrender#Microsoft_AspNetCore_Components_ComponentBase_ShouldRender">ComponentBase.ShouldRender()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.aspnetcore.components.componentbase.invokeasync#Microsoft_AspNetCore_Components_ComponentBase_InvokeAsync_System_Action_">ComponentBase.InvokeAsync(Action)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.aspnetcore.components.componentbase.invokeasync#Microsoft_AspNetCore_Components_ComponentBase_InvokeAsync_System_Func_System_Threading_Tasks_Task__">ComponentBase.InvokeAsync(Func&lt;Task&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.aspnetcore.components.componentbase.microsoft-aspnetcore-components-icomponent-attach#Microsoft_AspNetCore_Components_ComponentBase_Microsoft_AspNetCore_Components_IComponent_Attach_Microsoft_AspNetCore_Components_RenderHandle_">ComponentBase.IComponent.Attach(RenderHandle)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.aspnetcore.components.componentbase.setparametersasync#Microsoft_AspNetCore_Components_ComponentBase_SetParametersAsync_Microsoft_AspNetCore_Components_ParameterView_">ComponentBase.SetParametersAsync(ParameterView)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.aspnetcore.components.componentbase.microsoft-aspnetcore-components-ihandleevent-handleeventasync#Microsoft_AspNetCore_Components_ComponentBase_Microsoft_AspNetCore_Components_IHandleEvent_HandleEventAsync_Microsoft_AspNetCore_Components_EventCallbackWorkItem_System_Object_">ComponentBase.IHandleEvent.HandleEventAsync(EventCallbackWorkItem, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.aspnetcore.components.componentbase.microsoft-aspnetcore-components-ihandleafterrender-onafterrenderasync#Microsoft_AspNetCore_Components_ComponentBase_Microsoft_AspNetCore_Components_IHandleAfterRender_OnAfterRenderAsync">ComponentBase.IHandleAfterRender.OnAfterRenderAsync()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_">Object.Equals(Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.equals#System_Object_Equals_System_Object_System_Object_">Object.Equals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gethashcode#System_Object_GetHashCode">Object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.gettype#System_Object_GetType">Object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.memberwiseclone#System_Object_MemberwiseClone">Object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.referenceequals#System_Object_ReferenceEquals_System_Object_System_Object_">Object.ReferenceEquals(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object.tostring#System_Object_ToString">Object.ToString()</a>
+    </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Material.Blazor.html">Material.Blazor</a></h6>
   <h6><strong>Assembly</strong>: Material.Blazor.dll</h6>
   <h5 id="Material_Blazor_MBCard_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class MBCard : ComponentFoundation, IDisposable</code></pre>
+    <pre><code class="lang-csharp hljs">public class MBCard : ComponentFoundation, IComponent, IHandleEvent, IHandleAfterRender, IAsyncDisposable</code></pre>
   </div>
   <h3 id="properties">Properties
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Material-Blazor/Material.Blazor/new/main/apiSpec/new?filename=Material_Blazor_MBCard_ActionButtons.md&amp;value=---%0Auid%3A%20Material.Blazor.MBCard.ActionButtons%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/stefanloerwald/Material.Blazor/new/main/apiSpec/new?filename=Material_Blazor_MBCard_ActionButtons.md&amp;value=---%0Auid%3A%20Material.Blazor.MBCard.ActionButtons%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Material-Blazor/Material.Blazor/blob/main/Material.Blazor/Components/Card/MBCard.razor.cs/#L44">View Source</a>
+    <a href="https://github.com/stefanloerwald/Material.Blazor/blob/main/Material.Blazor/Components/Card/MBCard.razor.cs/#L44">View Source</a>
   </span>
   <a id="Material_Blazor_MBCard_ActionButtons_" data-uid="Material.Blazor.MBCard.ActionButtons*"></a>
   <h4 id="Material_Blazor_MBCard_ActionButtons" data-uid="Material.Blazor.MBCard.ActionButtons">ActionButtons</h4>
@@ -236,7 +291,8 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public RenderFragment ActionButtons { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">[Parameter]
+public RenderFragment ActionButtons { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -248,17 +304,17 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">RenderFragment</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.aspnetcore.components.renderfragment">RenderFragment</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Material-Blazor/Material.Blazor/new/main/apiSpec/new?filename=Material_Blazor_MBCard_ActionIcons.md&amp;value=---%0Auid%3A%20Material.Blazor.MBCard.ActionIcons%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/stefanloerwald/Material.Blazor/new/main/apiSpec/new?filename=Material_Blazor_MBCard_ActionIcons.md&amp;value=---%0Auid%3A%20Material.Blazor.MBCard.ActionIcons%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Material-Blazor/Material.Blazor/blob/main/Material.Blazor/Components/Card/MBCard.razor.cs/#L50">View Source</a>
+    <a href="https://github.com/stefanloerwald/Material.Blazor/blob/main/Material.Blazor/Components/Card/MBCard.razor.cs/#L50">View Source</a>
   </span>
   <a id="Material_Blazor_MBCard_ActionIcons_" data-uid="Material.Blazor.MBCard.ActionIcons*"></a>
   <h4 id="Material_Blazor_MBCard_ActionIcons" data-uid="Material.Blazor.MBCard.ActionIcons">ActionIcons</h4>
@@ -267,7 +323,8 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public RenderFragment ActionIcons { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">[Parameter]
+public RenderFragment ActionIcons { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -279,17 +336,17 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">RenderFragment</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.aspnetcore.components.renderfragment">RenderFragment</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Material-Blazor/Material.Blazor/new/main/apiSpec/new?filename=Material_Blazor_MBCard_AutoStyled.md&amp;value=---%0Auid%3A%20Material.Blazor.MBCard.AutoStyled%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/stefanloerwald/Material.Blazor/new/main/apiSpec/new?filename=Material_Blazor_MBCard_AutoStyled.md&amp;value=---%0Auid%3A%20Material.Blazor.MBCard.AutoStyled%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Material-Blazor/Material.Blazor/blob/main/Material.Blazor/Components/Card/MBCard.razor.cs/#L26">View Source</a>
+    <a href="https://github.com/stefanloerwald/Material.Blazor/blob/main/Material.Blazor/Components/Card/MBCard.razor.cs/#L26">View Source</a>
   </span>
   <a id="Material_Blazor_MBCard_AutoStyled_" data-uid="Material.Blazor.MBCard.AutoStyled*"></a>
   <h4 id="Material_Blazor_MBCard_AutoStyled" data-uid="Material.Blazor.MBCard.AutoStyled">AutoStyled</h4>
@@ -299,7 +356,8 @@ and you can individually style the HTML in the primary and primary action render
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool AutoStyled { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">[Parameter]
+public bool AutoStyled { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -318,10 +376,10 @@ and you can individually style the HTML in the primary and primary action render
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Material-Blazor/Material.Blazor/new/main/apiSpec/new?filename=Material_Blazor_MBCard_CardStyle.md&amp;value=---%0Auid%3A%20Material.Blazor.MBCard.CardStyle%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/stefanloerwald/Material.Blazor/new/main/apiSpec/new?filename=Material_Blazor_MBCard_CardStyle.md&amp;value=---%0Auid%3A%20Material.Blazor.MBCard.CardStyle%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Material-Blazor/Material.Blazor/blob/main/Material.Blazor/Components/Card/MBCard.razor.cs/#L19">View Source</a>
+    <a href="https://github.com/stefanloerwald/Material.Blazor/blob/main/Material.Blazor/Components/Card/MBCard.razor.cs/#L19">View Source</a>
   </span>
   <a id="Material_Blazor_MBCard_CardStyle_" data-uid="Material.Blazor.MBCard.CardStyle*"></a>
   <h4 id="Material_Blazor_MBCard_CardStyle" data-uid="Material.Blazor.MBCard.CardStyle">CardStyle</h4>
@@ -331,7 +389,8 @@ and you can individually style the HTML in the primary and primary action render
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public MBCardStyle? CardStyle { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">[Parameter]
+public MBCardStyle? CardStyle { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -350,10 +409,10 @@ and you can individually style the HTML in the primary and primary action render
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Material-Blazor/Material.Blazor/new/main/apiSpec/new?filename=Material_Blazor_MBCard_Primary.md&amp;value=---%0Auid%3A%20Material.Blazor.MBCard.Primary%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/stefanloerwald/Material.Blazor/new/main/apiSpec/new?filename=Material_Blazor_MBCard_Primary.md&amp;value=---%0Auid%3A%20Material.Blazor.MBCard.Primary%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Material-Blazor/Material.Blazor/blob/main/Material.Blazor/Components/Card/MBCard.razor.cs/#L32">View Source</a>
+    <a href="https://github.com/stefanloerwald/Material.Blazor/blob/main/Material.Blazor/Components/Card/MBCard.razor.cs/#L32">View Source</a>
   </span>
   <a id="Material_Blazor_MBCard_Primary_" data-uid="Material.Blazor.MBCard.Primary*"></a>
   <h4 id="Material_Blazor_MBCard_Primary" data-uid="Material.Blazor.MBCard.Primary">Primary</h4>
@@ -362,7 +421,8 @@ and you can individually style the HTML in the primary and primary action render
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public RenderFragment Primary { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">[Parameter]
+public RenderFragment Primary { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -374,17 +434,17 @@ and you can individually style the HTML in the primary and primary action render
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">RenderFragment</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.aspnetcore.components.renderfragment">RenderFragment</a></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Material-Blazor/Material.Blazor/new/main/apiSpec/new?filename=Material_Blazor_MBCard_PrimaryAction.md&amp;value=---%0Auid%3A%20Material.Blazor.MBCard.PrimaryAction%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/stefanloerwald/Material.Blazor/new/main/apiSpec/new?filename=Material_Blazor_MBCard_PrimaryAction.md&amp;value=---%0Auid%3A%20Material.Blazor.MBCard.PrimaryAction%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Material-Blazor/Material.Blazor/blob/main/Material.Blazor/Components/Card/MBCard.razor.cs/#L38">View Source</a>
+    <a href="https://github.com/stefanloerwald/Material.Blazor/blob/main/Material.Blazor/Components/Card/MBCard.razor.cs/#L38">View Source</a>
   </span>
   <a id="Material_Blazor_MBCard_PrimaryAction_" data-uid="Material.Blazor.MBCard.PrimaryAction*"></a>
   <h4 id="Material_Blazor_MBCard_PrimaryAction" data-uid="Material.Blazor.MBCard.PrimaryAction">PrimaryAction</h4>
@@ -393,7 +453,8 @@ and you can individually style the HTML in the primary and primary action render
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public RenderFragment PrimaryAction { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">[Parameter]
+public RenderFragment PrimaryAction { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -405,7 +466,7 @@ and you can individually style the HTML in the primary and primary action render
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">RenderFragment</span></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.aspnetcore.components.renderfragment">RenderFragment</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -414,22 +475,48 @@ and you can individually style the HTML in the primary and primary action render
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/Material-Blazor/Material.Blazor/new/main/apiSpec/new?filename=Material_Blazor_MBCard_OnInitialized.md&amp;value=---%0Auid%3A%20Material.Blazor.MBCard.OnInitialized%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/stefanloerwald/Material.Blazor/new/main/apiSpec/new?filename=Material_Blazor_MBCard_OnInitializedAsync.md&amp;value=---%0Auid%3A%20Material.Blazor.MBCard.OnInitializedAsync%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/Material-Blazor/Material.Blazor/blob/main/Material.Blazor/Components/Card/MBCard.razor.cs/#L59">View Source</a>
+    <a href="https://github.com/stefanloerwald/Material.Blazor/blob/main/Material.Blazor/Components/Card/MBCard.razor.cs/#L59">View Source</a>
   </span>
-  <a id="Material_Blazor_MBCard_OnInitialized_" data-uid="Material.Blazor.MBCard.OnInitialized*"></a>
-  <h4 id="Material_Blazor_MBCard_OnInitialized" data-uid="Material.Blazor.MBCard.OnInitialized">OnInitialized()</h4>
+  <a id="Material_Blazor_MBCard_OnInitializedAsync_" data-uid="Material.Blazor.MBCard.OnInitializedAsync*"></a>
+  <h4 id="Material_Blazor_MBCard_OnInitializedAsync" data-uid="Material.Blazor.MBCard.OnInitializedAsync">OnInitializedAsync()</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected override void OnInitialized()</code></pre>
+    <pre><code class="lang-csharp hljs">protected override Task OnInitializedAsync()</code></pre>
   </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.aspnetcore.components.componentbase.oninitializedasync#Microsoft_AspNetCore_Components_ComponentBase_OnInitializedAsync">ComponentBase.OnInitializedAsync()</a></div>
   <h3 id="implements">Implements</h3>
   <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.idisposable">System.IDisposable</a>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.aspnetcore.components.icomponent">Microsoft.AspNetCore.Components.IComponent</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.aspnetcore.components.ihandleevent">Microsoft.AspNetCore.Components.IHandleEvent</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.aspnetcore.components.ihandleafterrender">Microsoft.AspNetCore.Components.IHandleAfterRender</a>
+  </div>
+  <div>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iasyncdisposable">System.IAsyncDisposable</a>
   </div>
 </article>
           </div>
@@ -439,10 +526,10 @@ and you can individually style the HTML in the primary and primary action render
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/Material-Blazor/Material.Blazor/new/main/apiSpec/new?filename=Material_Blazor_MBCard.md&amp;value=---%0Auid%3A%20Material.Blazor.MBCard%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/stefanloerwald/Material.Blazor/new/main/apiSpec/new?filename=Material_Blazor_MBCard.md&amp;value=---%0Auid%3A%20Material.Blazor.MBCard%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/Material-Blazor/Material.Blazor/blob/main/Material.Blazor/Components/Card/MBCard.razor.cs/#L13" class="contribution-link">View Source</a>
+                    <a href="https://github.com/stefanloerwald/Material.Blazor/blob/main/Material.Blazor/Components/Card/MBCard.razor.cs/#L13" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>
