@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Interface IMBIcon
+    <title>Delegate IMBIcon.IconFragment
    </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Interface IMBIcon
+    <meta name="title" content="Delegate IMBIcon.IconFragment
    ">
     <meta name="generator" content="docfx 2.56.1.0">
     
@@ -79,70 +79,48 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="Material.Blazor.IMBIcon">
+            <article class="content wrap" id="_content" data-uid="Material.Blazor.IMBIcon.IconFragment">
   
   
-  <h1 id="Material_Blazor_IMBIcon" data-uid="Material.Blazor.IMBIcon" class="text-break">Interface IMBIcon
+  <h1 id="Material_Blazor_IMBIcon_IconFragment" data-uid="Material.Blazor.IMBIcon.IconFragment" class="text-break">Delegate IMBIcon.IconFragment
   </h1>
-  <div class="markdown level0 summary"><p>Interface providing markup elements for an icon in a given foundry.</p>
+  <div class="markdown level0 summary"><p>A delegate that applies user-defined class, style, and other attributes to the icon.</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Material.Blazor.html">Material.Blazor</a></h6>
   <h6><strong>Assembly</strong>: Material.Blazor.dll</h6>
-  <h5 id="Material_Blazor_IMBIcon_syntax">Syntax</h5>
+  <h5 id="Material_Blazor_IMBIcon_IconFragment_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public interface IMBIcon</code></pre>
+    <pre><code class="lang-csharp hljs">public delegate RenderFragment IconFragment(string class, string style, IEnumerable&lt;KeyValuePair&lt;string, object&gt;&gt; attributes);</code></pre>
   </div>
-  <h3 id="properties">Properties
-  </h3>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/stefanloerwald/Material.Blazor/new/main/apiSpec/new?filename=Material_Blazor_IMBIcon_Render.md&amp;value=---%0Auid%3A%20Material.Blazor.IMBIcon.Render%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/stefanloerwald/Material.Blazor/blob/main/Material.Blazor/Model/Interfaces/IMBIcon.cs/#L25">View Source</a>
-  </span>
-  <a id="Material_Blazor_IMBIcon_Render_" data-uid="Material.Blazor.IMBIcon.Render*"></a>
-  <h4 id="Material_Blazor_IMBIcon_Render" data-uid="Material.Blazor.IMBIcon.Render">Render</h4>
-  <div class="markdown level1 summary"><p>The delegate that combines all the information of the icon into markup.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">IMBIcon.IconFragment Render { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
+  <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
         <th>Type</th>
+        <th>Name</th>
         <th>Description</th>
       </tr>
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="Material.Blazor.IMBIcon.IconFragment.html">IMBIcon.IconFragment</a></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">class</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td><span class="parametername">style</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2">KeyValuePair</a>&lt;<a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a>, <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.object">Object</a>&gt;&gt;</td>
+        <td><span class="parametername">attributes</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/stefanloerwald/Material.Blazor/new/main/apiSpec/new?filename=Material_Blazor_IMBIcon_RequiresColorFilter.md&amp;value=---%0Auid%3A%20Material.Blazor.IMBIcon.RequiresColorFilter%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/stefanloerwald/Material.Blazor/blob/main/Material.Blazor/Model/Interfaces/IMBIcon.cs/#L31">View Source</a>
-  </span>
-  <a id="Material_Blazor_IMBIcon_RequiresColorFilter_" data-uid="Material.Blazor.IMBIcon.RequiresColorFilter*"></a>
-  <h4 id="Material_Blazor_IMBIcon_RequiresColorFilter" data-uid="Material.Blazor.IMBIcon.RequiresColorFilter">RequiresColorFilter</h4>
-  <div class="markdown level1 summary"><p>Determines whether color should be set via a filter in the case of Material Icons two-tone theme. Presently partly implemented in toasts only.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">bool RequiresColorFilter { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
+  <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -152,7 +130,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.boolean">Boolean</a></td>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/microsoft.aspnetcore.components.renderfragment">RenderFragment</a></td>
         <td></td>
       </tr>
     </tbody>
@@ -165,10 +143,10 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/stefanloerwald/Material.Blazor/new/main/apiSpec/new?filename=Material_Blazor_IMBIcon.md&amp;value=---%0Auid%3A%20Material.Blazor.IMBIcon%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/stefanloerwald/Material.Blazor/new/main/apiSpec/new?filename=Material_Blazor_IMBIcon_IconFragment.md&amp;value=---%0Auid%3A%20Material.Blazor.IMBIcon.IconFragment%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/stefanloerwald/Material.Blazor/blob/main/Material.Blazor/Model/Interfaces/IMBIcon.cs/#L9" class="contribution-link">View Source</a>
+                    <a href="https://github.com/stefanloerwald/Material.Blazor/blob/main/Material.Blazor/Model/Interfaces/IMBIcon.cs/#L18" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

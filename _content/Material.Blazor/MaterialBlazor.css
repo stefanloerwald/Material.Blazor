@@ -926,6 +926,21 @@ mb-blade-content {
   flex-direction: row;
 }
 
+.mb-circular-progress--small {
+  height: 24px;
+  width: 24px;
+}
+
+.mb-circular-progress--medium {
+  height: 36px;
+  width: 36px;
+}
+
+.mb-circular-progress--large {
+  height: 48px;
+  width: 48px;
+}
+
 .mdc-data-table.dense--5 .mdc-data-table__cell, .mdc-data-table.dense--4 .mdc-data-table__cell {
   height: 36px;
 }
