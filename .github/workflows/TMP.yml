@@ -1,0 +1,48 @@
+﻿name: GithubActionsWIP
+
+on:
+  push:
+    branches: [ main ]
+
+  pull_request:
+    branches: [ main ]
+
+env:
+  buildPlatform: 'Any CPU'
+  buildConfiguration: 'Release'
+  outputDocFx: ${{github.workspace}}\siteDocFx
+  outputMB: ${{github.workspace}}\siteMB
+  outputMBC: ${{github.workspace}}\siteMBC
+  outputWeb: ${{github.workspace}}\siteWeb
+  projectMB: 'Material.Blazor/Material.Blazor.csproj'
+  projectMBC: 'Material.Blazor.Css/Material.Blazor.Css.csproj'
+  projectTest: 'Material.Blazor.Test/Material.Blazor.Test.csproj'
+  projectWeb: 'Material.Blazor.Website.WebAssembly/Material.Blazor.Website.WebAssembly.csproj'
+
+jobs:
+  compare:
+    if: (github.repository != 'Material-Blazor/Material.Blazor') # && contains(github.event.head_commit.message, '[compare]')
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository under $GITHUB_WORKSPACE so the job can access it 🛎️
+      uses: actions/checkout@v2
+      if: (github.repository != 'Material-Blazor/Material.Blazor')
+    
+      # TODO: figure out all pages: 
+      #     create a file from the first line of all razor files in Material.Blazor.Website/Pages/
+    - name: Find pages
+      id: findpages
+      run: |
+        echo "::set-output name=pages::$(date +'%Y_%m_%d')"
+
+    - name: Crawl pages
+      uses: stefanloerwald/HeadlessChrome@v0.3
+      with:
+        page: https://google.com
+        outputfile: index.html
+      # TODO: crawl all pages here and on the official website
+      # TODO: find the diff
+      # TODO: create a report file or files
+      # TODO: create issue(s) from it/them
