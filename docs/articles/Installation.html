@@ -80,7 +80,7 @@
             <article class="content wrap" id="_content" data-uid="A.Installation">
 <h1 id="installation">Installation</h1>
 
-<p>Either fork this repo or use the Nuget package linked at the top of this document. Once the package is referenced in your project you will need to add the CSS and JS in your html.</p>
+<p>Either fork this repo or reference the Material.Blazor Nuget package. Once the package is referenced in your project you will need to add the CSS and JS in your html.</p>
 <p>There are non-minified files of MaterialBlazor.css &amp; MaterialBlazor.js available to reference if you need them for debugging purposes.</p>
 <p>Add the <code>Material.Blazor</code> namespace to your project by appending <code>@using Material.Blazor</code> to the end of your project's _Imports.razor file. Do not use components from the <code>Material.Blazor.Internal</code> namespace: as the name
 implies these are intended for internal use by Material.Blazor, however Blazor has no mechanism for internally restricted Blazor components to mirror the <code>internal</code> directive for a C# class.</p>
@@ -93,8 +93,11 @@ Material icons. You will to add three items to your index.html/_Host.cshtml. Pla
 <p>and at the end of <code>&lt;body&gt;</code>:</p>
 <pre><code class="lang-html">&lt;script src=&quot;_content/Material.Blazor/MaterialBlazor.min.js&quot;&gt;&lt;/script&gt;
 </code></pre>
-<p>Replace the unpkg CSS with your own
+<p>Replace the unpkg CSS (or the Material.Blazor.Css CSS) with your own
 if you have built a theme - you can see how we have done this in the <a href="https://github.com/Material-Blazor/Material.Blazor/blob/main/Material.Blazor.Website.WebAssembly/wwwroot/index.html#L14">Material.Blazor website's index.html</a>.</p>
+<p>Alternatively, you can choose to install the Material.Blazor.Css Nuget package. This package contains the matching Material css for Material.Blazor. It has both the minified and 'raw' css. If you choose this method of obtaining the CSS the first link above becomes:</p>
+<pre><code class="lang-html">&lt;link href=&quot;_content/Material.Blazor.Css/Material.min.css&quot; rel=&quot;stylesheet&quot; /&gt;
+</code></pre>
 <h2 id="package-versions">Package versions</h2>
 <p>Material.Blazor works with the following package versions:</p>
 <ul>
