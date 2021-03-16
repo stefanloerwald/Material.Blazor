@@ -33,3 +33,4 @@ Material.Blazor is a lightweight [Material Theme](https://material.io/) [web dev
 
 [![GithubActionsMainPublish](https://img.shields.io/github/workflow/status/Material-Blazor/Material.Blazor/GithubActionsMainPublish?label=actions%20main&logo=github&style=flat-square)](https://github.com/Material-Blazor/Material.Blazor/actions?query=workflow%3AGithubActionsMainPublish)
 [![GithubActionsDevelop](https://img.shields.io/github/workflow/status/Material-Blazor/Material.Blazor/GithubActionsDevelop?label=actions%20develop&logo=github&style=flat-square)](https://github.com/Material-Blazor/Material.Blazor/actions?query=workflow%3AGithubActionsDevelop)
+
