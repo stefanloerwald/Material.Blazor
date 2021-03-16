@@ -181,7 +181,9 @@ jobs:
 ############################################################################################################
   deployghpages:
     needs: [test, build-documentation, build-website]
-    if: github.event_name != 'pull_request' # for PRs, we only need to make sure the build works (the job above), we don't need to deploy anything.
+     # for PRs, we only need to make sure the build works (the job above), we don't need to deploy anything.
+     # On forks, PRs against main will run the deploy step only if initiated by the fork owner 
+    if: github.event_name != 'pull_request' || ((github.repository != 'Material-Blazor/Material.Blazor') && (github.repository_owner == github.actor))
 
     runs-on: ubuntu-latest
 
