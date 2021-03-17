@@ -5,6 +5,7 @@ on:
 jobs:
   create-repo:
     runs-on: ubuntu-latest
+    if: false
     steps:
       - uses: octokit/request-action@v2.x
         id: create
@@ -15,6 +16,20 @@ jobs:
           name: TestingTheApiIgnoreMe
           description: This is an automatically generated repo. Ignore me.
           visibility: private
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_PAT }}
+      - run: echo "${{ steps.create.outputs.data }}"
+  delete-repo:
+    runs-on: ubuntu-latest
+    if: true
+    steps:
+      - uses: octokit/request-action@v2.x
+        id: create
+        with:
+          route: DELETE /repos/{org}/{repo}
+          org: Material-Blazor
+          accept: 'application/vnd.github.v3+json'
+          repo: TestingTheApiIgnoreMe
         env:
           GITHUB_TOKEN: ${{ secrets.GH_PAT }}
       - run: echo "${{ steps.create.outputs.data }}"
