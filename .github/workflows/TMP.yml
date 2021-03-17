@@ -3,7 +3,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  create repo:
+  create-repo:
     runs-on: ubuntu-latest
     steps:
       - uses: octokit/request-action@v2.x
