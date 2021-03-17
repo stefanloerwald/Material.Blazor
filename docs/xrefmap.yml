@@ -523,45 +523,25 @@ references:
   commentId: T:Material.Blazor.IMBIcon
   fullName: Material.Blazor.IMBIcon
   nameWithType: IMBIcon
-- uid: Material.Blazor.IMBIcon.Attributes
-  name: Attributes
-  href: api/Material.Blazor.IMBIcon.html#Material_Blazor_IMBIcon_Attributes
-  commentId: P:Material.Blazor.IMBIcon.Attributes
-  fullName: Material.Blazor.IMBIcon.Attributes
-  nameWithType: IMBIcon.Attributes
-- uid: Material.Blazor.IMBIcon.Attributes*
-  name: Attributes
-  href: api/Material.Blazor.IMBIcon.html#Material_Blazor_IMBIcon_Attributes_
-  commentId: Overload:Material.Blazor.IMBIcon.Attributes
+- uid: Material.Blazor.IMBIcon.IconFragment
+  name: IMBIcon.IconFragment
+  href: api/Material.Blazor.IMBIcon.IconFragment.html
+  commentId: T:Material.Blazor.IMBIcon.IconFragment
+  fullName: Material.Blazor.IMBIcon.IconFragment
+  nameWithType: IMBIcon.IconFragment
+- uid: Material.Blazor.IMBIcon.Render
+  name: Render
+  href: api/Material.Blazor.IMBIcon.html#Material_Blazor_IMBIcon_Render
+  commentId: P:Material.Blazor.IMBIcon.Render
+  fullName: Material.Blazor.IMBIcon.Render
+  nameWithType: IMBIcon.Render
+- uid: Material.Blazor.IMBIcon.Render*
+  name: Render
+  href: api/Material.Blazor.IMBIcon.html#Material_Blazor_IMBIcon_Render_
+  commentId: Overload:Material.Blazor.IMBIcon.Render
   isSpec: "True"
-  fullName: Material.Blazor.IMBIcon.Attributes
-  nameWithType: IMBIcon.Attributes
-- uid: Material.Blazor.IMBIcon.Class
-  name: Class
-  href: api/Material.Blazor.IMBIcon.html#Material_Blazor_IMBIcon_Class
-  commentId: P:Material.Blazor.IMBIcon.Class
-  fullName: Material.Blazor.IMBIcon.Class
-  nameWithType: IMBIcon.Class
-- uid: Material.Blazor.IMBIcon.Class*
-  name: Class
-  href: api/Material.Blazor.IMBIcon.html#Material_Blazor_IMBIcon_Class_
-  commentId: Overload:Material.Blazor.IMBIcon.Class
-  isSpec: "True"
-  fullName: Material.Blazor.IMBIcon.Class
-  nameWithType: IMBIcon.Class
-- uid: Material.Blazor.IMBIcon.IconName
-  name: IconName
-  href: api/Material.Blazor.IMBIcon.html#Material_Blazor_IMBIcon_IconName
-  commentId: P:Material.Blazor.IMBIcon.IconName
-  fullName: Material.Blazor.IMBIcon.IconName
-  nameWithType: IMBIcon.IconName
-- uid: Material.Blazor.IMBIcon.IconName*
-  name: IconName
-  href: api/Material.Blazor.IMBIcon.html#Material_Blazor_IMBIcon_IconName_
-  commentId: Overload:Material.Blazor.IMBIcon.IconName
-  isSpec: "True"
-  fullName: Material.Blazor.IMBIcon.IconName
-  nameWithType: IMBIcon.IconName
+  fullName: Material.Blazor.IMBIcon.Render
+  nameWithType: IMBIcon.Render
 - uid: Material.Blazor.IMBIcon.RequiresColorFilter
   name: RequiresColorFilter
   href: api/Material.Blazor.IMBIcon.html#Material_Blazor_IMBIcon_RequiresColorFilter
@@ -575,19 +555,6 @@ references:
   isSpec: "True"
   fullName: Material.Blazor.IMBIcon.RequiresColorFilter
   nameWithType: IMBIcon.RequiresColorFilter
-- uid: Material.Blazor.IMBIcon.Text
-  name: Text
-  href: api/Material.Blazor.IMBIcon.html#Material_Blazor_IMBIcon_Text
-  commentId: P:Material.Blazor.IMBIcon.Text
-  fullName: Material.Blazor.IMBIcon.Text
-  nameWithType: IMBIcon.Text
-- uid: Material.Blazor.IMBIcon.Text*
-  name: Text
-  href: api/Material.Blazor.IMBIcon.html#Material_Blazor_IMBIcon_Text_
-  commentId: Overload:Material.Blazor.IMBIcon.Text
-  isSpec: "True"
-  fullName: Material.Blazor.IMBIcon.Text
-  nameWithType: IMBIcon.Text
 - uid: Material.Blazor.IMBIconFoundry
   name: IMBIconFoundry
   href: api/Material.Blazor.IMBIconFoundry.html
@@ -763,111 +730,25 @@ references:
   commentId: N:Material.Blazor.Internal
   fullName: Material.Blazor.Internal
   nameWithType: Material.Blazor.Internal
-- uid: Material.Blazor.Internal.ClassAndStyleMapper
-  name: ClassAndStyleMapper
-  href: api/Material.Blazor.Internal.ClassAndStyleMapper.html
-  commentId: T:Material.Blazor.Internal.ClassAndStyleMapper
-  fullName: Material.Blazor.Internal.ClassAndStyleMapper
-  nameWithType: ClassAndStyleMapper
-- uid: Material.Blazor.Internal.ClassAndStyleMapper.ToClassString
-  name: ToClassString()
-  href: api/Material.Blazor.Internal.ClassAndStyleMapper.html#Material_Blazor_Internal_ClassAndStyleMapper_ToClassString
-  commentId: M:Material.Blazor.Internal.ClassAndStyleMapper.ToClassString
-  fullName: Material.Blazor.Internal.ClassAndStyleMapper.ToClassString()
-  nameWithType: ClassAndStyleMapper.ToClassString()
-- uid: Material.Blazor.Internal.ClassAndStyleMapper.ToClassString*
-  name: ToClassString
-  href: api/Material.Blazor.Internal.ClassAndStyleMapper.html#Material_Blazor_Internal_ClassAndStyleMapper_ToClassString_
-  commentId: Overload:Material.Blazor.Internal.ClassAndStyleMapper.ToClassString
-  isSpec: "True"
-  fullName: Material.Blazor.Internal.ClassAndStyleMapper.ToClassString
-  nameWithType: ClassAndStyleMapper.ToClassString
-- uid: Material.Blazor.Internal.ClassAndStyleMapper.ToStyleString
-  name: ToStyleString()
-  href: api/Material.Blazor.Internal.ClassAndStyleMapper.html#Material_Blazor_Internal_ClassAndStyleMapper_ToStyleString
-  commentId: M:Material.Blazor.Internal.ClassAndStyleMapper.ToStyleString
-  fullName: Material.Blazor.Internal.ClassAndStyleMapper.ToStyleString()
-  nameWithType: ClassAndStyleMapper.ToStyleString()
-- uid: Material.Blazor.Internal.ClassAndStyleMapper.ToStyleString*
-  name: ToStyleString
-  href: api/Material.Blazor.Internal.ClassAndStyleMapper.html#Material_Blazor_Internal_ClassAndStyleMapper_ToStyleString_
-  commentId: Overload:Material.Blazor.Internal.ClassAndStyleMapper.ToStyleString
-  isSpec: "True"
-  fullName: Material.Blazor.Internal.ClassAndStyleMapper.ToStyleString
-  nameWithType: ClassAndStyleMapper.ToStyleString
-- uid: Material.Blazor.Internal.ClassAndStyleMapperExtensions
-  name: ClassAndStyleMapperExtensions
-  href: api/Material.Blazor.Internal.ClassAndStyleMapperExtensions.html
-  commentId: T:Material.Blazor.Internal.ClassAndStyleMapperExtensions
-  fullName: Material.Blazor.Internal.ClassAndStyleMapperExtensions
-  nameWithType: ClassAndStyleMapperExtensions
-- uid: Material.Blazor.Internal.ClassAndStyleMapperExtensions.Add(Material.Blazor.Internal.ClassAndStyleMapper,System.String)
-  name: Add(ClassAndStyleMapper, String)
-  href: api/Material.Blazor.Internal.ClassAndStyleMapperExtensions.html#Material_Blazor_Internal_ClassAndStyleMapperExtensions_Add_Material_Blazor_Internal_ClassAndStyleMapper_System_String_
-  commentId: M:Material.Blazor.Internal.ClassAndStyleMapperExtensions.Add(Material.Blazor.Internal.ClassAndStyleMapper,System.String)
-  fullName: Material.Blazor.Internal.ClassAndStyleMapperExtensions.Add(Material.Blazor.Internal.ClassAndStyleMapper, System.String)
-  nameWithType: ClassAndStyleMapperExtensions.Add(ClassAndStyleMapper, String)
-- uid: Material.Blazor.Internal.ClassAndStyleMapperExtensions.Add*
-  name: Add
-  href: api/Material.Blazor.Internal.ClassAndStyleMapperExtensions.html#Material_Blazor_Internal_ClassAndStyleMapperExtensions_Add_
-  commentId: Overload:Material.Blazor.Internal.ClassAndStyleMapperExtensions.Add
-  isSpec: "True"
-  fullName: Material.Blazor.Internal.ClassAndStyleMapperExtensions.Add
-  nameWithType: ClassAndStyleMapperExtensions.Add
-- uid: Material.Blazor.Internal.ClassAndStyleMapperExtensions.AddIf(Material.Blazor.Internal.ClassAndStyleMapper,System.String,System.Func{System.Boolean})
-  name: AddIf(ClassAndStyleMapper, String, Func<Boolean>)
-  href: api/Material.Blazor.Internal.ClassAndStyleMapperExtensions.html#Material_Blazor_Internal_ClassAndStyleMapperExtensions_AddIf_Material_Blazor_Internal_ClassAndStyleMapper_System_String_System_Func_System_Boolean__
-  commentId: M:Material.Blazor.Internal.ClassAndStyleMapperExtensions.AddIf(Material.Blazor.Internal.ClassAndStyleMapper,System.String,System.Func{System.Boolean})
-  name.vb: AddIf(ClassAndStyleMapper, String, Func(Of Boolean))
-  fullName: Material.Blazor.Internal.ClassAndStyleMapperExtensions.AddIf(Material.Blazor.Internal.ClassAndStyleMapper, System.String, System.Func<System.Boolean>)
-  fullName.vb: Material.Blazor.Internal.ClassAndStyleMapperExtensions.AddIf(Material.Blazor.Internal.ClassAndStyleMapper, System.String, System.Func(Of System.Boolean))
-  nameWithType: ClassAndStyleMapperExtensions.AddIf(ClassAndStyleMapper, String, Func<Boolean>)
-  nameWithType.vb: ClassAndStyleMapperExtensions.AddIf(ClassAndStyleMapper, String, Func(Of Boolean))
-- uid: Material.Blazor.Internal.ClassAndStyleMapperExtensions.AddIf*
-  name: AddIf
-  href: api/Material.Blazor.Internal.ClassAndStyleMapperExtensions.html#Material_Blazor_Internal_ClassAndStyleMapperExtensions_AddIf_
-  commentId: Overload:Material.Blazor.Internal.ClassAndStyleMapperExtensions.AddIf
-  isSpec: "True"
-  fullName: Material.Blazor.Internal.ClassAndStyleMapperExtensions.AddIf
-  nameWithType: ClassAndStyleMapperExtensions.AddIf
-- uid: Material.Blazor.Internal.ClassAndStyleMapperExtensions.Clear(Material.Blazor.Internal.ClassAndStyleMapper)
-  name: Clear(ClassAndStyleMapper)
-  href: api/Material.Blazor.Internal.ClassAndStyleMapperExtensions.html#Material_Blazor_Internal_ClassAndStyleMapperExtensions_Clear_Material_Blazor_Internal_ClassAndStyleMapper_
-  commentId: M:Material.Blazor.Internal.ClassAndStyleMapperExtensions.Clear(Material.Blazor.Internal.ClassAndStyleMapper)
-  fullName: Material.Blazor.Internal.ClassAndStyleMapperExtensions.Clear(Material.Blazor.Internal.ClassAndStyleMapper)
-  nameWithType: ClassAndStyleMapperExtensions.Clear(ClassAndStyleMapper)
-- uid: Material.Blazor.Internal.ClassAndStyleMapperExtensions.Clear*
-  name: Clear
-  href: api/Material.Blazor.Internal.ClassAndStyleMapperExtensions.html#Material_Blazor_Internal_ClassAndStyleMapperExtensions_Clear_
-  commentId: Overload:Material.Blazor.Internal.ClassAndStyleMapperExtensions.Clear
-  isSpec: "True"
-  fullName: Material.Blazor.Internal.ClassAndStyleMapperExtensions.Clear
-  nameWithType: ClassAndStyleMapperExtensions.Clear
-- uid: Material.Blazor.Internal.ClassMapper
-  name: ClassMapper
-  href: api/Material.Blazor.Internal.ClassMapper.html
-  commentId: T:Material.Blazor.Internal.ClassMapper
-  fullName: Material.Blazor.Internal.ClassMapper
-  nameWithType: ClassMapper
-- uid: Material.Blazor.Internal.ClassMapper.ToString
-  name: ToString()
-  href: api/Material.Blazor.Internal.ClassMapper.html#Material_Blazor_Internal_ClassMapper_ToString
-  commentId: M:Material.Blazor.Internal.ClassMapper.ToString
-  fullName: Material.Blazor.Internal.ClassMapper.ToString()
-  nameWithType: ClassMapper.ToString()
-- uid: Material.Blazor.Internal.ClassMapper.ToString*
-  name: ToString
-  href: api/Material.Blazor.Internal.ClassMapper.html#Material_Blazor_Internal_ClassMapper_ToString_
-  commentId: Overload:Material.Blazor.Internal.ClassMapper.ToString
-  isSpec: "True"
-  fullName: Material.Blazor.Internal.ClassMapper.ToString
-  nameWithType: ClassMapper.ToString
 - uid: Material.Blazor.Internal.ComponentFoundation
   name: ComponentFoundation
   href: api/Material.Blazor.Internal.ComponentFoundation.html
   commentId: T:Material.Blazor.Internal.ComponentFoundation
   fullName: Material.Blazor.Internal.ComponentFoundation
   nameWithType: ComponentFoundation
+- uid: Material.Blazor.Internal.ComponentFoundation.ActiveConditionalClasses
+  name: ActiveConditionalClasses
+  href: api/Material.Blazor.Internal.ComponentFoundation.html#Material_Blazor_Internal_ComponentFoundation_ActiveConditionalClasses
+  commentId: P:Material.Blazor.Internal.ComponentFoundation.ActiveConditionalClasses
+  fullName: Material.Blazor.Internal.ComponentFoundation.ActiveConditionalClasses
+  nameWithType: ComponentFoundation.ActiveConditionalClasses
+- uid: Material.Blazor.Internal.ComponentFoundation.ActiveConditionalClasses*
+  name: ActiveConditionalClasses
+  href: api/Material.Blazor.Internal.ComponentFoundation.html#Material_Blazor_Internal_ComponentFoundation_ActiveConditionalClasses_
+  commentId: Overload:Material.Blazor.Internal.ComponentFoundation.ActiveConditionalClasses
+  isSpec: "True"
+  fullName: Material.Blazor.Internal.ComponentFoundation.ActiveConditionalClasses
+  nameWithType: ComponentFoundation.ActiveConditionalClasses
 - uid: Material.Blazor.Internal.ComponentFoundation.CascadingDefaults
   name: CascadingDefaults
   href: api/Material.Blazor.Internal.ComponentFoundation.html#Material_Blazor_Internal_ComponentFoundation_CascadingDefaults
@@ -881,6 +762,19 @@ references:
   isSpec: "True"
   fullName: Material.Blazor.Internal.ComponentFoundation.CascadingDefaults
   nameWithType: ComponentFoundation.CascadingDefaults
+- uid: Material.Blazor.Internal.ComponentFoundation.class
+  name: class
+  href: api/Material.Blazor.Internal.ComponentFoundation.html#Material_Blazor_Internal_ComponentFoundation_class
+  commentId: P:Material.Blazor.Internal.ComponentFoundation.class
+  fullName: Material.Blazor.Internal.ComponentFoundation.class
+  nameWithType: ComponentFoundation.class
+- uid: Material.Blazor.Internal.ComponentFoundation.class*
+  name: class
+  href: api/Material.Blazor.Internal.ComponentFoundation.html#Material_Blazor_Internal_ComponentFoundation_class_
+  commentId: Overload:Material.Blazor.Internal.ComponentFoundation.class
+  isSpec: "True"
+  fullName: Material.Blazor.Internal.ComponentFoundation.class
+  nameWithType: ComponentFoundation.class
 - uid: Material.Blazor.Internal.ComponentFoundation.Disabled
   name: Disabled
   href: api/Material.Blazor.Internal.ComponentFoundation.html#Material_Blazor_Internal_ComponentFoundation_Disabled
@@ -913,6 +807,19 @@ references:
   isSpec: "True"
   fullName: Material.Blazor.Internal.ComponentFoundation.DisposeAsync
   nameWithType: ComponentFoundation.DisposeAsync
+- uid: Material.Blazor.Internal.ComponentFoundation.id
+  name: id
+  href: api/Material.Blazor.Internal.ComponentFoundation.html#Material_Blazor_Internal_ComponentFoundation_id
+  commentId: P:Material.Blazor.Internal.ComponentFoundation.id
+  fullName: Material.Blazor.Internal.ComponentFoundation.id
+  nameWithType: ComponentFoundation.id
+- uid: Material.Blazor.Internal.ComponentFoundation.id*
+  name: id
+  href: api/Material.Blazor.Internal.ComponentFoundation.html#Material_Blazor_Internal_ComponentFoundation_id_
+  commentId: Overload:Material.Blazor.Internal.ComponentFoundation.id
+  isSpec: "True"
+  fullName: Material.Blazor.Internal.ComponentFoundation.id
+  nameWithType: ComponentFoundation.id
 - uid: Material.Blazor.Internal.ComponentFoundation.LogMBCritical(EventId,System.Exception,System.String,System.Object[])
   name: LogMBCritical(EventId, Exception, String, Object[])
   href: api/Material.Blazor.Internal.ComponentFoundation.html#Material_Blazor_Internal_ComponentFoundation_LogMBCritical_EventId_System_Exception_System_String_System_Object___
@@ -1266,6 +1173,19 @@ references:
   isSpec: "True"
   fullName: Material.Blazor.Internal.ComponentFoundation.OnParametersSetAsync
   nameWithType: ComponentFoundation.OnParametersSetAsync
+- uid: Material.Blazor.Internal.ComponentFoundation.style
+  name: style
+  href: api/Material.Blazor.Internal.ComponentFoundation.html#Material_Blazor_Internal_ComponentFoundation_style
+  commentId: P:Material.Blazor.Internal.ComponentFoundation.style
+  fullName: Material.Blazor.Internal.ComponentFoundation.style
+  nameWithType: ComponentFoundation.style
+- uid: Material.Blazor.Internal.ComponentFoundation.style*
+  name: style
+  href: api/Material.Blazor.Internal.ComponentFoundation.html#Material_Blazor_Internal_ComponentFoundation_style_
+  commentId: Overload:Material.Blazor.Internal.ComponentFoundation.style
+  isSpec: "True"
+  fullName: Material.Blazor.Internal.ComponentFoundation.style
+  nameWithType: ComponentFoundation.style
 - uid: Material.Blazor.Internal.ComponentFoundation.Tooltip
   name: Tooltip
   href: api/Material.Blazor.Internal.ComponentFoundation.html#Material_Blazor_Internal_ComponentFoundation_Tooltip
@@ -1292,6 +1212,41 @@ references:
   isSpec: "True"
   fullName: Material.Blazor.Internal.ComponentFoundation.UnmatchedAttributes
   nameWithType: ComponentFoundation.UnmatchedAttributes
+- uid: Material.Blazor.Internal.ConditionalCssClasses
+  name: ConditionalCssClasses
+  href: api/Material.Blazor.Internal.ConditionalCssClasses.html
+  commentId: T:Material.Blazor.Internal.ConditionalCssClasses
+  fullName: Material.Blazor.Internal.ConditionalCssClasses
+  nameWithType: ConditionalCssClasses
+- uid: Material.Blazor.Internal.ConditionalCssClasses.AddIf(System.String,System.Func{System.Boolean})
+  name: AddIf(String, Func<Boolean>)
+  href: api/Material.Blazor.Internal.ConditionalCssClasses.html#Material_Blazor_Internal_ConditionalCssClasses_AddIf_System_String_System_Func_System_Boolean__
+  commentId: M:Material.Blazor.Internal.ConditionalCssClasses.AddIf(System.String,System.Func{System.Boolean})
+  name.vb: AddIf(String, Func(Of Boolean))
+  fullName: Material.Blazor.Internal.ConditionalCssClasses.AddIf(System.String, System.Func<System.Boolean>)
+  fullName.vb: Material.Blazor.Internal.ConditionalCssClasses.AddIf(System.String, System.Func(Of System.Boolean))
+  nameWithType: ConditionalCssClasses.AddIf(String, Func<Boolean>)
+  nameWithType.vb: ConditionalCssClasses.AddIf(String, Func(Of Boolean))
+- uid: Material.Blazor.Internal.ConditionalCssClasses.AddIf*
+  name: AddIf
+  href: api/Material.Blazor.Internal.ConditionalCssClasses.html#Material_Blazor_Internal_ConditionalCssClasses_AddIf_
+  commentId: Overload:Material.Blazor.Internal.ConditionalCssClasses.AddIf
+  isSpec: "True"
+  fullName: Material.Blazor.Internal.ConditionalCssClasses.AddIf
+  nameWithType: ConditionalCssClasses.AddIf
+- uid: Material.Blazor.Internal.ConditionalCssClasses.ToString
+  name: ToString()
+  href: api/Material.Blazor.Internal.ConditionalCssClasses.html#Material_Blazor_Internal_ConditionalCssClasses_ToString
+  commentId: M:Material.Blazor.Internal.ConditionalCssClasses.ToString
+  fullName: Material.Blazor.Internal.ConditionalCssClasses.ToString()
+  nameWithType: ConditionalCssClasses.ToString()
+- uid: Material.Blazor.Internal.ConditionalCssClasses.ToString*
+  name: ToString
+  href: api/Material.Blazor.Internal.ConditionalCssClasses.html#Material_Blazor_Internal_ConditionalCssClasses_ToString_
+  commentId: Overload:Material.Blazor.Internal.ConditionalCssClasses.ToString
+  isSpec: "True"
+  fullName: Material.Blazor.Internal.ConditionalCssClasses.ToString
+  nameWithType: ConditionalCssClasses.ToString
 - uid: Material.Blazor.Internal.IBatchingJsRuntime
   name: IBatchingJsRuntime
   href: api/Material.Blazor.Internal.IBatchingJsRuntime.html
@@ -2299,25 +2254,6 @@ references:
   isSpec: "True"
   fullName: Material.Blazor.Internal.SnackbarInstance.TimeStamp
   nameWithType: SnackbarInstance.TimeStamp
-- uid: Material.Blazor.Internal.StyleMapper
-  name: StyleMapper
-  href: api/Material.Blazor.Internal.StyleMapper.html
-  commentId: T:Material.Blazor.Internal.StyleMapper
-  fullName: Material.Blazor.Internal.StyleMapper
-  nameWithType: StyleMapper
-- uid: Material.Blazor.Internal.StyleMapper.ToString
-  name: ToString()
-  href: api/Material.Blazor.Internal.StyleMapper.html#Material_Blazor_Internal_StyleMapper_ToString
-  commentId: M:Material.Blazor.Internal.StyleMapper.ToString
-  fullName: Material.Blazor.Internal.StyleMapper.ToString()
-  nameWithType: StyleMapper.ToString()
-- uid: Material.Blazor.Internal.StyleMapper.ToString*
-  name: ToString
-  href: api/Material.Blazor.Internal.StyleMapper.html#Material_Blazor_Internal_StyleMapper_ToString_
-  commentId: Overload:Material.Blazor.Internal.StyleMapper.ToString
-  isSpec: "True"
-  fullName: Material.Blazor.Internal.StyleMapper.ToString
-  nameWithType: StyleMapper.ToString
 - uid: Material.Blazor.MB_Grid_ColumnType
   name: MB_Grid_ColumnType
   href: api/Material.Blazor.MB_Grid_ColumnType.html
@@ -5896,6 +5832,19 @@ references:
   commentId: T:Material.Blazor.MBIcon
   fullName: Material.Blazor.MBIcon
   nameWithType: MBIcon
+- uid: Material.Blazor.MBIcon.BuildRenderTree(RenderTreeBuilder)
+  name: BuildRenderTree(RenderTreeBuilder)
+  href: api/Material.Blazor.MBIcon.html#Material_Blazor_MBIcon_BuildRenderTree_RenderTreeBuilder_
+  commentId: M:Material.Blazor.MBIcon.BuildRenderTree(RenderTreeBuilder)
+  fullName: Material.Blazor.MBIcon.BuildRenderTree(RenderTreeBuilder)
+  nameWithType: MBIcon.BuildRenderTree(RenderTreeBuilder)
+- uid: Material.Blazor.MBIcon.BuildRenderTree*
+  name: BuildRenderTree
+  href: api/Material.Blazor.MBIcon.html#Material_Blazor_MBIcon_BuildRenderTree_
+  commentId: Overload:Material.Blazor.MBIcon.BuildRenderTree
+  isSpec: "True"
+  fullName: Material.Blazor.MBIcon.BuildRenderTree
+  nameWithType: MBIcon.BuildRenderTree
 - uid: Material.Blazor.MBIcon.IconFoundry
   name: IconFoundry
   href: api/Material.Blazor.MBIcon.html#Material_Blazor_MBIcon_IconFoundry
@@ -6242,32 +6191,6 @@ references:
   commentId: T:Material.Blazor.MBIconHelper
   fullName: Material.Blazor.MBIconHelper
   nameWithType: MBIconHelper
-- uid: Material.Blazor.MBIconHelper.Attributes
-  name: Attributes
-  href: api/Material.Blazor.MBIconHelper.html#Material_Blazor_MBIconHelper_Attributes
-  commentId: P:Material.Blazor.MBIconHelper.Attributes
-  fullName: Material.Blazor.MBIconHelper.Attributes
-  nameWithType: MBIconHelper.Attributes
-- uid: Material.Blazor.MBIconHelper.Attributes*
-  name: Attributes
-  href: api/Material.Blazor.MBIconHelper.html#Material_Blazor_MBIconHelper_Attributes_
-  commentId: Overload:Material.Blazor.MBIconHelper.Attributes
-  isSpec: "True"
-  fullName: Material.Blazor.MBIconHelper.Attributes
-  nameWithType: MBIconHelper.Attributes
-- uid: Material.Blazor.MBIconHelper.Class
-  name: Class
-  href: api/Material.Blazor.MBIconHelper.html#Material_Blazor_MBIconHelper_Class
-  commentId: P:Material.Blazor.MBIconHelper.Class
-  fullName: Material.Blazor.MBIconHelper.Class
-  nameWithType: MBIconHelper.Class
-- uid: Material.Blazor.MBIconHelper.Class*
-  name: Class
-  href: api/Material.Blazor.MBIconHelper.html#Material_Blazor_MBIconHelper_Class_
-  commentId: Overload:Material.Blazor.MBIconHelper.Class
-  isSpec: "True"
-  fullName: Material.Blazor.MBIconHelper.Class
-  nameWithType: MBIconHelper.Class
 - uid: Material.Blazor.MBIconHelper.FAFoundry(System.Nullable{Material.Blazor.MBIconFAStyle},System.Nullable{Material.Blazor.MBIconFARelativeSize})
   name: FAFoundry(Nullable<MBIconFAStyle>, Nullable<MBIconFARelativeSize>)
   href: api/Material.Blazor.MBIconHelper.html#Material_Blazor_MBIconHelper_FAFoundry_System_Nullable_Material_Blazor_MBIconFAStyle__System_Nullable_Material_Blazor_MBIconFARelativeSize__
@@ -6284,19 +6207,6 @@ references:
   isSpec: "True"
   fullName: Material.Blazor.MBIconHelper.FAFoundry
   nameWithType: MBIconHelper.FAFoundry
-- uid: Material.Blazor.MBIconHelper.IconName
-  name: IconName
-  href: api/Material.Blazor.MBIconHelper.html#Material_Blazor_MBIconHelper_IconName
-  commentId: P:Material.Blazor.MBIconHelper.IconName
-  fullName: Material.Blazor.MBIconHelper.IconName
-  nameWithType: MBIconHelper.IconName
-- uid: Material.Blazor.MBIconHelper.IconName*
-  name: IconName
-  href: api/Material.Blazor.MBIconHelper.html#Material_Blazor_MBIconHelper_IconName_
-  commentId: Overload:Material.Blazor.MBIconHelper.IconName
-  isSpec: "True"
-  fullName: Material.Blazor.MBIconHelper.IconName
-  nameWithType: MBIconHelper.IconName
 - uid: Material.Blazor.MBIconHelper.MIFoundry(System.Nullable{Material.Blazor.MBIconMITheme})
   name: MIFoundry(Nullable<MBIconMITheme>)
   href: api/Material.Blazor.MBIconHelper.html#Material_Blazor_MBIconHelper_MIFoundry_System_Nullable_Material_Blazor_MBIconMITheme__
@@ -6326,6 +6236,19 @@ references:
   isSpec: "True"
   fullName: Material.Blazor.MBIconHelper.OIFoundry
   nameWithType: MBIconHelper.OIFoundry
+- uid: Material.Blazor.MBIconHelper.Render
+  name: Render
+  href: api/Material.Blazor.MBIconHelper.html#Material_Blazor_MBIconHelper_Render
+  commentId: P:Material.Blazor.MBIconHelper.Render
+  fullName: Material.Blazor.MBIconHelper.Render
+  nameWithType: MBIconHelper.Render
+- uid: Material.Blazor.MBIconHelper.Render*
+  name: Render
+  href: api/Material.Blazor.MBIconHelper.html#Material_Blazor_MBIconHelper_Render_
+  commentId: Overload:Material.Blazor.MBIconHelper.Render
+  isSpec: "True"
+  fullName: Material.Blazor.MBIconHelper.Render
+  nameWithType: MBIconHelper.Render
 - uid: Material.Blazor.MBIconHelper.RequiresColorFilter
   name: RequiresColorFilter
   href: api/Material.Blazor.MBIconHelper.html#Material_Blazor_MBIconHelper_RequiresColorFilter
@@ -6339,19 +6262,6 @@ references:
   isSpec: "True"
   fullName: Material.Blazor.MBIconHelper.RequiresColorFilter
   nameWithType: MBIconHelper.RequiresColorFilter
-- uid: Material.Blazor.MBIconHelper.Text
-  name: Text
-  href: api/Material.Blazor.MBIconHelper.html#Material_Blazor_MBIconHelper_Text
-  commentId: P:Material.Blazor.MBIconHelper.Text
-  fullName: Material.Blazor.MBIconHelper.Text
-  nameWithType: MBIconHelper.Text
-- uid: Material.Blazor.MBIconHelper.Text*
-  name: Text
-  href: api/Material.Blazor.MBIconHelper.html#Material_Blazor_MBIconHelper_Text_
-  commentId: Overload:Material.Blazor.MBIconHelper.Text
-  isSpec: "True"
-  fullName: Material.Blazor.MBIconHelper.Text
-  nameWithType: MBIconHelper.Text
 - uid: Material.Blazor.MBIconMITheme
   name: MBIconMITheme
   href: api/Material.Blazor.MBIconMITheme.html
