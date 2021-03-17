@@ -7,10 +7,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: octokit/request-action@v2.x
-        id: get_latest_release
+        id: create
         with:
-          route: POST /orgs/Material-Blazor/repos
-          body: toJSON({ accept = 'application/vnd.github.v3+json', name= 'TestingTheApiIgnoreMe', description = 'This is an automatically generated repo. Ignore me.', visibility = 'private'  })
+          route: POST /orgs/{org}/repos
+          org: Material-Blazor
+          accept: 'application/vnd.github.v3+json'
+          name: TestingTheApiIgnoreMe
+          description: This is an automatically generated repo. Ignore me.
+          visibility: private
         env:
           GITHUB_TOKEN: ${{ secrets.GH_PAT }}
-      - run: "echo latest release: ${{ steps.get_latest_release.outputs.data }}"
+      - run: echo "${{ steps.create.outputs.data }}"
