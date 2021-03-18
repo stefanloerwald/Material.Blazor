@@ -1,5 +1,6 @@
 name: Create repo
 on:
+  push:
   pull_request:
     types: [opened, reopened, edited, closed]
 jobs:
