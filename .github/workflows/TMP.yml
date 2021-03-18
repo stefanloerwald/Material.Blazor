@@ -4,13 +4,9 @@ on:
   pull_request:
     types: [opened, reopened, edited, closed]
 jobs:
-  info:
-    runs-on: ubuntu-latest
-    steps:
-    - run: echo ${{toJSON(github.event)}}
   delete-repo:
     runs-on: ubuntu-latest
-    if: false
+    if: github.event_name == 'pull_request' && github.event.action == 'closed'
     steps:
       - uses: octokit/request-action@v2.x
         id: create
@@ -23,9 +19,8 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GH_PAT }}
       - run: echo "${{ steps.create.outputs.data }}"
   create-repo:
-    needs: [ delete-repo ]
     runs-on: ubuntu-latest
-    if: true
+    if: github.event_name == 'pull_request' && (github.event.action == 'opened' || github.event.action == 'reopened')
     steps:
       - uses: octokit/request-action@v2.x
         id: create
@@ -43,7 +38,7 @@ jobs:
   deploy-to-repo:
     needs: [ create-repo ]
     runs-on: ubuntu-latest
-    if: always() && true
+    if: github.event_name == 'pull_request' && (github.event.action == 'opened' || github.event.action == 'reopened' || github.event.action == 'edited')
     steps:
     - name: Checkout repository under $GITHUB_WORKSPACE so the job can access it 🛎️
       uses: actions/checkout@v2
@@ -61,7 +56,6 @@ jobs:
   wait-for-non-404:
     needs: [ deploy-to-repo ]
     runs-on: ubuntu-latest
-    if: always() && true
     steps:
     - name: Waiting...
       run: |
