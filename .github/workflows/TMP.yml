@@ -5,7 +5,7 @@ on:
 jobs:
   delete-repo:
     runs-on: ubuntu-latest
-    if: false
+    if: true
     steps:
       - uses: octokit/request-action@v2.x
         id: create
