@@ -14,7 +14,7 @@ jobs:
           route: DELETE /repos/{org}/{repo}
           org: Material-Blazor
           accept: 'application/vnd.github.v3+json'
-          repo: TestingTheApiIgnoreMe
+          repo: MB-PR-${{github.event.number}}
         env:
           GITHUB_TOKEN: ${{ secrets.GH_PAT }}
       - run: echo "${{ steps.create.outputs.data }}"
@@ -28,8 +28,8 @@ jobs:
           route: POST /orgs/{org}/repos
           org: Material-Blazor
           accept: 'application/vnd.github.v3+json'
-          name: TestingTheApiIgnoreMe
-          description: This is an automatically generated repo. Ignore me.
+          name: MB-PR-${{github.event.number}}
+          description: This is an automatically generated repo for PR number ${{github.event.number}} 
           visibility: private
         env:
           GITHUB_TOKEN: ${{ secrets.GH_PAT }}
@@ -52,7 +52,7 @@ jobs:
         token: ${{secrets.GH_PAT}}
         branch: gh-pages
         folder: 'deployroot'
-        repository-name: Material-Blazor/TestingTheApiIgnoreMe
+        repository-name: Material-Blazor/MB-PR-${{github.event.number}}
   wait-for-non-404:
     needs: [ deploy-to-repo ]
     runs-on: ubuntu-latest
@@ -62,8 +62,8 @@ jobs:
         i=0
         while :
         do
-          curl --fail https://material-blazor.github.io/TestingTheApiIgnoreMe/?attempt=$i && break
-          echo "The page https://material-blazor.github.io/TestingTheApiIgnoreMe/?attempt=$i doesn't seem available yet"
+          curl --fail https://material-blazor.github.io/MB-PR-${{github.event.number}}/?attempt=$i && break
+          echo "The page https://material-blazor.github.io/MB-PR-${{github.event.number}}/?attempt=$i doesn't seem available yet"
           sleep 5
           i=$((i+1))
         done
