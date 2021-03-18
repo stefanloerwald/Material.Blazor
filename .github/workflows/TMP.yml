@@ -62,7 +62,7 @@ jobs:
       run: |
         while :
         do
-          wget https://material-blazor.github.io/TestingTheApiIgnoreMe/ && break
+          curl https://material-blazor.github.io/TestingTheApiIgnoreMe/ && break
           echo "The page https://material-blazor.github.io/TestingTheApiIgnoreMe/ doesn't seem available yet"
           sleep 5
         done
