@@ -35,37 +35,21 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GH_PAT }}
       - run: echo "${{ steps.create.outputs.data }}"
         if: always()
-  deploy-to-repo:
-    needs: [ create-repo ]
-    runs-on: ubuntu-latest
-    if: github.event_name == 'pull_request' && (github.event.action == 'opened' || github.event.action == 'reopened' || github.event.action == 'edited')
-    steps:
-    - name: Checkout repository under $GITHUB_WORKSPACE so the job can access it 🛎️
-      uses: actions/checkout@v2
-    - name: Create some content
-      run: |
-        mkdir deployroot
-        echo "Hello PR" > deployroot/Readme.md
-    - name: Deploy 🚀
-      uses: JamesIves/github-pages-deploy-action@4.1.0
-      with:
-        token: ${{secrets.GH_PAT}}
-        branch: gh-pages
-        folder: 'deployroot'
-        repository-name: Material-Blazor/MB-PR-${{github.event.number}}
-  wait-for-non-404:
-    needs: [ deploy-to-repo ]
-    runs-on: ubuntu-latest
-    steps:
-    - name: Waiting...
-      run: |
-        i=0
-        while :
-        do
-          curl --fail https://material-blazor.github.io/MB-PR-${{github.event.number}}/?attempt=$i && break
-          echo "The page https://material-blazor.github.io/MB-PR-${{github.event.number}}/?attempt=$i doesn't seem available yet"
-          sleep 5
-          i=$((i+1))
-        done
+      - run: |
+          echo "Hello line1" > meta_report.md
+          echo "Hello line2" >> meta_report.md
+          echo "Hello line3" >> meta_report.md
+      - name: Add a comment to this PR
+        uses: octokit/request-action@v2.x
+        id: create-comment
+        with:
+          route: POST /repos/{org}/{repo}/issues/{issue_number}/comments
+          org: stefanloerwald
+          repo: Material.Blazor
+          accept: 'application/vnd.github.v3+json'
+          issue_number: ${{github.event.number}}
+          body: "$(cat meta_report.md)"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_PAT }}
 
 
