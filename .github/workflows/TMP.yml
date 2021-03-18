@@ -16,6 +16,8 @@ jobs:
           name: TestingTheApiIgnoreMe
           description: This is an automatically generated repo. Ignore me.
           visibility: private
+      - run: echo Ignore the above error
+        if: always()
         env:
           GITHUB_TOKEN: ${{ secrets.GH_PAT }}
       - run: echo "${{ steps.create.outputs.data }}"
