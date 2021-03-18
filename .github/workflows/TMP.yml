@@ -1,4 +1,4 @@
-name: Create repo
+name: Create repo for PR
 on:
   push:
   pull_request:
