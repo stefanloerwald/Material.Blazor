@@ -19,6 +19,7 @@ jobs:
           meta_report="${meta_report//'%'/'%25'}"
           meta_report="${meta_report//$'\n'/'%0A'}"
           meta_report="${meta_report//$'\r'/'%0D'}"
+          meta_report="${meta_report//$':'/'%3A'}"
           echo "::set-output name=meta_report::$meta_report"
       - name: Add a comment to this PR
         uses: octokit/request-action@v2.x
