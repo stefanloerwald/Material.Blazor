@@ -19,10 +19,24 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GH_PAT }}
       - run: echo "${{ steps.create.outputs.data }}"
-  delete-repo:
+  deploy-to-repo:
     needs: [ create-repo ]
     runs-on: ubuntu-latest
     if: true
+    steps:
+    - name: Create some content
+      run: |
+        mkdir deployroot
+        echo "Hello PR" > deployroot/Readme.md
+    - name: Deploy 🚀
+      uses: JamesIves/github-pages-deploy-action@4.1.0
+      with:
+        token: ${{secrets.GH_PAT}}
+        branch: gh-pages
+        folder: 'deployroot'
+  delete-repo:
+    runs-on: ubuntu-latest
+    if: false
     steps:
       - uses: octokit/request-action@v2.x
         id: create
