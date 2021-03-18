@@ -1,9 +1,24 @@
 name: Create repo
 on:
-  workflow_dispatch:
+  push:
 
 jobs:
+  delete-repo:
+    runs-on: ubuntu-latest
+    if: false
+    steps:
+      - uses: octokit/request-action@v2.x
+        id: create
+        with:
+          route: DELETE /repos/{org}/{repo}
+          org: Material-Blazor
+          accept: 'application/vnd.github.v3+json'
+          repo: TestingTheApiIgnoreMe
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_PAT }}
+      - run: echo "${{ steps.create.outputs.data }}"
   create-repo:
+    needs: [ delete-repo ]
     runs-on: ubuntu-latest
     if: true
     steps:
@@ -38,17 +53,3 @@ jobs:
         branch: gh-pages
         folder: 'deployroot'
         repository-name: Material-Blazor/TestingTheApiIgnoreMe
-  delete-repo:
-    runs-on: ubuntu-latest
-    if: false
-    steps:
-      - uses: octokit/request-action@v2.x
-        id: create
-        with:
-          route: DELETE /repos/{org}/{repo}
-          org: Material-Blazor
-          accept: 'application/vnd.github.v3+json'
-          repo: TestingTheApiIgnoreMe
-        env:
-          GITHUB_TOKEN: ${{ secrets.GH_PAT }}
-      - run: echo "${{ steps.create.outputs.data }}"
