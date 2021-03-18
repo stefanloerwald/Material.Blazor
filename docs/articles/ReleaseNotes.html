@@ -1,0 +1,255 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>ReleaseNotes </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="ReleaseNotes ">
+    <meta name="generator" content="docfx 2.56.1.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"> 
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-173249047-2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+  
+      gtag('config', 'UA-173249047-2');
+    </script>
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="A.ReleaseNotes">
+<h1 id="release-notes">Release Notes</h1>
+
+<h4 id="200"><a href="https://github.com/Material-Blazor/Material.Blazor/tree/2.0.0">2.0.0</a></h4>
+<p>In Pre-Release Q4 2020 and Q1 2021</p>
+<p><em>NOTE THAT DURING PRE-RELEASE BREAKING CHANGES MAY OCCUR BETWEEN PRE-RELEASE VERSIONS.</em></p>
+<p><strong>Updates</strong></p>
+<ul>
+<li>Upgrade to <a href="https://github.com/material-components/material-components-web/tree/v9.0.0/packages">Material Components Web 9.0.0</a>.</li>
+<li>Full implementation of Material Components Web JS <code>destroy()</code> function calls for every component's <code>Dispose()</code> process.</li>
+<li>MBDataTable enhanced with pagination and linear progress implementation - no breaking changes.</li>
+<li>MBPaginator now uses Material Component Web 9.0.0's markup, with some minor modification - no breaking changes.</li>
+<li>Tooltips use Material Component Web 9.0.0 rather than preview packages - no breaking changes.</li>
+<li>Material.Blazor beginning to use <code>ILogger</code> to log warnings when validating component markup to help you during app development.</li>
+<li>General bug fixes.</li>
+<li>Material.Blazor 2.0.0 is compatible with .NET 5.0 only. If you need to build against older versions of .NET please continue to use Material.Blazor 1.1.4.</li>
+</ul>
+<p><strong>New components</strong></p>
+<ul>
+<li>MBBladeSet - a blade implementation inspired by Microsoft Azure blades.</li>
+<li>MBGrid (EXPERIMENTAL) - a capable grid component. This is not yet styled to look like Material Theme and we may or may not keep it in Material.Blazor. We recommend not using MBGrid for anything other than experiment or contributing to its development.</li>
+<li>MBNumericDecimalField - a decimal variant of the existing numeric input fields.</li>
+<li>MBChipsSelectMulti - a multi select variant of a chip set.</li>
+<li>MBChipsSelectSingle - a single select variant of a chip set.</li>
+<li>MBSegmentedButtonMulti - a multi select variant of segmented buttons, which have been added to Material Components Web 9.0.0.</li>
+<li>MBSegmentedButtonSingle - a single select variant of segmented buttons, which have been added to Material Components Web 9.0.0.</li>
+<li>MBSlider - a continuous and discrete single-thumb slider.</li>
+<li>MBSnackbar - a core Material Theme snackbar component.</li>
+</ul>
+<p><strong>Breaking Changes</strong></p>
+<ul>
+<li>CDN packages now reference material components web 9.0.0, see <a class="xref" href="Installation.html">Installation article</a>.</li>
+<li>If you are building a theme from material components web SASS, you need to reference version 9.0.0.</li>
+<li>MBMenu <code>ToggleAsync()</code> is now return type <code>Task</code> rather than <code>Task&lt;string&gt;</code> in version 1.</li>
+<li>MBRadioButtonGroup <code>EnableTouchWrapper</code> obsolete and removed.</li>
+<li><code>MBToastCloseMethod</code> enum renamed to <code>MBNotifierCloseMethod</code>, and enum value names have changed. This is now used by both toasts and snackbars.</li>
+<li>The names and content of the  css and js resources required for MaterialBlazor have changed. Please see <a class="xref" href="Installation.html">Installation article</a> for details.</li>
+</ul>
+<br>
+<h4 id="114"><a href="https://github.com/Material-Blazor/Material.Blazor/tree/1.1.4">1.1.4</a></h4>
+<p>06 November 2020</p>
+<ul>
+<li>Repaired Release build.</li>
+</ul>
+<br>
+<h4 id="113"><a href="https://github.com/Material-Blazor/Material.Blazor/tree/1.1.3">1.1.3</a></h4>
+<p>06 November 2020</p>
+<ul>
+<li>Removed dual runtimes due to an error in DocFx.</li>
+</ul>
+<br>
+<h4 id="112"><a href="https://github.com/Material-Blazor/Material.Blazor/tree/1.1.2">1.1.2</a></h4>
+<p>02 November 2020</p>
+<ul>
+<li>Upgraded build process for DocFx.</li>
+</ul>
+<br>
+<h4 id="111"><a href="https://github.com/Material-Blazor/Material.Blazor/tree/1.1.1">1.1.1</a></h4>
+<p>02 November 2020</p>
+<ul>
+<li>Upgraded build process to produce Material.Blazor with support for netstandard2.1 and net5.0.</li>
+</ul>
+<br>
+<h4 id="110"><a href="https://github.com/Material-Blazor/Material.Blazor/tree/1.1.0">1.1.0</a></h4>
+<p>31 October 2020</p>
+<ul>
+<li>Added FABs (floating action buttons).</li>
+<li>Upgraded build process to skip node builds if npm isn't installed.</li>
+<li>Bug fixes.</li>
+</ul>
+<br>
+<h4 id="100"><a href="https://github.com/Material-Blazor/Material.Blazor/tree/1.0.0">1.0.0</a></h4>
+<p>27 October 2020</p>
+<ul>
+<li>First full release of Material.Blazor!</li>
+<li>Minor changes to internal cascading values, setting <code>IsFixed=&quot;true&quot;</code>.</li>
+</ul>
+<br>
+<h4 id="100-rc6"><a href="https://github.com/Material-Blazor/Material.Blazor/tree/1.0.0-rc.6">1.0.0-rc.6</a></h4>
+<p>23 October 2020</p>
+<ul>
+<li>Rewrote two-way binding in response to <a href="https://github.com/dotnet/aspnetcore/issues/24599#issuecomment-697588562">ASP.NET issue #24599</a> with Steve Sanderson's advisory note.</li>
+<li>Toasts dynamically respond to service configuration changes.</li>
+<li>Bug fixes.</li>
+</ul>
+<br>
+<h4 id="100-rc5"><a href="https://github.com/Material-Blazor/Material.Blazor/tree/1.0.0-rc.5">1.0.0-rc.5</a></h4>
+<p>13 October 2020</p>
+<ul>
+<li>MS Build dependency check for SASS and Typescript files working.</li>
+<li>Github Actions updated to new path setting construct.</li>
+<li>Bug fixes.</li>
+</ul>
+<br>
+<h4 id="100-rc4"><a href="https://github.com/Material-Blazor/Material.Blazor/tree/1.0.0-rc.4">1.0.0-rc.4</a></h4>
+<p>24 September 2020</p>
+<ul>
+<li>Build process uses npm directly rather than via docker (docker dependency removed).</li>
+<li>Typescript in localized files replaces single Javascript file.</li>
+<li>Themes upgraded.</li>
+<li><code>ToastService.ShowToast</code> adds debug parameter, showing toast only in debug mode when true.</li>
+<li>Bug fixes.</li>
+</ul>
+<br>
+<h4 id="100-rc3"><a href="https://github.com/Material-Blazor/Material.Blazor/tree/1.0.0-rc.3">1.0.0-rc.3</a></h4>
+<p>16 September 2020</p>
+<ul>
+<li>Material helper text added to text fields and associated derivatives.</li>
+<li>Blazor native validation integrated with Material Components Web's validation display mechanism.</li>
+<li><code>HelperText</code>, <code>HelperTextPersistent</code> and <code>ValidationMessageFor</code> implemented on:
+<ul>
+<li>MBAutocompleteTextField</li>
+<li>MBDebouncedTextField</li>
+<li>MBNumericDoubleField</li>
+<li>MBNumericIntField</li>
+<li>MBTextArea</li>
+<li>MBTextField</li>
+</ul>
+</li>
+<li>Attribute splatting order checked and documentation provided for reserved attributes in relevant components' articles</li>
+</ul>
+<br>
+<h4 id="100-rc2"><a href="https://github.com/Material-Blazor/Material.Blazor/tree/1.0.0-rc.2">1.0.0-rc.2</a></h4>
+<p>15 September 2020</p>
+<ul>
+<li>Corrects tooltip javascript initiation bug.</li>
+<li>Updates website to ASP.NET 5 rc 1.</li>
+<li>Re-enables autocomplete demonstration due to REGEX fix in ASP.NET 5 rc 1.</li>
+<li>Re-order attributes in MBButton to make <code>type=&quot;&quot;</code> attribute splat correctly.</li>
+<li>Minor upgrades to red round and varied themes.</li>
+</ul>
+<br>
+<h4 id="100-rc1"><a href="https://github.com/Material-Blazor/Material.Blazor/tree/1.0.0-RC.1">1.0.0-rc.1</a></h4>
+<p>14 September 2020</p>
+<ul>
+<li>First 1.0.0 release candidate having migrated from prior Blazor MDC previews.</li>
+</ul>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/stefanloerwald/Material.Blazor/blob/main/articles/ReleaseNotes.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
