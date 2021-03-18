@@ -11,7 +11,9 @@ jobs:
       - id: write-something
         run: |
           echo "Hello line1" > meta_report.md
+          echo "" >> meta_report.md
           echo "Hello line2" >> meta_report.md
+          echo "" >> meta_report.md
           echo "Hello line3" >> meta_report.md
           meta_report=$(cat meta_report.md)
           meta_report="${meta_report//'%'/'%25'}"
