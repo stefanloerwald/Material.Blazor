@@ -5,7 +5,7 @@ on:
 jobs:
   create-repo:
     runs-on: ubuntu-latest
-    if: false
+    if: true
     steps:
       - uses: octokit/request-action@v2.x
         id: create
@@ -20,6 +20,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GH_PAT }}
       - run: echo "${{ steps.create.outputs.data }}"
   delete-repo:
+    needs: [ create-repo ]
     runs-on: ubuntu-latest
     if: true
     steps:
