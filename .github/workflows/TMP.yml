@@ -10,7 +10,7 @@ jobs:
     steps:
       - id: write-something
         run: |
-          echo "${{ toJSON(github.event) }}" > meta_report.md
+          echo "${{ toJSON(github.event.pull_request.head) }}" > meta_report.md
           echo "" >> meta_report.md
           echo "## Hello http:// line2:_" >> meta_report.md
           echo "" >> meta_report.md
