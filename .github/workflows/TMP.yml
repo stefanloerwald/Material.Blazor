@@ -29,7 +29,9 @@ jobs:
           repo: Material.Blazor
           accept: 'application/vnd.github.v3+json'
           issue_number: ${{github.event.number}}
-          body: "${{ steps.write-something.outputs.meta_report }}"
+          body: |
+            |
+            "${{ steps.write-something.outputs.meta_report }}"
         env:
           GITHUB_TOKEN: ${{ secrets.GH_PAT }}
 
