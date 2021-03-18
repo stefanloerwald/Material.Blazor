@@ -13,7 +13,7 @@ jobs:
           echo "Hello line1" > meta_report.md
           echo "Hello line2" >> meta_report.md
           echo "Hello line3" >> meta_report.md
-          echo "::set-output name=meta_report::toJSON($(cat meta_report.md))"
+          echo "::set-output name=meta_report::${{toJSON($(cat meta_report.md))}}"
       - name: Add a comment to this PR
         uses: octokit/request-action@v2.x
         id: create-comment
