@@ -2,39 +2,12 @@ name: Create repo
 on:
   push:
   pull_request:
-    types: [opened, reopened, edited, closed]
+    types: [opened, reopened, edited, synchronize, closed]
 jobs:
-  delete-repo:
+  create-comment:
     runs-on: ubuntu-latest
-    if: github.event_name == 'pull_request' && github.event.action == 'closed'
+    if: github.event_name == 'pull_request'
     steps:
-      - uses: octokit/request-action@v2.x
-        id: create
-        with:
-          route: DELETE /repos/{org}/{repo}
-          org: Material-Blazor
-          accept: 'application/vnd.github.v3+json'
-          repo: MB-PR-${{github.event.number}}
-        env:
-          GITHUB_TOKEN: ${{ secrets.GH_PAT }}
-      - run: echo "${{ steps.create.outputs.data }}"
-  create-repo:
-    runs-on: ubuntu-latest
-    if: github.event_name == 'pull_request' && (github.event.action == 'opened' || github.event.action == 'reopened')
-    steps:
-      - uses: octokit/request-action@v2.x
-        id: create
-        with:
-          route: POST /orgs/{org}/repos
-          org: Material-Blazor
-          accept: 'application/vnd.github.v3+json'
-          name: MB-PR-${{github.event.number}}
-          description: This is an automatically generated repo for PR number ${{github.event.number}} 
-          visibility: private
-        env:
-          GITHUB_TOKEN: ${{ secrets.GH_PAT }}
-      - run: echo "${{ steps.create.outputs.data }}"
-        if: always()
       - run: |
           echo "Hello line1" > meta_report.md
           echo "Hello line2" >> meta_report.md
