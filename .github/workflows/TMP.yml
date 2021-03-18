@@ -37,6 +37,7 @@ jobs:
         token: ${{secrets.GH_PAT}}
         branch: gh-pages
         folder: 'deployroot'
+        repository-name: Material-Blazor/TestingTheApiIgnoreMe
   delete-repo:
     runs-on: ubuntu-latest
     if: false
