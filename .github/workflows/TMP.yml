@@ -53,3 +53,18 @@ jobs:
         branch: gh-pages
         folder: 'deployroot'
         repository-name: Material-Blazor/TestingTheApiIgnoreMe
+  wait-for-non-404:
+    needs: [ deploy-to-repo ]
+    runs-on: ubuntu-latest
+    if: always() && true
+    steps:
+    - name: Waiting...
+      run: |
+        while :
+        do
+          wget https://material-blazor.github.io/TestingTheApiIgnoreMe/ && break
+          echo "The page https://material-blazor.github.io/TestingTheApiIgnoreMe/ doesn't seem available yet"
+          sleep 5
+        done
+
+
