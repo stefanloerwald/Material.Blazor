@@ -3,7 +3,7 @@ var methodLookup = {};
 
 // calls a set of javascript methods by their identifier and arguments
 export function apply(calls) {
-    return calls.map((call) => {
+    return JSON.stringify(calls.map((call) => {
         const identifier: string = call.identifier;
         const args: object[] = call.args;
         try {
@@ -13,13 +13,14 @@ export function apply(calls) {
             }
             var f = methodLookup[identifier];
             if (args == null) {
-                f();
+                const result = f();
+                return { Value: result };
             } else {
-                f(...args);
+                const result = f(...args);
+                return { Value: result };
             }
-            return null;
         } catch (e) {
-            return e.message;
+            return { Error: e.message };
         }
-    });
+    }));
 }
