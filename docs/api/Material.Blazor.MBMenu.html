@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class MBMenu
    ">
-    <meta name="generator" content="docfx 2.56.1.0">
+    <meta name="generator" content="docfx 2.56.7.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -95,7 +95,7 @@
   </div>
   <div classs="implements">
     <h5>Implements</h5>
-    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iasyncdisposable">IAsyncDisposable</a></div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -109,10 +109,22 @@
       <a class="xref" href="Material.Blazor.Internal.ComponentFoundation.html#Material_Blazor_Internal_ComponentFoundation_Disabled">ComponentFoundation.Disabled</a>
     </div>
     <div>
+      <a class="xref" href="Material.Blazor.Internal.ComponentFoundation.html#Material_Blazor_Internal_ComponentFoundation_id">ComponentFoundation.id</a>
+    </div>
+    <div>
+      <a class="xref" href="Material.Blazor.Internal.ComponentFoundation.html#Material_Blazor_Internal_ComponentFoundation_class">ComponentFoundation.class</a>
+    </div>
+    <div>
+      <a class="xref" href="Material.Blazor.Internal.ComponentFoundation.html#Material_Blazor_Internal_ComponentFoundation_ActiveConditionalClasses">ComponentFoundation.ActiveConditionalClasses</a>
+    </div>
+    <div>
+      <a class="xref" href="Material.Blazor.Internal.ComponentFoundation.html#Material_Blazor_Internal_ComponentFoundation_style">ComponentFoundation.style</a>
+    </div>
+    <div>
       <a class="xref" href="Material.Blazor.Internal.ComponentFoundation.html#Material_Blazor_Internal_ComponentFoundation_Tooltip">ComponentFoundation.Tooltip</a>
     </div>
     <div>
-      <a class="xref" href="Material.Blazor.Internal.ComponentFoundation.html#Material_Blazor_Internal_ComponentFoundation_DisposeAsync">ComponentFoundation.DisposeAsync()</a>
+      <a class="xref" href="Material.Blazor.Internal.ComponentFoundation.html#Material_Blazor_Internal_ComponentFoundation_Dispose">ComponentFoundation.Dispose()</a>
     </div>
     <div>
       <a class="xref" href="Material.Blazor.Internal.ComponentFoundation.html#Material_Blazor_Internal_ComponentFoundation_OnParametersSet">ComponentFoundation.OnParametersSet()</a>
@@ -215,7 +227,7 @@
   <h6><strong>Assembly</strong>: Material.Blazor.dll</h6>
   <h5 id="Material_Blazor_MBMenu_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class MBMenu : ComponentFoundation, IAsyncDisposable</code></pre>
+    <pre><code class="lang-csharp hljs">public class MBMenu : ComponentFoundation, IDisposable</code></pre>
   </div>
   <h3 id="properties">Properties
   </h3>
@@ -224,7 +236,7 @@
     <a href="https://github.com/stefanloerwald/Material.Blazor/new/main/apiSpec/new?filename=Material_Blazor_MBMenu_ChildContent.md&amp;value=---%0Auid%3A%20Material.Blazor.MBMenu.ChildContent%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/stefanloerwald/Material.Blazor/blob/main/Material.Blazor/Components/Menu/MBMenu.razor.cs/#L19">View Source</a>
+    <a href="https://github.com/stefanloerwald/Material.Blazor/blob/main/Material.Blazor/Components/Menu/MBMenu.razor.cs/#L17">View Source</a>
   </span>
   <a id="Material_Blazor_MBMenu_ChildContent_" data-uid="Material.Blazor.MBMenu.ChildContent*"></a>
   <h4 id="Material_Blazor_MBMenu_ChildContent" data-uid="Material.Blazor.MBMenu.ChildContent">ChildContent</h4>
@@ -255,7 +267,7 @@
     <a href="https://github.com/stefanloerwald/Material.Blazor/new/main/apiSpec/new?filename=Material_Blazor_MBMenu_MenuSurfacePositioning.md&amp;value=---%0Auid%3A%20Material.Blazor.MBMenu.MenuSurfacePositioning%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/stefanloerwald/Material.Blazor/blob/main/Material.Blazor/Components/Menu/MBMenu.razor.cs/#L25">View Source</a>
+    <a href="https://github.com/stefanloerwald/Material.Blazor/blob/main/Material.Blazor/Components/Menu/MBMenu.razor.cs/#L23">View Source</a>
   </span>
   <a id="Material_Blazor_MBMenu_MenuSurfacePositioning_" data-uid="Material.Blazor.MBMenu.MenuSurfacePositioning*"></a>
   <h4 id="Material_Blazor_MBMenu_MenuSurfacePositioning" data-uid="Material.Blazor.MBMenu.MenuSurfacePositioning">MenuSurfacePositioning</h4>
@@ -285,18 +297,18 @@
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/stefanloerwald/Material.Blazor/new/main/apiSpec/new?filename=Material_Blazor_MBMenu_DisposeAsync_System_Boolean_.md&amp;value=---%0Auid%3A%20Material.Blazor.MBMenu.DisposeAsync(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/stefanloerwald/Material.Blazor/new/main/apiSpec/new?filename=Material_Blazor_MBMenu_Dispose_System_Boolean_.md&amp;value=---%0Auid%3A%20Material.Blazor.MBMenu.Dispose(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/stefanloerwald/Material.Blazor/blob/main/Material.Blazor/Components/Menu/MBMenu.razor.cs/#L47">View Source</a>
+    <a href="https://github.com/stefanloerwald/Material.Blazor/blob/main/Material.Blazor/Components/Menu/MBMenu.razor.cs/#L44">View Source</a>
   </span>
-  <a id="Material_Blazor_MBMenu_DisposeAsync_" data-uid="Material.Blazor.MBMenu.DisposeAsync*"></a>
-  <h4 id="Material_Blazor_MBMenu_DisposeAsync_System_Boolean_" data-uid="Material.Blazor.MBMenu.DisposeAsync(System.Boolean)">DisposeAsync(Boolean)</h4>
+  <a id="Material_Blazor_MBMenu_Dispose_" data-uid="Material.Blazor.MBMenu.Dispose*"></a>
+  <h4 id="Material_Blazor_MBMenu_Dispose_System_Boolean_" data-uid="Material.Blazor.MBMenu.Dispose(System.Boolean)">Dispose(Boolean)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected override ValueTask DisposeAsync(bool disposing)</code></pre>
+    <pre><code class="lang-csharp hljs">protected override void Dispose(bool disposing)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -315,29 +327,14 @@
       </tr>
     </tbody>
   </table>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.threading.tasks.valuetask">ValueTask</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
   <h5 class="overrides">Overrides</h5>
-  <div><a class="xref" href="Material.Blazor.Internal.ComponentFoundation.html#Material_Blazor_Internal_ComponentFoundation_DisposeAsync_System_Boolean_">ComponentFoundation.DisposeAsync(Boolean)</a></div>
+  <div><a class="xref" href="Material.Blazor.Internal.ComponentFoundation.html#Material_Blazor_Internal_ComponentFoundation_Dispose_System_Boolean_">ComponentFoundation.Dispose(Boolean)</a></div>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
     <a href="https://github.com/stefanloerwald/Material.Blazor/new/main/apiSpec/new?filename=Material_Blazor_MBMenu_NotifyClosedAsync.md&amp;value=---%0Auid%3A%20Material.Blazor.MBMenu.NotifyClosedAsync%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/stefanloerwald/Material.Blazor/blob/main/Material.Blazor/Components/Menu/MBMenu.razor.cs/#L68">View Source</a>
+    <a href="https://github.com/stefanloerwald/Material.Blazor/blob/main/Material.Blazor/Components/Menu/MBMenu.razor.cs/#L65">View Source</a>
   </span>
   <a id="Material_Blazor_MBMenu_NotifyClosedAsync_" data-uid="Material.Blazor.MBMenu.NotifyClosedAsync*"></a>
   <h4 id="Material_Blazor_MBMenu_NotifyClosedAsync" data-uid="Material.Blazor.MBMenu.NotifyClosedAsync">NotifyClosedAsync()</h4>
@@ -368,7 +365,7 @@
     <a href="https://github.com/stefanloerwald/Material.Blazor/new/main/apiSpec/new?filename=Material_Blazor_MBMenu_OnInitializedAsync.md&amp;value=---%0Auid%3A%20Material.Blazor.MBMenu.OnInitializedAsync%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/stefanloerwald/Material.Blazor/blob/main/Material.Blazor/Components/Menu/MBMenu.razor.cs/#L34">View Source</a>
+    <a href="https://github.com/stefanloerwald/Material.Blazor/blob/main/Material.Blazor/Components/Menu/MBMenu.razor.cs/#L32">View Source</a>
   </span>
   <a id="Material_Blazor_MBMenu_OnInitializedAsync_" data-uid="Material.Blazor.MBMenu.OnInitializedAsync*"></a>
   <h4 id="Material_Blazor_MBMenu_OnInitializedAsync" data-uid="Material.Blazor.MBMenu.OnInitializedAsync">OnInitializedAsync()</h4>
@@ -398,7 +395,7 @@
     <a href="https://github.com/stefanloerwald/Material.Blazor/new/main/apiSpec/new?filename=Material_Blazor_MBMenu_ToggleAsync.md&amp;value=---%0Auid%3A%20Material.Blazor.MBMenu.ToggleAsync%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/stefanloerwald/Material.Blazor/blob/main/Material.Blazor/Components/Menu/MBMenu.razor.cs/#L81">View Source</a>
+    <a href="https://github.com/stefanloerwald/Material.Blazor/blob/main/Material.Blazor/Components/Menu/MBMenu.razor.cs/#L78">View Source</a>
   </span>
   <a id="Material_Blazor_MBMenu_ToggleAsync_" data-uid="Material.Blazor.MBMenu.ToggleAsync*"></a>
   <h4 id="Material_Blazor_MBMenu_ToggleAsync" data-uid="Material.Blazor.MBMenu.ToggleAsync">ToggleAsync()</h4>
@@ -426,7 +423,7 @@
   </table>
   <h3 id="implements">Implements</h3>
   <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iasyncdisposable">System.IAsyncDisposable</a>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.idisposable">System.IDisposable</a>
   </div>
 </article>
           </div>
@@ -439,12 +436,13 @@
                     <a href="https://github.com/stefanloerwald/Material.Blazor/new/main/apiSpec/new?filename=Material_Blazor_MBMenu.md&amp;value=---%0Auid%3A%20Material.Blazor.MBMenu%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/stefanloerwald/Material.Blazor/blob/main/Material.Blazor/Components/Menu/MBMenu.razor.cs/#L14" class="contribution-link">View Source</a>
+                    <a href="https://github.com/stefanloerwald/Material.Blazor/blob/main/Material.Blazor/Components/Menu/MBMenu.razor.cs/#L12" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+                <h5>In This Article</h5>
+                <div></div>
               </nav>
             </div>
           </div>

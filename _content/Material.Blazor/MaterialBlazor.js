@@ -6039,7 +6039,6 @@
         __webpack_require__.r(MBAutocompleteTextField_namespaceObject);
         __webpack_require__.d(MBAutocompleteTextField_namespaceObject, {
             close: () => MBAutocompleteTextField_close,
-            destroy: () => destroy,
             init: () => init,
             open: () => MBAutocompleteTextField_open,
             setDisabled: () => setDisabled,
@@ -6054,19 +6053,16 @@
         var MBButton_namespaceObject = {};
         __webpack_require__.r(MBButton_namespaceObject);
         __webpack_require__.d(MBButton_namespaceObject, {
-            destroy: () => MBButton_destroy,
             init: () => MBButton_init
         });
         var MBCard_namespaceObject = {};
         __webpack_require__.r(MBCard_namespaceObject);
         __webpack_require__.d(MBCard_namespaceObject, {
-            destroy: () => MBCard_destroy,
             init: () => MBCard_init
         });
         var MBChipsSelectMulti_namespaceObject = {};
         __webpack_require__.r(MBChipsSelectMulti_namespaceObject);
         __webpack_require__.d(MBChipsSelectMulti_namespaceObject, {
-            destroy: () => MBChipsSelectMulti_destroy,
             init: () => MBChipsSelectMulti_init,
             setDisabled: () => MBChipsSelectMulti_setDisabled,
             setSelected: () => setSelected
@@ -6074,7 +6070,6 @@
         var MBCheckbox_namespaceObject = {};
         __webpack_require__.r(MBCheckbox_namespaceObject);
         __webpack_require__.d(MBCheckbox_namespaceObject, {
-            destroy: () => MBCheckbox_destroy,
             init: () => MBCheckbox_init,
             setChecked: () => setChecked,
             setDisabled: () => MBCheckbox_setDisabled,
@@ -6083,21 +6078,18 @@
         var MBCircularProgress_namespaceObject = {};
         __webpack_require__.r(MBCircularProgress_namespaceObject);
         __webpack_require__.d(MBCircularProgress_namespaceObject, {
-            destroy: () => MBCircularProgress_destroy,
             init: () => MBCircularProgress_init,
             setProgress: () => setProgress
         });
         var MBDataTable_namespaceObject = {};
         __webpack_require__.r(MBDataTable_namespaceObject);
         __webpack_require__.d(MBDataTable_namespaceObject, {
-            destroy: () => MBDataTable_destroy,
             init: () => MBDataTable_init,
             setProgress: () => MBDataTable_setProgress
         });
         var MBDatePicker_namespaceObject = {};
         __webpack_require__.r(MBDatePicker_namespaceObject);
         __webpack_require__.d(MBDatePicker_namespaceObject, {
-            destroy: () => MBDatePicker_destroy,
             init: () => MBDatePicker_init,
             listItemClick: () => listItemClick,
             scrollToYear: () => scrollToYear,
@@ -6112,14 +6104,12 @@
         var MBDrawer_namespaceObject = {};
         __webpack_require__.r(MBDrawer_namespaceObject);
         __webpack_require__.d(MBDrawer_namespaceObject, {
-            destroy: () => MBDrawer_destroy,
             init: () => MBDrawer_init,
             toggle: () => toggle
         });
         var MBFloatingActionButton_namespaceObject = {};
         __webpack_require__.r(MBFloatingActionButton_namespaceObject);
         __webpack_require__.d(MBFloatingActionButton_namespaceObject, {
-            destroy: () => MBFloatingActionButton_destroy,
             init: () => MBFloatingActionButton_init,
             setExited: () => setExited
         });
@@ -6134,34 +6124,29 @@
         var MBIconButton_namespaceObject = {};
         __webpack_require__.r(MBIconButton_namespaceObject);
         __webpack_require__.d(MBIconButton_namespaceObject, {
-            destroy: () => MBIconButton_destroy,
             init: () => MBIconButton_init
         });
         var MBIconButtonToggle_namespaceObject = {};
         __webpack_require__.r(MBIconButtonToggle_namespaceObject);
         __webpack_require__.d(MBIconButtonToggle_namespaceObject, {
             click: () => click,
-            destroy: () => MBIconButtonToggle_destroy,
             init: () => MBIconButtonToggle_init,
             setOn: () => setOn
         });
         var MBLinearProgress_namespaceObject = {};
         __webpack_require__.r(MBLinearProgress_namespaceObject);
         __webpack_require__.d(MBLinearProgress_namespaceObject, {
-            destroy: () => MBLinearProgress_destroy,
             init: () => MBLinearProgress_init,
             setProgress: () => MBLinearProgress_setProgress
         });
         var MBList_namespaceObject = {};
         __webpack_require__.r(MBList_namespaceObject);
         __webpack_require__.d(MBList_namespaceObject, {
-            destroy: () => MBList_destroy,
             init: () => MBList_init
         });
         var MBMenu_namespaceObject = {};
         __webpack_require__.r(MBMenu_namespaceObject);
         __webpack_require__.d(MBMenu_namespaceObject, {
-            destroy: () => MBMenu_destroy,
             hide: () => MBMenu_hide,
             init: () => MBMenu_init,
             show: () => MBMenu_show
@@ -6169,7 +6154,6 @@
         var MBRadioButton_namespaceObject = {};
         __webpack_require__.r(MBRadioButton_namespaceObject);
         __webpack_require__.d(MBRadioButton_namespaceObject, {
-            destroy: () => MBRadioButton_destroy,
             init: () => MBRadioButton_init,
             setChecked: () => MBRadioButton_setChecked,
             setDisabled: () => MBRadioButton_setDisabled
@@ -6177,7 +6161,6 @@
         var MBSegmentedButtonMulti_namespaceObject = {};
         __webpack_require__.r(MBSegmentedButtonMulti_namespaceObject);
         __webpack_require__.d(MBSegmentedButtonMulti_namespaceObject, {
-            destroy: () => MBSegmentedButtonMulti_destroy,
             init: () => MBSegmentedButtonMulti_init,
             setDisabled: () => MBSegmentedButtonMulti_setDisabled,
             setSelected: () => MBSegmentedButtonMulti_setSelected
@@ -6185,7 +6168,6 @@
         var MBSelect_namespaceObject = {};
         __webpack_require__.r(MBSelect_namespaceObject);
         __webpack_require__.d(MBSelect_namespaceObject, {
-            destroy: () => MBSelect_destroy,
             init: () => MBSelect_init,
             setDisabled: () => MBSelect_setDisabled,
             setIndex: () => setIndex
@@ -6193,7 +6175,6 @@
         var MBSlider_namespaceObject = {};
         __webpack_require__.r(MBSlider_namespaceObject);
         __webpack_require__.d(MBSlider_namespaceObject, {
-            destroy: () => MBSlider_destroy,
             init: () => MBSlider_init,
             setDisabled: () => MBSlider_setDisabled,
             setValue: () => MBSlider_setValue
@@ -6201,13 +6182,11 @@
         var MBSnackbar_namespaceObject = {};
         __webpack_require__.r(MBSnackbar_namespaceObject);
         __webpack_require__.d(MBSnackbar_namespaceObject, {
-            destroy: () => MBSnackbar_destroy,
             init: () => MBSnackbar_init
         });
         var MBSwitch_namespaceObject = {};
         __webpack_require__.r(MBSwitch_namespaceObject);
         __webpack_require__.d(MBSwitch_namespaceObject, {
-            destroy: () => MBSwitch_destroy,
             init: () => MBSwitch_init,
             setChecked: () => MBSwitch_setChecked,
             setDisabled: () => MBSwitch_setDisabled
@@ -6216,13 +6195,11 @@
         __webpack_require__.r(MBTabBar_namespaceObject);
         __webpack_require__.d(MBTabBar_namespaceObject, {
             activateTab: () => activateTab,
-            destroy: () => MBTabBar_destroy,
             init: () => MBTabBar_init
         });
         var MBTextField_namespaceObject = {};
         __webpack_require__.r(MBTextField_namespaceObject);
         __webpack_require__.d(MBTextField_namespaceObject, {
-            destroy: () => MBTextField_destroy,
             init: () => MBTextField_init,
             setDisabled: () => MBTextField_setDisabled,
             setHelperText: () => setHelperText,
@@ -6232,13 +6209,11 @@
         var MBTooltip_namespaceObject = {};
         __webpack_require__.r(MBTooltip_namespaceObject);
         __webpack_require__.d(MBTooltip_namespaceObject, {
-            destroy: () => MBTooltip_destroy,
             init: () => MBTooltip_init
         });
         var MBTopAppBar_namespaceObject = {};
         __webpack_require__.r(MBTopAppBar_namespaceObject);
         __webpack_require__.d(MBTopAppBar_namespaceObject, {
-            destroy: () => MBTopAppBar_destroy,
             init: () => MBTopAppBar_init
         });
         /*! *****************************************************************************
@@ -12052,11 +12027,6 @@ PERFORMANCE OF THIS SOFTWARE.
             };
             menuElem._menu.listen("MDCMenuSurface:closed", closedCallback);
         }
-        function destroy(textElem, menuElem) {
-            var _textElem$_textField, _menuElem$_menu;
-            textElem === null || textElem === void 0 ? void 0 : (_textElem$_textField = textElem._textField) === null || _textElem$_textField === void 0 ? void 0 : _textElem$_textField.destroy();
-            menuElem === null || menuElem === void 0 ? void 0 : (_menuElem$_menu = menuElem._menu) === null || _menuElem$_menu === void 0 ? void 0 : _menuElem$_menu.destroy();
-        }
         function MBAutocompleteTextField_open(menuElem) {
             menuElem._menu.open = true;
             menuElem._menu.foundation.setDefaultFocusState(0);
@@ -12130,16 +12100,8 @@ PERFORMANCE OF THIS SOFTWARE.
         function MBButton_init(elem) {
             elem._ripple = MDCRipple.attachTo(elem);
         }
-        function MBButton_destroy(elem) {
-            var _elem$_ripple;
-            elem === null || elem === void 0 ? void 0 : (_elem$_ripple = elem._ripple) === null || _elem$_ripple === void 0 ? void 0 : _elem$_ripple.destroy();
-        }
         function MBCard_init(elem) {
             elem._ripple = MDCRipple.attachTo(elem);
-        }
-        function MBCard_destroy(elem) {
-            var _elem$_ripple;
-            elem === null || elem === void 0 ? void 0 : (_elem$_ripple = elem._ripple) === null || _elem$_ripple === void 0 ? void 0 : _elem$_ripple.destroy();
         }
         /**
  * @license
@@ -13657,10 +13619,6 @@ PERFORMANCE OF THIS SOFTWARE.
             };
             elem._chipSet.listen("MDCChip:selection", clickedCallback);
         }
-        function MBChipsSelectMulti_destroy(elem) {
-            var _elem$_chipSet;
-            elem === null || elem === void 0 ? void 0 : (_elem$_chipSet = elem._chipSet) === null || _elem$_chipSet === void 0 ? void 0 : _elem$_chipSet.destroy();
-        }
         function MBChipsSelectMulti_setDisabled(elem, value) {
             elem._chipSet.disabled = value;
         }
@@ -14377,11 +14335,6 @@ PERFORMANCE OF THIS SOFTWARE.
             elem._formField = MDCFormField.attachTo(formFieldElem);
             elem._formField.input = elem._checkbox;
         }
-        function MBCheckbox_destroy(elem) {
-            var _elem$_checkbox, _elem$_formField;
-            elem === null || elem === void 0 ? void 0 : (_elem$_checkbox = elem._checkbox) === null || _elem$_checkbox === void 0 ? void 0 : _elem$_checkbox.destroy();
-            elem === null || elem === void 0 ? void 0 : (_elem$_formField = elem._formField) === null || _elem$_formField === void 0 ? void 0 : _elem$_formField.destroy();
-        }
         function setChecked(elem, checked) {
             elem._checkbox.checked = checked;
         }
@@ -14635,10 +14588,6 @@ PERFORMANCE OF THIS SOFTWARE.
         function MBCircularProgress_init(elem, progress) {
             elem._circularProgress = MDCCircularProgress.attachTo(elem);
             setProgress(elem, progress);
-        }
-        function MBCircularProgress_destroy(elem) {
-            var _elem$_circularProgre;
-            elem === null || elem === void 0 ? void 0 : (_elem$_circularProgre = elem._circularProgress) === null || _elem$_circularProgre === void 0 ? void 0 : _elem$_circularProgre.destroy();
         }
         function setProgress(elem, progress) {
             elem._circularProgress.progress = progress;
@@ -15726,10 +15675,6 @@ PERFORMANCE OF THIS SOFTWARE.
             if (hasProgress) {
                 MBDataTable_setProgress(elem, showProgress);
             }
-        }
-        function MBDataTable_destroy(elem) {
-            var _elem$_dataTable;
-            elem === null || elem === void 0 ? void 0 : (_elem$_dataTable = elem._dataTable) === null || _elem$_dataTable === void 0 ? void 0 : _elem$_dataTable.destroy();
         }
         function MBDataTable_setProgress(elem, showProgress) {
             if (showProgress) {
@@ -17081,10 +17026,6 @@ PERFORMANCE OF THIS SOFTWARE.
         function MBDatePicker_setDisabled(elem, value) {
             elem._select.disabled = value;
         }
-        function MBDatePicker_destroy(elem) {
-            var _elem$_select;
-            elem === null || elem === void 0 ? void 0 : (_elem$_select = elem._select) === null || _elem$_select === void 0 ? void 0 : _elem$_select.destroy();
-        }
         function listItemClick(elem, elemText) {
             elem.innerText = elemText;
             elem.click();
@@ -17803,14 +17744,12 @@ PERFORMANCE OF THIS SOFTWARE.
             dialog.listen("MDCDialog:opened", openedCallback);
             dialog.escapeKeyAction = escapeKeyAction;
             dialog.scrimClickAction = scrimClickAction;
-            return new Promise((function(resolve) {
-                var closingCallback = function closingCallback(event) {
-                    dialog.unlisten("MDCDialog:closing", closingCallback);
-                    resolve(event.detail.action);
-                };
-                dialog.listen("MDCDialog:closing", closingCallback);
-                dialog.open();
-            }));
+            var closingCallback = function closingCallback(event) {
+                dialog.unlisten("MDCDialog:closing", closingCallback);
+                dotNetObject.invokeMethodAsync("NotifyClosed", event.detail.action);
+            };
+            dialog.listen("MDCDialog:closing", closingCallback);
+            dialog.open();
         }
         function hide(elem, dialogAction) {
             if (elem && elem._dialog) {
@@ -18246,10 +18185,6 @@ PERFORMANCE OF THIS SOFTWARE.
             elem._drawer = MDCDrawer.attachTo(elem);
             toggle(elem, isOpen);
         }
-        function MBDrawer_destroy(elem) {
-            var _elem$_drawer;
-            elem === null || elem === void 0 ? void 0 : (_elem$_drawer = elem._drawer) === null || _elem$_drawer === void 0 ? void 0 : _elem$_drawer.destroy();
-        }
         function toggle(elem, isOpen) {
             elem._drawer.open = isOpen;
         }
@@ -18257,10 +18192,6 @@ PERFORMANCE OF THIS SOFTWARE.
             elem._fab = MDCRipple.attachTo(elem);
             elem._exited = false;
             setExited(elem, exited);
-        }
-        function MBFloatingActionButton_destroy(elem) {
-            var _elem$_fab;
-            elem === null || elem === void 0 ? void 0 : (_elem$_fab = elem._fab) === null || _elem$_fab === void 0 ? void 0 : _elem$_fab.destroy();
         }
         function setExited(elem, exited) {
             if (elem) {
@@ -18319,10 +18250,6 @@ PERFORMANCE OF THIS SOFTWARE.
         function MBIconButton_init(elem) {
             elem._ripple = MDCRipple.attachTo(elem);
             elem._ripple.unbounded = true;
-        }
-        function MBIconButton_destroy(elem) {
-            var _elem$_ripple;
-            elem === null || elem === void 0 ? void 0 : (_elem$_ripple = elem._ripple) === null || _elem$_ripple === void 0 ? void 0 : _elem$_ripple.destroy();
         }
         /**
  * @license
@@ -18562,10 +18489,6 @@ PERFORMANCE OF THIS SOFTWARE.
         function MBIconButtonToggle_init(elem) {
             elem._iconButtonToggle = MDCIconButtonToggle.attachTo(elem);
         }
-        function MBIconButtonToggle_destroy(elem) {
-            var _elem$_iconButtonTogg;
-            elem === null || elem === void 0 ? void 0 : (_elem$_iconButtonTogg = elem._iconButtonToggle) === null || _elem$_iconButtonTogg === void 0 ? void 0 : _elem$_iconButtonTogg.destroy();
-        }
         function setOn(elem, isOn) {
             elem._iconButtonToggle.on = isOn;
         }
@@ -18575,10 +18498,6 @@ PERFORMANCE OF THIS SOFTWARE.
         function MBLinearProgress_init(elem, progress, buffer) {
             elem._linearProgress = MDCLinearProgress.attachTo(elem);
             MBLinearProgress_setProgress(elem, progress, buffer);
-        }
-        function MBLinearProgress_destroy(elem) {
-            var _elem$_linearProgress;
-            elem === null || elem === void 0 ? void 0 : (_elem$_linearProgress = elem._linearProgress) === null || _elem$_linearProgress === void 0 ? void 0 : _elem$_linearProgress.destroy();
         }
         function MBLinearProgress_setProgress(elem, progress, buffer) {
             elem._linearProgress.progress = progress;
@@ -18594,20 +18513,12 @@ PERFORMANCE OF THIS SOFTWARE.
                 }
             }
         }
-        function MBList_destroy(elem) {
-            var _elem$_list;
-            elem === null || elem === void 0 ? void 0 : (_elem$_list = elem._list) === null || _elem$_list === void 0 ? void 0 : _elem$_list.destroy();
-        }
         function MBMenu_init(elem, dotNetObject) {
             elem._menu = MDCMenu.attachTo(elem);
             var closedCallback = function closedCallback() {
                 dotNetObject.invokeMethodAsync("NotifyClosedAsync");
             };
             elem._menu.listen("MDCMenuSurface:closed", closedCallback);
-        }
-        function MBMenu_destroy(elem) {
-            var _elem$_menu;
-            elem === null || elem === void 0 ? void 0 : (_elem$_menu = elem._menu) === null || _elem$_menu === void 0 ? void 0 : _elem$_menu.destroy();
         }
         function MBMenu_show(elem) {
             if (elem._menu) {
@@ -18843,11 +18754,6 @@ PERFORMANCE OF THIS SOFTWARE.
             elem._radio.checked = isChecked;
             elem._formField = MDCFormField.attachTo(formFieldElem);
             elem._formField.input = elem._radio;
-        }
-        function MBRadioButton_destroy(elem) {
-            var _elem$_radio, _elem$_formField;
-            elem === null || elem === void 0 ? void 0 : (_elem$_radio = elem._radio) === null || _elem$_radio === void 0 ? void 0 : _elem$_radio.destroy();
-            elem === null || elem === void 0 ? void 0 : (_elem$_formField = elem._formField) === null || _elem$_formField === void 0 ? void 0 : _elem$_formField.destroy();
         }
         function MBRadioButton_setDisabled(elem, value) {
             elem._radio.disabled = value;
@@ -19395,10 +19301,6 @@ PERFORMANCE OF THIS SOFTWARE.
                 }
             };
         }
-        function MBSegmentedButtonMulti_destroy(elem) {
-            var _elem$_segmentedButto;
-            elem === null || elem === void 0 ? void 0 : (_elem$_segmentedButto = elem._segmentedButton) === null || _elem$_segmentedButto === void 0 ? void 0 : _elem$_segmentedButto.destroy();
-        }
         function MBSegmentedButtonMulti_setDisabled(elem, value) {
             elem._segmentedButton.disabled = value;
         }
@@ -19417,10 +19319,6 @@ PERFORMANCE OF THIS SOFTWARE.
                 elem._select.foundation.setSelectedIndex(index);
                 dotNetObject.invokeMethodAsync("NotifySelectedAsync", index);
             };
-        }
-        function MBSelect_destroy(elem) {
-            var _elem$_select;
-            elem === null || elem === void 0 ? void 0 : (_elem$_select = elem._select) === null || _elem$_select === void 0 ? void 0 : _elem$_select.destroy();
         }
         function MBSelect_setDisabled(elem, value) {
             elem._select.disabled = value;
@@ -20546,10 +20444,6 @@ PERFORMANCE OF THIS SOFTWARE.
                 elem._slider.listen("MDCSlider:input", throttleCallback);
             }
         }
-        function MBSlider_destroy(elem) {
-            var _elem$_slider;
-            elem === null || elem === void 0 ? void 0 : (_elem$_slider = elem._slider) === null || _elem$_slider === void 0 ? void 0 : _elem$_slider.destroy();
-        }
         function MBSlider_setValue(elem, value) {
             elem._slider.setValue(value);
         }
@@ -21021,10 +20915,6 @@ PERFORMANCE OF THIS SOFTWARE.
             elem._snackbar.timeoutMs = timeoutMs;
             elem._snackbar.open();
         }
-        function MBSnackbar_destroy(elem) {
-            var _elem$_snackbar;
-            elem === null || elem === void 0 ? void 0 : (_elem$_snackbar = elem._snackbar) === null || _elem$_snackbar === void 0 ? void 0 : _elem$_snackbar.destroy();
-        }
         /**
  * @license
  * Copyright 2018 Google Inc.
@@ -21294,10 +21184,6 @@ PERFORMANCE OF THIS SOFTWARE.
         function MBSwitch_init(elem, checked) {
             elem._switch = MDCSwitch.attachTo(elem);
             elem._switch.checked = checked;
-        }
-        function MBSwitch_destroy(elem) {
-            var _elem$_switch;
-            elem === null || elem === void 0 ? void 0 : (_elem$_switch = elem._switch) === null || _elem$_switch === void 0 ? void 0 : _elem$_switch.destroy();
         }
         function MBSwitch_setChecked(elem, checked) {
             elem._switch.checked = checked;
@@ -23093,10 +22979,6 @@ PERFORMANCE OF THIS SOFTWARE.
             };
             elem._tabBar.listen("MDCTabBar:activated", elem._callback);
         }
-        function MBTabBar_destroy(elem) {
-            var _elem$_tabBar;
-            elem === null || elem === void 0 ? void 0 : (_elem$_tabBar = elem._tabBar) === null || _elem$_tabBar === void 0 ? void 0 : _elem$_tabBar.destroy();
-        }
         function activateTab(elem, index) {
             elem._tabBar.unlisten("MDCTabBar:activated", elem._callback);
             elem._tabBar.activateTab(index);
@@ -23105,13 +22987,6 @@ PERFORMANCE OF THIS SOFTWARE.
         function MBTextField_init(elem, helperTextElem, helperText, helperTextPersistent, performsValidation) {
             elem._textField = MDCTextField.attachTo(elem);
             setHelperText(elem, helperTextElem, helperText, helperTextPersistent, performsValidation, false, "");
-        }
-        function MBTextField_destroy(elem) {
-            var _elem$_textField;
-            elem === null || elem === void 0 ? void 0 : (_elem$_textField = elem._textField) === null || _elem$_textField === void 0 ? void 0 : _elem$_textField.destroy();
-            if (elem !== null && elem !== void 0 && elem._helperText) {
-                elem._helperText.destroy();
-            }
         }
         function MBTextField_setValue(elem, value) {
             elem._textField.value = value;
@@ -24025,10 +23900,6 @@ PERFORMANCE OF THIS SOFTWARE.
                 return elem._tooltip = MDCTooltip.attachTo(elem);
             }));
         }
-        function MBTooltip_destroy(elem) {
-            var _elem$_tooltip;
-            elem === null || elem === void 0 ? void 0 : (_elem$_tooltip = elem._tooltip) === null || _elem$_tooltip === void 0 ? void 0 : _elem$_tooltip.destroy();
-        }
         /**
  * @license
  * Copyright 2018 Google Inc.
@@ -24529,10 +24400,6 @@ PERFORMANCE OF THIS SOFTWARE.
             if (scrollTarget) {
                 elem._topAppBar.setScrollTarget(document.querySelector(scrollTarget));
             }
-        }
-        function MBTopAppBar_destroy(elem) {
-            var _elem$_topAppBar;
-            elem === null || elem === void 0 ? void 0 : (_elem$_topAppBar = elem._topAppBar) === null || _elem$_topAppBar === void 0 ? void 0 : _elem$_topAppBar.destroy();
         }
         var Batching = __webpack_require__(854);
         window.MaterialBlazor = {

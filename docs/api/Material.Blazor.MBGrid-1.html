@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Class MBGrid&lt;TRowData&gt;
    ">
-    <meta name="generator" content="docfx 2.56.1.0">
+    <meta name="generator" content="docfx 2.56.7.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -96,7 +96,7 @@
   </div>
   <div classs="implements">
     <h5>Implements</h5>
-    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iasyncdisposable">IAsyncDisposable</a></div>
+    <div><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.idisposable">IDisposable</a></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -110,13 +110,25 @@
       <a class="xref" href="Material.Blazor.Internal.ComponentFoundation.html#Material_Blazor_Internal_ComponentFoundation_Disabled">ComponentFoundation.Disabled</a>
     </div>
     <div>
+      <a class="xref" href="Material.Blazor.Internal.ComponentFoundation.html#Material_Blazor_Internal_ComponentFoundation_id">ComponentFoundation.id</a>
+    </div>
+    <div>
+      <a class="xref" href="Material.Blazor.Internal.ComponentFoundation.html#Material_Blazor_Internal_ComponentFoundation_class">ComponentFoundation.class</a>
+    </div>
+    <div>
+      <a class="xref" href="Material.Blazor.Internal.ComponentFoundation.html#Material_Blazor_Internal_ComponentFoundation_ActiveConditionalClasses">ComponentFoundation.ActiveConditionalClasses</a>
+    </div>
+    <div>
+      <a class="xref" href="Material.Blazor.Internal.ComponentFoundation.html#Material_Blazor_Internal_ComponentFoundation_style">ComponentFoundation.style</a>
+    </div>
+    <div>
       <a class="xref" href="Material.Blazor.Internal.ComponentFoundation.html#Material_Blazor_Internal_ComponentFoundation_Tooltip">ComponentFoundation.Tooltip</a>
     </div>
     <div>
-      <a class="xref" href="Material.Blazor.Internal.ComponentFoundation.html#Material_Blazor_Internal_ComponentFoundation_DisposeAsync_System_Boolean_">ComponentFoundation.DisposeAsync(Boolean)</a>
+      <a class="xref" href="Material.Blazor.Internal.ComponentFoundation.html#Material_Blazor_Internal_ComponentFoundation_Dispose_System_Boolean_">ComponentFoundation.Dispose(Boolean)</a>
     </div>
     <div>
-      <a class="xref" href="Material.Blazor.Internal.ComponentFoundation.html#Material_Blazor_Internal_ComponentFoundation_DisposeAsync">ComponentFoundation.DisposeAsync()</a>
+      <a class="xref" href="Material.Blazor.Internal.ComponentFoundation.html#Material_Blazor_Internal_ComponentFoundation_Dispose">ComponentFoundation.Dispose()</a>
     </div>
     <div>
       <a class="xref" href="Material.Blazor.Internal.ComponentFoundation.html#Material_Blazor_Internal_ComponentFoundation_OnParametersSet">ComponentFoundation.OnParametersSet()</a>
@@ -213,7 +225,7 @@
   <h6><strong>Assembly</strong>: Material.Blazor.dll</h6>
   <h5 id="Material_Blazor_MBGrid_1_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class MBGrid&lt;TRowData&gt; : ComponentFoundation, IAsyncDisposable</code></pre>
+    <pre><code class="lang-csharp hljs">public class MBGrid&lt;TRowData&gt; : ComponentFoundation, IDisposable</code></pre>
   </div>
   <h5 class="typeParameters">Type Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -393,10 +405,42 @@ that is used to indicate a row that has been clicked.</p>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/stefanloerwald/Material.Blazor/new/main/apiSpec/new?filename=Material_Blazor_MBGrid_1_Measurement.md&amp;value=---%0Auid%3A%20Material.Blazor.MBGrid%601.Measurement%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/stefanloerwald/Material.Blazor/new/main/apiSpec/new?filename=Material_Blazor_MBGrid_1_LogIdentification.md&amp;value=---%0Auid%3A%20Material.Blazor.MBGrid%601.LogIdentification%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
     <a href="https://github.com/stefanloerwald/Material.Blazor/blob/main/Material.Blazor/Components/Grid/MBGrid.cs/#L86">View Source</a>
+  </span>
+  <a id="Material_Blazor_MBGrid_1_LogIdentification_" data-uid="Material.Blazor.MBGrid`1.LogIdentification*"></a>
+  <h4 id="Material_Blazor_MBGrid_1_LogIdentification" data-uid="Material.Blazor.MBGrid`1.LogIdentification">LogIdentification</h4>
+  <div class="markdown level1 summary"><p>LogIdentification is added to logging message to allow differentiation between multiple grids
+on a single page or component</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string LogIdentification { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.microsoft.com/dotnet/api/system.string">String</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/stefanloerwald/Material.Blazor/new/main/apiSpec/new?filename=Material_Blazor_MBGrid_1_Measurement.md&amp;value=---%0Auid%3A%20Material.Blazor.MBGrid%601.Measurement%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/stefanloerwald/Material.Blazor/blob/main/Material.Blazor/Components/Grid/MBGrid.cs/#L93">View Source</a>
   </span>
   <a id="Material_Blazor_MBGrid_1_Measurement_" data-uid="Material.Blazor.MBGrid`1.Measurement*"></a>
   <h4 id="Material_Blazor_MBGrid_1_Measurement" data-uid="Material.Blazor.MBGrid`1.Measurement">Measurement</h4>
@@ -428,7 +472,7 @@ data widths (FitToData)</p>
     <a href="https://github.com/stefanloerwald/Material.Blazor/new/main/apiSpec/new?filename=Material_Blazor_MBGrid_1_ObscurePMI.md&amp;value=---%0Auid%3A%20Material.Blazor.MBGrid%601.ObscurePMI%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/stefanloerwald/Material.Blazor/blob/main/Material.Blazor/Components/Grid/MBGrid.cs/#L92">View Source</a>
+    <a href="https://github.com/stefanloerwald/Material.Blazor/blob/main/Material.Blazor/Components/Grid/MBGrid.cs/#L99">View Source</a>
   </span>
   <a id="Material_Blazor_MBGrid_1_ObscurePMI_" data-uid="Material.Blazor.MBGrid`1.ObscurePMI*"></a>
   <h4 id="Material_Blazor_MBGrid_1_ObscurePMI" data-uid="Material.Blazor.MBGrid`1.ObscurePMI">ObscurePMI</h4>
@@ -459,7 +503,7 @@ data widths (FitToData)</p>
     <a href="https://github.com/stefanloerwald/Material.Blazor/new/main/apiSpec/new?filename=Material_Blazor_MBGrid_1_OnMouseClick.md&amp;value=---%0Auid%3A%20Material.Blazor.MBGrid%601.OnMouseClick%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/stefanloerwald/Material.Blazor/blob/main/Material.Blazor/Components/Grid/MBGrid.cs/#L98">View Source</a>
+    <a href="https://github.com/stefanloerwald/Material.Blazor/blob/main/Material.Blazor/Components/Grid/MBGrid.cs/#L105">View Source</a>
   </span>
   <a id="Material_Blazor_MBGrid_1_OnMouseClick_" data-uid="Material.Blazor.MBGrid`1.OnMouseClick*"></a>
   <h4 id="Material_Blazor_MBGrid_1_OnMouseClick" data-uid="Material.Blazor.MBGrid`1.OnMouseClick">OnMouseClick</h4>
@@ -490,7 +534,7 @@ data widths (FitToData)</p>
     <a href="https://github.com/stefanloerwald/Material.Blazor/new/main/apiSpec/new?filename=Material_Blazor_MBGrid_1_SupressHeader.md&amp;value=---%0Auid%3A%20Material.Blazor.MBGrid%601.SupressHeader%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/stefanloerwald/Material.Blazor/blob/main/Material.Blazor/Components/Grid/MBGrid.cs/#L103">View Source</a>
+    <a href="https://github.com/stefanloerwald/Material.Blazor/blob/main/Material.Blazor/Components/Grid/MBGrid.cs/#L110">View Source</a>
   </span>
   <a id="Material_Blazor_MBGrid_1_SupressHeader_" data-uid="Material.Blazor.MBGrid`1.SupressHeader*"></a>
   <h4 id="Material_Blazor_MBGrid_1_SupressHeader" data-uid="Material.Blazor.MBGrid`1.SupressHeader">SupressHeader</h4>
@@ -523,7 +567,7 @@ data widths (FitToData)</p>
     <a href="https://github.com/stefanloerwald/Material.Blazor/new/main/apiSpec/new?filename=Material_Blazor_MBGrid_1_BuildRenderTree_RenderTreeBuilder_.md&amp;value=---%0Auid%3A%20Material.Blazor.MBGrid%601.BuildRenderTree(RenderTreeBuilder)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/stefanloerwald/Material.Blazor/blob/main/Material.Blazor/Components/Grid/MBGrid.cs/#L186">View Source</a>
+    <a href="https://github.com/stefanloerwald/Material.Blazor/blob/main/Material.Blazor/Components/Grid/MBGrid.cs/#L193">View Source</a>
   </span>
   <a id="Material_Blazor_MBGrid_1_BuildRenderTree_" data-uid="Material.Blazor.MBGrid`1.BuildRenderTree*"></a>
   <h4 id="Material_Blazor_MBGrid_1_BuildRenderTree_RenderTreeBuilder_" data-uid="Material.Blazor.MBGrid`1.BuildRenderTree(RenderTreeBuilder)">BuildRenderTree(RenderTreeBuilder)</h4>
@@ -555,7 +599,7 @@ data widths (FitToData)</p>
     <a href="https://github.com/stefanloerwald/Material.Blazor/new/main/apiSpec/new?filename=Material_Blazor_MBGrid_1_GridSyncScroll.md&amp;value=---%0Auid%3A%20Material.Blazor.MBGrid%601.GridSyncScroll%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/stefanloerwald/Material.Blazor/blob/main/Material.Blazor/Components/Grid/MBGrid.cs/#L540">View Source</a>
+    <a href="https://github.com/stefanloerwald/Material.Blazor/blob/main/Material.Blazor/Components/Grid/MBGrid.cs/#L547">View Source</a>
   </span>
   <a id="Material_Blazor_MBGrid_1_GridSyncScroll_" data-uid="Material.Blazor.MBGrid`1.GridSyncScroll*"></a>
   <h4 id="Material_Blazor_MBGrid_1_GridSyncScroll" data-uid="Material.Blazor.MBGrid`1.GridSyncScroll">GridSyncScroll()</h4>
@@ -585,7 +629,7 @@ data widths (FitToData)</p>
     <a href="https://github.com/stefanloerwald/Material.Blazor/new/main/apiSpec/new?filename=Material_Blazor_MBGrid_1_OnAfterRenderAsync_System_Boolean_.md&amp;value=---%0Auid%3A%20Material.Blazor.MBGrid%601.OnAfterRenderAsync(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/stefanloerwald/Material.Blazor/blob/main/Material.Blazor/Components/Grid/MBGrid.cs/#L669">View Source</a>
+    <a href="https://github.com/stefanloerwald/Material.Blazor/blob/main/Material.Blazor/Components/Grid/MBGrid.cs/#L692">View Source</a>
   </span>
   <a id="Material_Blazor_MBGrid_1_OnAfterRenderAsync_" data-uid="Material.Blazor.MBGrid`1.OnAfterRenderAsync*"></a>
   <h4 id="Material_Blazor_MBGrid_1_OnAfterRenderAsync_System_Boolean_" data-uid="Material.Blazor.MBGrid`1.OnAfterRenderAsync(System.Boolean)">OnAfterRenderAsync(Boolean)</h4>
@@ -634,7 +678,7 @@ data widths (FitToData)</p>
     <a href="https://github.com/stefanloerwald/Material.Blazor/new/main/apiSpec/new?filename=Material_Blazor_MBGrid_1_OnInitializedAsync.md&amp;value=---%0Auid%3A%20Material.Blazor.MBGrid%601.OnInitializedAsync%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/stefanloerwald/Material.Blazor/blob/main/Material.Blazor/Components/Grid/MBGrid.cs/#L705">View Source</a>
+    <a href="https://github.com/stefanloerwald/Material.Blazor/blob/main/Material.Blazor/Components/Grid/MBGrid.cs/#L728">View Source</a>
   </span>
   <a id="Material_Blazor_MBGrid_1_OnInitializedAsync_" data-uid="Material.Blazor.MBGrid`1.OnInitializedAsync*"></a>
   <h4 id="Material_Blazor_MBGrid_1_OnInitializedAsync" data-uid="Material.Blazor.MBGrid`1.OnInitializedAsync">OnInitializedAsync()</h4>
@@ -664,7 +708,7 @@ data widths (FitToData)</p>
     <a href="https://github.com/stefanloerwald/Material.Blazor/new/main/apiSpec/new?filename=Material_Blazor_MBGrid_1_OnParametersSetAsync.md&amp;value=---%0Auid%3A%20Material.Blazor.MBGrid%601.OnParametersSetAsync%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/stefanloerwald/Material.Blazor/blob/main/Material.Blazor/Components/Grid/MBGrid.cs/#L745">View Source</a>
+    <a href="https://github.com/stefanloerwald/Material.Blazor/blob/main/Material.Blazor/Components/Grid/MBGrid.cs/#L764">View Source</a>
   </span>
   <a id="Material_Blazor_MBGrid_1_OnParametersSetAsync_" data-uid="Material.Blazor.MBGrid`1.OnParametersSetAsync*"></a>
   <h4 id="Material_Blazor_MBGrid_1_OnParametersSetAsync" data-uid="Material.Blazor.MBGrid`1.OnParametersSetAsync">OnParametersSetAsync()</h4>
@@ -696,7 +740,7 @@ data widths (FitToData)</p>
     <a href="https://github.com/stefanloerwald/Material.Blazor/new/main/apiSpec/new?filename=Material_Blazor_MBGrid_1_SetParametersAsync_ParameterView_.md&amp;value=---%0Auid%3A%20Material.Blazor.MBGrid%601.SetParametersAsync(ParameterView)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/stefanloerwald/Material.Blazor/blob/main/Material.Blazor/Components/Grid/MBGrid.cs/#L776">View Source</a>
+    <a href="https://github.com/stefanloerwald/Material.Blazor/blob/main/Material.Blazor/Components/Grid/MBGrid.cs/#L795">View Source</a>
   </span>
   <a id="Material_Blazor_MBGrid_1_SetParametersAsync_" data-uid="Material.Blazor.MBGrid`1.SetParametersAsync*"></a>
   <h4 id="Material_Blazor_MBGrid_1_SetParametersAsync_ParameterView_" data-uid="Material.Blazor.MBGrid`1.SetParametersAsync(ParameterView)">SetParametersAsync(ParameterView)</h4>
@@ -743,7 +787,7 @@ data widths (FitToData)</p>
     <a href="https://github.com/stefanloerwald/Material.Blazor/new/main/apiSpec/new?filename=Material_Blazor_MBGrid_1_ShouldRender.md&amp;value=---%0Auid%3A%20Material.Blazor.MBGrid%601.ShouldRender%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/stefanloerwald/Material.Blazor/blob/main/Material.Blazor/Components/Grid/MBGrid.cs/#L882">View Source</a>
+    <a href="https://github.com/stefanloerwald/Material.Blazor/blob/main/Material.Blazor/Components/Grid/MBGrid.cs/#L987">View Source</a>
   </span>
   <a id="Material_Blazor_MBGrid_1_ShouldRender_" data-uid="Material.Blazor.MBGrid`1.ShouldRender*"></a>
   <h4 id="Material_Blazor_MBGrid_1_ShouldRender" data-uid="Material.Blazor.MBGrid`1.ShouldRender">ShouldRender()</h4>
@@ -770,7 +814,7 @@ data widths (FitToData)</p>
   </table>
   <h3 id="implements">Implements</h3>
   <div>
-      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.iasyncdisposable">System.IAsyncDisposable</a>
+      <a class="xref" href="https://docs.microsoft.com/dotnet/api/system.idisposable">System.IDisposable</a>
   </div>
 </article>
           </div>
@@ -788,7 +832,8 @@ data widths (FitToData)</p>
                 </ul>
               </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
-              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+                <h5>In This Article</h5>
+                <div></div>
               </nav>
             </div>
           </div>
