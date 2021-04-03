@@ -926,7 +926,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Material.Blazor.Internal.ComponentFoundation.html",
-          "hash": "HZsaYsguRgxhZU0NlwJd3g=="
+          "hash": "iI0KXHP62whWuKdIHM25lw=="
         }
       },
       "is_incremental": false,
@@ -1238,7 +1238,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Material.Blazor.MBCascadingDefaults.html",
-          "hash": "dJWkUIKe+nw6ZFJiPOfn5w=="
+          "hash": "d1OZdfpwsz3eaYyaMmYLUw=="
         }
       },
       "is_incremental": false,
@@ -2277,12 +2277,15 @@
       "version": ""
     },
     {
+      "log_codes": [
+        "UidNotFound"
+      ],
       "type": "Conceptual",
       "source_relative_path": "articles/CascadingDefaults.md",
       "output": {
         ".html": {
           "relative_path": "articles/CascadingDefaults.html",
-          "hash": "4uqJHsUwz9hnGK0W252RxQ=="
+          "hash": "xE2YSLNCHwhcSZlqtwpqAg=="
         }
       },
       "is_incremental": false,
@@ -2688,7 +2691,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "H8T9NgSTZbZ/RDbhSrrwEA=="
+          "hash": "aDZcdBwYgesvsre5UnwrgQ=="
         }
       },
       "is_incremental": false,
