@@ -154,6 +154,9 @@ references:
 - uid: C.MBMenuSelectionGroup
   name: MBMenuSelectionGroup
   href: Material.Blazor/Components/MenuSelectionGroup/MBMenuSelectionGroup.html
+- uid: C.MBMenuSurface
+  name: MBMenuSurface
+  href: Material.Blazor/Components/MenuSurface/MBMenuSurface.html
 - uid: C.MBNumericDecimalField
   name: MBNumericDecimalField
   href: Material.Blazor/Components/NumericDecimalField/MBNumericDecimalField.html
@@ -1182,6 +1185,19 @@ references:
   isSpec: "True"
   fullName: Material.Blazor.Internal.ComponentFoundation.OnAfterRenderAsync
   nameWithType: ComponentFoundation.OnAfterRenderAsync
+- uid: Material.Blazor.Internal.ComponentFoundation.OnInitialized
+  name: OnInitialized()
+  href: api/Material.Blazor.Internal.ComponentFoundation.html#Material_Blazor_Internal_ComponentFoundation_OnInitialized
+  commentId: M:Material.Blazor.Internal.ComponentFoundation.OnInitialized
+  fullName: Material.Blazor.Internal.ComponentFoundation.OnInitialized()
+  nameWithType: ComponentFoundation.OnInitialized()
+- uid: Material.Blazor.Internal.ComponentFoundation.OnInitialized*
+  name: OnInitialized
+  href: api/Material.Blazor.Internal.ComponentFoundation.html#Material_Blazor_Internal_ComponentFoundation_OnInitialized_
+  commentId: Overload:Material.Blazor.Internal.ComponentFoundation.OnInitialized
+  isSpec: "True"
+  fullName: Material.Blazor.Internal.ComponentFoundation.OnInitialized
+  nameWithType: ComponentFoundation.OnInitialized
 - uid: Material.Blazor.Internal.ComponentFoundation.OnParametersSet
   name: OnParametersSet()
   href: api/Material.Blazor.Internal.ComponentFoundation.html#Material_Blazor_Internal_ComponentFoundation_OnParametersSet
@@ -1439,23 +1455,6 @@ references:
   fullName.vb: Material.Blazor.Internal.InputComponent(Of T).OnAfterRenderAsync
   nameWithType: InputComponent<T>.OnAfterRenderAsync
   nameWithType.vb: InputComponent(Of T).OnAfterRenderAsync
-- uid: Material.Blazor.Internal.InputComponent`1.OnInitialized
-  name: OnInitialized()
-  href: api/Material.Blazor.Internal.InputComponent-1.html#Material_Blazor_Internal_InputComponent_1_OnInitialized
-  commentId: M:Material.Blazor.Internal.InputComponent`1.OnInitialized
-  fullName: Material.Blazor.Internal.InputComponent<T>.OnInitialized()
-  fullName.vb: Material.Blazor.Internal.InputComponent(Of T).OnInitialized()
-  nameWithType: InputComponent<T>.OnInitialized()
-  nameWithType.vb: InputComponent(Of T).OnInitialized()
-- uid: Material.Blazor.Internal.InputComponent`1.OnInitialized*
-  name: OnInitialized
-  href: api/Material.Blazor.Internal.InputComponent-1.html#Material_Blazor_Internal_InputComponent_1_OnInitialized_
-  commentId: Overload:Material.Blazor.Internal.InputComponent`1.OnInitialized
-  isSpec: "True"
-  fullName: Material.Blazor.Internal.InputComponent<T>.OnInitialized
-  fullName.vb: Material.Blazor.Internal.InputComponent(Of T).OnInitialized
-  nameWithType: InputComponent<T>.OnInitialized
-  nameWithType.vb: InputComponent(Of T).OnInitialized
 - uid: Material.Blazor.Internal.InputComponent`1.OnInitializedAsync
   name: OnInitializedAsync()
   href: api/Material.Blazor.Internal.InputComponent-1.html#Material_Blazor_Internal_InputComponent_1_OnInitializedAsync
@@ -2587,32 +2586,32 @@ references:
   isSpec: "True"
   fullName: Material.Blazor.MBAutocompleteTextField.MatchFromItemStart
   nameWithType: MBAutocompleteTextField.MatchFromItemStart
-- uid: Material.Blazor.MBAutocompleteTextField.NotifyClosedAsync
-  name: NotifyClosedAsync()
-  href: api/Material.Blazor.MBAutocompleteTextField.html#Material_Blazor_MBAutocompleteTextField_NotifyClosedAsync
-  commentId: M:Material.Blazor.MBAutocompleteTextField.NotifyClosedAsync
-  fullName: Material.Blazor.MBAutocompleteTextField.NotifyClosedAsync()
-  nameWithType: MBAutocompleteTextField.NotifyClosedAsync()
-- uid: Material.Blazor.MBAutocompleteTextField.NotifyClosedAsync*
-  name: NotifyClosedAsync
-  href: api/Material.Blazor.MBAutocompleteTextField.html#Material_Blazor_MBAutocompleteTextField_NotifyClosedAsync_
-  commentId: Overload:Material.Blazor.MBAutocompleteTextField.NotifyClosedAsync
+- uid: Material.Blazor.MBAutocompleteTextField.NotifyClosed
+  name: NotifyClosed()
+  href: api/Material.Blazor.MBAutocompleteTextField.html#Material_Blazor_MBAutocompleteTextField_NotifyClosed
+  commentId: M:Material.Blazor.MBAutocompleteTextField.NotifyClosed
+  fullName: Material.Blazor.MBAutocompleteTextField.NotifyClosed()
+  nameWithType: MBAutocompleteTextField.NotifyClosed()
+- uid: Material.Blazor.MBAutocompleteTextField.NotifyClosed*
+  name: NotifyClosed
+  href: api/Material.Blazor.MBAutocompleteTextField.html#Material_Blazor_MBAutocompleteTextField_NotifyClosed_
+  commentId: Overload:Material.Blazor.MBAutocompleteTextField.NotifyClosed
   isSpec: "True"
-  fullName: Material.Blazor.MBAutocompleteTextField.NotifyClosedAsync
-  nameWithType: MBAutocompleteTextField.NotifyClosedAsync
-- uid: Material.Blazor.MBAutocompleteTextField.NotifySelectedAsync(System.String)
-  name: NotifySelectedAsync(String)
-  href: api/Material.Blazor.MBAutocompleteTextField.html#Material_Blazor_MBAutocompleteTextField_NotifySelectedAsync_System_String_
-  commentId: M:Material.Blazor.MBAutocompleteTextField.NotifySelectedAsync(System.String)
-  fullName: Material.Blazor.MBAutocompleteTextField.NotifySelectedAsync(System.String)
-  nameWithType: MBAutocompleteTextField.NotifySelectedAsync(String)
-- uid: Material.Blazor.MBAutocompleteTextField.NotifySelectedAsync*
-  name: NotifySelectedAsync
-  href: api/Material.Blazor.MBAutocompleteTextField.html#Material_Blazor_MBAutocompleteTextField_NotifySelectedAsync_
-  commentId: Overload:Material.Blazor.MBAutocompleteTextField.NotifySelectedAsync
+  fullName: Material.Blazor.MBAutocompleteTextField.NotifyClosed
+  nameWithType: MBAutocompleteTextField.NotifyClosed
+- uid: Material.Blazor.MBAutocompleteTextField.NotifySelected(System.String)
+  name: NotifySelected(String)
+  href: api/Material.Blazor.MBAutocompleteTextField.html#Material_Blazor_MBAutocompleteTextField_NotifySelected_System_String_
+  commentId: M:Material.Blazor.MBAutocompleteTextField.NotifySelected(System.String)
+  fullName: Material.Blazor.MBAutocompleteTextField.NotifySelected(System.String)
+  nameWithType: MBAutocompleteTextField.NotifySelected(String)
+- uid: Material.Blazor.MBAutocompleteTextField.NotifySelected*
+  name: NotifySelected
+  href: api/Material.Blazor.MBAutocompleteTextField.html#Material_Blazor_MBAutocompleteTextField_NotifySelected_
+  commentId: Overload:Material.Blazor.MBAutocompleteTextField.NotifySelected
   isSpec: "True"
-  fullName: Material.Blazor.MBAutocompleteTextField.NotifySelectedAsync
-  nameWithType: MBAutocompleteTextField.NotifySelectedAsync
+  fullName: Material.Blazor.MBAutocompleteTextField.NotifySelected
+  nameWithType: MBAutocompleteTextField.NotifySelected
 - uid: Material.Blazor.MBAutocompleteTextField.OnInitializedAsync
   name: OnInitializedAsync()
   href: api/Material.Blazor.MBAutocompleteTextField.html#Material_Blazor_MBAutocompleteTextField_OnInitializedAsync
@@ -3046,6 +3045,19 @@ references:
   isSpec: "True"
   fullName: Material.Blazor.MBButton.OnInitializedAsync
   nameWithType: MBButton.OnInitializedAsync
+- uid: Material.Blazor.MBButton.TouchTarget
+  name: TouchTarget
+  href: api/Material.Blazor.MBButton.html#Material_Blazor_MBButton_TouchTarget
+  commentId: P:Material.Blazor.MBButton.TouchTarget
+  fullName: Material.Blazor.MBButton.TouchTarget
+  nameWithType: MBButton.TouchTarget
+- uid: Material.Blazor.MBButton.TouchTarget*
+  name: TouchTarget
+  href: api/Material.Blazor.MBButton.html#Material_Blazor_MBButton_TouchTarget_
+  commentId: Overload:Material.Blazor.MBButton.TouchTarget
+  isSpec: "True"
+  fullName: Material.Blazor.MBButton.TouchTarget
+  nameWithType: MBButton.TouchTarget
 - uid: Material.Blazor.MBButton.TrailingIcon
   name: TrailingIcon
   href: api/Material.Blazor.MBButton.html#Material_Blazor_MBButton_TrailingIcon
@@ -3587,6 +3599,19 @@ references:
   isSpec: "True"
   fullName: Material.Blazor.MBCascadingDefaults.SelectInputStyle
   nameWithType: MBCascadingDefaults.SelectInputStyle
+- uid: Material.Blazor.MBCascadingDefaults.ShallowCopy
+  name: ShallowCopy()
+  href: api/Material.Blazor.MBCascadingDefaults.html#Material_Blazor_MBCascadingDefaults_ShallowCopy
+  commentId: M:Material.Blazor.MBCascadingDefaults.ShallowCopy
+  fullName: Material.Blazor.MBCascadingDefaults.ShallowCopy()
+  nameWithType: MBCascadingDefaults.ShallowCopy()
+- uid: Material.Blazor.MBCascadingDefaults.ShallowCopy*
+  name: ShallowCopy
+  href: api/Material.Blazor.MBCascadingDefaults.html#Material_Blazor_MBCascadingDefaults_ShallowCopy_
+  commentId: Overload:Material.Blazor.MBCascadingDefaults.ShallowCopy
+  isSpec: "True"
+  fullName: Material.Blazor.MBCascadingDefaults.ShallowCopy
+  nameWithType: MBCascadingDefaults.ShallowCopy
 - uid: Material.Blazor.MBCascadingDefaults.SwitchDensity
   name: SwitchDensity
   href: api/Material.Blazor.MBCascadingDefaults.html#Material_Blazor_MBCascadingDefaults_SwitchDensity
@@ -3665,6 +3690,19 @@ references:
   isSpec: "True"
   fullName: Material.Blazor.MBCascadingDefaults.ThemeDensity
   nameWithType: MBCascadingDefaults.ThemeDensity
+- uid: Material.Blazor.MBCascadingDefaults.TouchTarget
+  name: TouchTarget
+  href: api/Material.Blazor.MBCascadingDefaults.html#Material_Blazor_MBCascadingDefaults_TouchTarget
+  commentId: P:Material.Blazor.MBCascadingDefaults.TouchTarget
+  fullName: Material.Blazor.MBCascadingDefaults.TouchTarget
+  nameWithType: MBCascadingDefaults.TouchTarget
+- uid: Material.Blazor.MBCascadingDefaults.TouchTarget*
+  name: TouchTarget
+  href: api/Material.Blazor.MBCascadingDefaults.html#Material_Blazor_MBCascadingDefaults_TouchTarget_
+  commentId: Overload:Material.Blazor.MBCascadingDefaults.TouchTarget
+  isSpec: "True"
+  fullName: Material.Blazor.MBCascadingDefaults.TouchTarget
+  nameWithType: MBCascadingDefaults.TouchTarget
 - uid: Material.Blazor.MBCascadingDefaults.Version
   name: Version
   href: api/Material.Blazor.MBCascadingDefaults.html#Material_Blazor_MBCascadingDefaults_Version
@@ -3736,12 +3774,12 @@ references:
   isSpec: "True"
   fullName: Material.Blazor.MBCheckbox.Label
   nameWithType: MBCheckbox.Label
-- uid: Material.Blazor.MBCheckbox.OnDisabledSetCallback(System.Object,System.EventArgs)
-  name: OnDisabledSetCallback(Object, EventArgs)
-  href: api/Material.Blazor.MBCheckbox.html#Material_Blazor_MBCheckbox_OnDisabledSetCallback_System_Object_System_EventArgs_
-  commentId: M:Material.Blazor.MBCheckbox.OnDisabledSetCallback(System.Object,System.EventArgs)
-  fullName: Material.Blazor.MBCheckbox.OnDisabledSetCallback(System.Object, System.EventArgs)
-  nameWithType: MBCheckbox.OnDisabledSetCallback(Object, EventArgs)
+- uid: Material.Blazor.MBCheckbox.OnDisabledSetCallback
+  name: OnDisabledSetCallback()
+  href: api/Material.Blazor.MBCheckbox.html#Material_Blazor_MBCheckbox_OnDisabledSetCallback
+  commentId: M:Material.Blazor.MBCheckbox.OnDisabledSetCallback
+  fullName: Material.Blazor.MBCheckbox.OnDisabledSetCallback()
+  nameWithType: MBCheckbox.OnDisabledSetCallback()
 - uid: Material.Blazor.MBCheckbox.OnDisabledSetCallback*
   name: OnDisabledSetCallback
   href: api/Material.Blazor.MBCheckbox.html#Material_Blazor_MBCheckbox_OnDisabledSetCallback_
@@ -3762,12 +3800,12 @@ references:
   isSpec: "True"
   fullName: Material.Blazor.MBCheckbox.OnInitializedAsync
   nameWithType: MBCheckbox.OnInitializedAsync
-- uid: Material.Blazor.MBCheckbox.OnValueSetCallback(System.Object,System.EventArgs)
-  name: OnValueSetCallback(Object, EventArgs)
-  href: api/Material.Blazor.MBCheckbox.html#Material_Blazor_MBCheckbox_OnValueSetCallback_System_Object_System_EventArgs_
-  commentId: M:Material.Blazor.MBCheckbox.OnValueSetCallback(System.Object,System.EventArgs)
-  fullName: Material.Blazor.MBCheckbox.OnValueSetCallback(System.Object, System.EventArgs)
-  nameWithType: MBCheckbox.OnValueSetCallback(Object, EventArgs)
+- uid: Material.Blazor.MBCheckbox.OnValueSetCallback
+  name: OnValueSetCallback()
+  href: api/Material.Blazor.MBCheckbox.html#Material_Blazor_MBCheckbox_OnValueSetCallback
+  commentId: M:Material.Blazor.MBCheckbox.OnValueSetCallback
+  fullName: Material.Blazor.MBCheckbox.OnValueSetCallback()
+  nameWithType: MBCheckbox.OnValueSetCallback()
 - uid: Material.Blazor.MBCheckbox.OnValueSetCallback*
   name: OnValueSetCallback
   href: api/Material.Blazor.MBCheckbox.html#Material_Blazor_MBCheckbox_OnValueSetCallback_
@@ -3775,6 +3813,19 @@ references:
   isSpec: "True"
   fullName: Material.Blazor.MBCheckbox.OnValueSetCallback
   nameWithType: MBCheckbox.OnValueSetCallback
+- uid: Material.Blazor.MBCheckbox.TouchTarget
+  name: TouchTarget
+  href: api/Material.Blazor.MBCheckbox.html#Material_Blazor_MBCheckbox_TouchTarget
+  commentId: P:Material.Blazor.MBCheckbox.TouchTarget
+  fullName: Material.Blazor.MBCheckbox.TouchTarget
+  nameWithType: MBCheckbox.TouchTarget
+- uid: Material.Blazor.MBCheckbox.TouchTarget*
+  name: TouchTarget
+  href: api/Material.Blazor.MBCheckbox.html#Material_Blazor_MBCheckbox_TouchTarget_
+  commentId: Overload:Material.Blazor.MBCheckbox.TouchTarget
+  isSpec: "True"
+  fullName: Material.Blazor.MBCheckbox.TouchTarget
+  nameWithType: MBCheckbox.TouchTarget
 - uid: Material.Blazor.MBChipsSelectMulti`1
   name: MBChipsSelectMulti<TItem>
   href: api/Material.Blazor.MBChipsSelectMulti-1.html
@@ -3801,49 +3852,49 @@ references:
   fullName.vb: Material.Blazor.MBChipsSelectMulti(Of TItem).Dispose
   nameWithType: MBChipsSelectMulti<TItem>.Dispose
   nameWithType.vb: MBChipsSelectMulti(Of TItem).Dispose
-- uid: Material.Blazor.MBChipsSelectMulti`1.NotifyMultiSelectedAsync(System.Boolean[])
-  name: NotifyMultiSelectedAsync(Boolean[])
-  href: api/Material.Blazor.MBChipsSelectMulti-1.html#Material_Blazor_MBChipsSelectMulti_1_NotifyMultiSelectedAsync_System_Boolean___
-  commentId: M:Material.Blazor.MBChipsSelectMulti`1.NotifyMultiSelectedAsync(System.Boolean[])
-  name.vb: NotifyMultiSelectedAsync(Boolean())
-  fullName: Material.Blazor.MBChipsSelectMulti<TItem>.NotifyMultiSelectedAsync(System.Boolean[])
-  fullName.vb: Material.Blazor.MBChipsSelectMulti(Of TItem).NotifyMultiSelectedAsync(System.Boolean())
-  nameWithType: MBChipsSelectMulti<TItem>.NotifyMultiSelectedAsync(Boolean[])
-  nameWithType.vb: MBChipsSelectMulti(Of TItem).NotifyMultiSelectedAsync(Boolean())
-- uid: Material.Blazor.MBChipsSelectMulti`1.NotifyMultiSelectedAsync*
-  name: NotifyMultiSelectedAsync
-  href: api/Material.Blazor.MBChipsSelectMulti-1.html#Material_Blazor_MBChipsSelectMulti_1_NotifyMultiSelectedAsync_
-  commentId: Overload:Material.Blazor.MBChipsSelectMulti`1.NotifyMultiSelectedAsync
+- uid: Material.Blazor.MBChipsSelectMulti`1.NotifyMultiSelected(System.Boolean[])
+  name: NotifyMultiSelected(Boolean[])
+  href: api/Material.Blazor.MBChipsSelectMulti-1.html#Material_Blazor_MBChipsSelectMulti_1_NotifyMultiSelected_System_Boolean___
+  commentId: M:Material.Blazor.MBChipsSelectMulti`1.NotifyMultiSelected(System.Boolean[])
+  name.vb: NotifyMultiSelected(Boolean())
+  fullName: Material.Blazor.MBChipsSelectMulti<TItem>.NotifyMultiSelected(System.Boolean[])
+  fullName.vb: Material.Blazor.MBChipsSelectMulti(Of TItem).NotifyMultiSelected(System.Boolean())
+  nameWithType: MBChipsSelectMulti<TItem>.NotifyMultiSelected(Boolean[])
+  nameWithType.vb: MBChipsSelectMulti(Of TItem).NotifyMultiSelected(Boolean())
+- uid: Material.Blazor.MBChipsSelectMulti`1.NotifyMultiSelected*
+  name: NotifyMultiSelected
+  href: api/Material.Blazor.MBChipsSelectMulti-1.html#Material_Blazor_MBChipsSelectMulti_1_NotifyMultiSelected_
+  commentId: Overload:Material.Blazor.MBChipsSelectMulti`1.NotifyMultiSelected
   isSpec: "True"
-  fullName: Material.Blazor.MBChipsSelectMulti<TItem>.NotifyMultiSelectedAsync
-  fullName.vb: Material.Blazor.MBChipsSelectMulti(Of TItem).NotifyMultiSelectedAsync
-  nameWithType: MBChipsSelectMulti<TItem>.NotifyMultiSelectedAsync
-  nameWithType.vb: MBChipsSelectMulti(Of TItem).NotifyMultiSelectedAsync
-- uid: Material.Blazor.MBChipsSelectMulti`1.NotifySingleSelectedAsync(System.Int32)
-  name: NotifySingleSelectedAsync(Int32)
-  href: api/Material.Blazor.MBChipsSelectMulti-1.html#Material_Blazor_MBChipsSelectMulti_1_NotifySingleSelectedAsync_System_Int32_
-  commentId: M:Material.Blazor.MBChipsSelectMulti`1.NotifySingleSelectedAsync(System.Int32)
-  fullName: Material.Blazor.MBChipsSelectMulti<TItem>.NotifySingleSelectedAsync(System.Int32)
-  fullName.vb: Material.Blazor.MBChipsSelectMulti(Of TItem).NotifySingleSelectedAsync(System.Int32)
-  nameWithType: MBChipsSelectMulti<TItem>.NotifySingleSelectedAsync(Int32)
-  nameWithType.vb: MBChipsSelectMulti(Of TItem).NotifySingleSelectedAsync(Int32)
-- uid: Material.Blazor.MBChipsSelectMulti`1.NotifySingleSelectedAsync*
-  name: NotifySingleSelectedAsync
-  href: api/Material.Blazor.MBChipsSelectMulti-1.html#Material_Blazor_MBChipsSelectMulti_1_NotifySingleSelectedAsync_
-  commentId: Overload:Material.Blazor.MBChipsSelectMulti`1.NotifySingleSelectedAsync
+  fullName: Material.Blazor.MBChipsSelectMulti<TItem>.NotifyMultiSelected
+  fullName.vb: Material.Blazor.MBChipsSelectMulti(Of TItem).NotifyMultiSelected
+  nameWithType: MBChipsSelectMulti<TItem>.NotifyMultiSelected
+  nameWithType.vb: MBChipsSelectMulti(Of TItem).NotifyMultiSelected
+- uid: Material.Blazor.MBChipsSelectMulti`1.NotifySingleSelected(System.Int32)
+  name: NotifySingleSelected(Int32)
+  href: api/Material.Blazor.MBChipsSelectMulti-1.html#Material_Blazor_MBChipsSelectMulti_1_NotifySingleSelected_System_Int32_
+  commentId: M:Material.Blazor.MBChipsSelectMulti`1.NotifySingleSelected(System.Int32)
+  fullName: Material.Blazor.MBChipsSelectMulti<TItem>.NotifySingleSelected(System.Int32)
+  fullName.vb: Material.Blazor.MBChipsSelectMulti(Of TItem).NotifySingleSelected(System.Int32)
+  nameWithType: MBChipsSelectMulti<TItem>.NotifySingleSelected(Int32)
+  nameWithType.vb: MBChipsSelectMulti(Of TItem).NotifySingleSelected(Int32)
+- uid: Material.Blazor.MBChipsSelectMulti`1.NotifySingleSelected*
+  name: NotifySingleSelected
+  href: api/Material.Blazor.MBChipsSelectMulti-1.html#Material_Blazor_MBChipsSelectMulti_1_NotifySingleSelected_
+  commentId: Overload:Material.Blazor.MBChipsSelectMulti`1.NotifySingleSelected
   isSpec: "True"
-  fullName: Material.Blazor.MBChipsSelectMulti<TItem>.NotifySingleSelectedAsync
-  fullName.vb: Material.Blazor.MBChipsSelectMulti(Of TItem).NotifySingleSelectedAsync
-  nameWithType: MBChipsSelectMulti<TItem>.NotifySingleSelectedAsync
-  nameWithType.vb: MBChipsSelectMulti(Of TItem).NotifySingleSelectedAsync
-- uid: Material.Blazor.MBChipsSelectMulti`1.OnDisabledSetCallback(System.Object,System.EventArgs)
-  name: OnDisabledSetCallback(Object, EventArgs)
-  href: api/Material.Blazor.MBChipsSelectMulti-1.html#Material_Blazor_MBChipsSelectMulti_1_OnDisabledSetCallback_System_Object_System_EventArgs_
-  commentId: M:Material.Blazor.MBChipsSelectMulti`1.OnDisabledSetCallback(System.Object,System.EventArgs)
-  fullName: Material.Blazor.MBChipsSelectMulti<TItem>.OnDisabledSetCallback(System.Object, System.EventArgs)
-  fullName.vb: Material.Blazor.MBChipsSelectMulti(Of TItem).OnDisabledSetCallback(System.Object, System.EventArgs)
-  nameWithType: MBChipsSelectMulti<TItem>.OnDisabledSetCallback(Object, EventArgs)
-  nameWithType.vb: MBChipsSelectMulti(Of TItem).OnDisabledSetCallback(Object, EventArgs)
+  fullName: Material.Blazor.MBChipsSelectMulti<TItem>.NotifySingleSelected
+  fullName.vb: Material.Blazor.MBChipsSelectMulti(Of TItem).NotifySingleSelected
+  nameWithType: MBChipsSelectMulti<TItem>.NotifySingleSelected
+  nameWithType.vb: MBChipsSelectMulti(Of TItem).NotifySingleSelected
+- uid: Material.Blazor.MBChipsSelectMulti`1.OnDisabledSetCallback
+  name: OnDisabledSetCallback()
+  href: api/Material.Blazor.MBChipsSelectMulti-1.html#Material_Blazor_MBChipsSelectMulti_1_OnDisabledSetCallback
+  commentId: M:Material.Blazor.MBChipsSelectMulti`1.OnDisabledSetCallback
+  fullName: Material.Blazor.MBChipsSelectMulti<TItem>.OnDisabledSetCallback()
+  fullName.vb: Material.Blazor.MBChipsSelectMulti(Of TItem).OnDisabledSetCallback()
+  nameWithType: MBChipsSelectMulti<TItem>.OnDisabledSetCallback()
+  nameWithType.vb: MBChipsSelectMulti(Of TItem).OnDisabledSetCallback()
 - uid: Material.Blazor.MBChipsSelectMulti`1.OnDisabledSetCallback*
   name: OnDisabledSetCallback
   href: api/Material.Blazor.MBChipsSelectMulti-1.html#Material_Blazor_MBChipsSelectMulti_1_OnDisabledSetCallback_
@@ -3870,14 +3921,14 @@ references:
   fullName.vb: Material.Blazor.MBChipsSelectMulti(Of TItem).OnInitializedAsync
   nameWithType: MBChipsSelectMulti<TItem>.OnInitializedAsync
   nameWithType.vb: MBChipsSelectMulti(Of TItem).OnInitializedAsync
-- uid: Material.Blazor.MBChipsSelectMulti`1.OnValueSetCallback(System.Object,System.EventArgs)
-  name: OnValueSetCallback(Object, EventArgs)
-  href: api/Material.Blazor.MBChipsSelectMulti-1.html#Material_Blazor_MBChipsSelectMulti_1_OnValueSetCallback_System_Object_System_EventArgs_
-  commentId: M:Material.Blazor.MBChipsSelectMulti`1.OnValueSetCallback(System.Object,System.EventArgs)
-  fullName: Material.Blazor.MBChipsSelectMulti<TItem>.OnValueSetCallback(System.Object, System.EventArgs)
-  fullName.vb: Material.Blazor.MBChipsSelectMulti(Of TItem).OnValueSetCallback(System.Object, System.EventArgs)
-  nameWithType: MBChipsSelectMulti<TItem>.OnValueSetCallback(Object, EventArgs)
-  nameWithType.vb: MBChipsSelectMulti(Of TItem).OnValueSetCallback(Object, EventArgs)
+- uid: Material.Blazor.MBChipsSelectMulti`1.OnValueSetCallback
+  name: OnValueSetCallback()
+  href: api/Material.Blazor.MBChipsSelectMulti-1.html#Material_Blazor_MBChipsSelectMulti_1_OnValueSetCallback
+  commentId: M:Material.Blazor.MBChipsSelectMulti`1.OnValueSetCallback
+  fullName: Material.Blazor.MBChipsSelectMulti<TItem>.OnValueSetCallback()
+  fullName.vb: Material.Blazor.MBChipsSelectMulti(Of TItem).OnValueSetCallback()
+  nameWithType: MBChipsSelectMulti<TItem>.OnValueSetCallback()
+  nameWithType.vb: MBChipsSelectMulti(Of TItem).OnValueSetCallback()
 - uid: Material.Blazor.MBChipsSelectMulti`1.OnValueSetCallback*
   name: OnValueSetCallback
   href: api/Material.Blazor.MBChipsSelectMulti-1.html#Material_Blazor_MBChipsSelectMulti_1_OnValueSetCallback_
@@ -3887,6 +3938,23 @@ references:
   fullName.vb: Material.Blazor.MBChipsSelectMulti(Of TItem).OnValueSetCallback
   nameWithType: MBChipsSelectMulti<TItem>.OnValueSetCallback
   nameWithType.vb: MBChipsSelectMulti(Of TItem).OnValueSetCallback
+- uid: Material.Blazor.MBChipsSelectMulti`1.TouchTarget
+  name: TouchTarget
+  href: api/Material.Blazor.MBChipsSelectMulti-1.html#Material_Blazor_MBChipsSelectMulti_1_TouchTarget
+  commentId: P:Material.Blazor.MBChipsSelectMulti`1.TouchTarget
+  fullName: Material.Blazor.MBChipsSelectMulti<TItem>.TouchTarget
+  fullName.vb: Material.Blazor.MBChipsSelectMulti(Of TItem).TouchTarget
+  nameWithType: MBChipsSelectMulti<TItem>.TouchTarget
+  nameWithType.vb: MBChipsSelectMulti(Of TItem).TouchTarget
+- uid: Material.Blazor.MBChipsSelectMulti`1.TouchTarget*
+  name: TouchTarget
+  href: api/Material.Blazor.MBChipsSelectMulti-1.html#Material_Blazor_MBChipsSelectMulti_1_TouchTarget_
+  commentId: Overload:Material.Blazor.MBChipsSelectMulti`1.TouchTarget
+  isSpec: "True"
+  fullName: Material.Blazor.MBChipsSelectMulti<TItem>.TouchTarget
+  fullName.vb: Material.Blazor.MBChipsSelectMulti(Of TItem).TouchTarget
+  nameWithType: MBChipsSelectMulti<TItem>.TouchTarget
+  nameWithType.vb: MBChipsSelectMulti(Of TItem).TouchTarget
 - uid: Material.Blazor.MBChipsSelectSingle`1
   name: MBChipsSelectSingle<TItem>
   href: api/Material.Blazor.MBChipsSelectSingle-1.html
@@ -3930,14 +3998,14 @@ references:
   fullName.vb: Material.Blazor.MBChipsSelectSingle(Of TItem).OnInitializedAsync
   nameWithType: MBChipsSelectSingle<TItem>.OnInitializedAsync
   nameWithType.vb: MBChipsSelectSingle(Of TItem).OnInitializedAsync
-- uid: Material.Blazor.MBChipsSelectSingle`1.OnValueSetCallback(System.Object,System.EventArgs)
-  name: OnValueSetCallback(Object, EventArgs)
-  href: api/Material.Blazor.MBChipsSelectSingle-1.html#Material_Blazor_MBChipsSelectSingle_1_OnValueSetCallback_System_Object_System_EventArgs_
-  commentId: M:Material.Blazor.MBChipsSelectSingle`1.OnValueSetCallback(System.Object,System.EventArgs)
-  fullName: Material.Blazor.MBChipsSelectSingle<TItem>.OnValueSetCallback(System.Object, System.EventArgs)
-  fullName.vb: Material.Blazor.MBChipsSelectSingle(Of TItem).OnValueSetCallback(System.Object, System.EventArgs)
-  nameWithType: MBChipsSelectSingle<TItem>.OnValueSetCallback(Object, EventArgs)
-  nameWithType.vb: MBChipsSelectSingle(Of TItem).OnValueSetCallback(Object, EventArgs)
+- uid: Material.Blazor.MBChipsSelectSingle`1.OnValueSetCallback
+  name: OnValueSetCallback()
+  href: api/Material.Blazor.MBChipsSelectSingle-1.html#Material_Blazor_MBChipsSelectSingle_1_OnValueSetCallback
+  commentId: M:Material.Blazor.MBChipsSelectSingle`1.OnValueSetCallback
+  fullName: Material.Blazor.MBChipsSelectSingle<TItem>.OnValueSetCallback()
+  fullName.vb: Material.Blazor.MBChipsSelectSingle(Of TItem).OnValueSetCallback()
+  nameWithType: MBChipsSelectSingle<TItem>.OnValueSetCallback()
+  nameWithType.vb: MBChipsSelectSingle(Of TItem).OnValueSetCallback()
 - uid: Material.Blazor.MBChipsSelectSingle`1.OnValueSetCallback*
   name: OnValueSetCallback
   href: api/Material.Blazor.MBChipsSelectSingle-1.html#Material_Blazor_MBChipsSelectSingle_1_OnValueSetCallback_
@@ -4005,12 +4073,12 @@ references:
   isSpec: "True"
   fullName: Material.Blazor.MBCircularProgress.OnInitializedAsync
   nameWithType: MBCircularProgress.OnInitializedAsync
-- uid: Material.Blazor.MBCircularProgress.OnValueSetCallback(System.Object,System.EventArgs)
-  name: OnValueSetCallback(Object, EventArgs)
-  href: api/Material.Blazor.MBCircularProgress.html#Material_Blazor_MBCircularProgress_OnValueSetCallback_System_Object_System_EventArgs_
-  commentId: M:Material.Blazor.MBCircularProgress.OnValueSetCallback(System.Object,System.EventArgs)
-  fullName: Material.Blazor.MBCircularProgress.OnValueSetCallback(System.Object, System.EventArgs)
-  nameWithType: MBCircularProgress.OnValueSetCallback(Object, EventArgs)
+- uid: Material.Blazor.MBCircularProgress.OnValueSetCallback
+  name: OnValueSetCallback()
+  href: api/Material.Blazor.MBCircularProgress.html#Material_Blazor_MBCircularProgress_OnValueSetCallback
+  commentId: M:Material.Blazor.MBCircularProgress.OnValueSetCallback
+  fullName: Material.Blazor.MBCircularProgress.OnValueSetCallback()
+  nameWithType: MBCircularProgress.OnValueSetCallback()
 - uid: Material.Blazor.MBCircularProgress.OnValueSetCallback*
   name: OnValueSetCallback
   href: api/Material.Blazor.MBCircularProgress.html#Material_Blazor_MBCircularProgress_OnValueSetCallback_
@@ -4516,12 +4584,12 @@ references:
   isSpec: "True"
   fullName: Material.Blazor.MBDatePicker.MinDate
   nameWithType: MBDatePicker.MinDate
-- uid: Material.Blazor.MBDatePicker.OnDisabledSetCallback(System.Object,System.EventArgs)
-  name: OnDisabledSetCallback(Object, EventArgs)
-  href: api/Material.Blazor.MBDatePicker.html#Material_Blazor_MBDatePicker_OnDisabledSetCallback_System_Object_System_EventArgs_
-  commentId: M:Material.Blazor.MBDatePicker.OnDisabledSetCallback(System.Object,System.EventArgs)
-  fullName: Material.Blazor.MBDatePicker.OnDisabledSetCallback(System.Object, System.EventArgs)
-  nameWithType: MBDatePicker.OnDisabledSetCallback(Object, EventArgs)
+- uid: Material.Blazor.MBDatePicker.OnDisabledSetCallback
+  name: OnDisabledSetCallback()
+  href: api/Material.Blazor.MBDatePicker.html#Material_Blazor_MBDatePicker_OnDisabledSetCallback
+  commentId: M:Material.Blazor.MBDatePicker.OnDisabledSetCallback
+  fullName: Material.Blazor.MBDatePicker.OnDisabledSetCallback()
+  nameWithType: MBDatePicker.OnDisabledSetCallback()
 - uid: Material.Blazor.MBDatePicker.OnDisabledSetCallback*
   name: OnDisabledSetCallback
   href: api/Material.Blazor.MBDatePicker.html#Material_Blazor_MBDatePicker_OnDisabledSetCallback_
@@ -4542,12 +4610,12 @@ references:
   isSpec: "True"
   fullName: Material.Blazor.MBDatePicker.OnInitializedAsync
   nameWithType: MBDatePicker.OnInitializedAsync
-- uid: Material.Blazor.MBDatePicker.OnValueSetCallback(System.Object,System.EventArgs)
-  name: OnValueSetCallback(Object, EventArgs)
-  href: api/Material.Blazor.MBDatePicker.html#Material_Blazor_MBDatePicker_OnValueSetCallback_System_Object_System_EventArgs_
-  commentId: M:Material.Blazor.MBDatePicker.OnValueSetCallback(System.Object,System.EventArgs)
-  fullName: Material.Blazor.MBDatePicker.OnValueSetCallback(System.Object, System.EventArgs)
-  nameWithType: MBDatePicker.OnValueSetCallback(Object, EventArgs)
+- uid: Material.Blazor.MBDatePicker.OnValueSetCallback
+  name: OnValueSetCallback()
+  href: api/Material.Blazor.MBDatePicker.html#Material_Blazor_MBDatePicker_OnValueSetCallback
+  commentId: M:Material.Blazor.MBDatePicker.OnValueSetCallback
+  fullName: Material.Blazor.MBDatePicker.OnValueSetCallback()
+  nameWithType: MBDatePicker.OnValueSetCallback()
 - uid: Material.Blazor.MBDatePicker.OnValueSetCallback*
   name: OnValueSetCallback
   href: api/Material.Blazor.MBDatePicker.html#Material_Blazor_MBDatePicker_OnValueSetCallback_
@@ -4965,19 +5033,19 @@ references:
   isSpec: "True"
   fullName: Material.Blazor.MBDialog.NotifyClosed
   nameWithType: MBDialog.NotifyClosed
-- uid: Material.Blazor.MBDialog.NotifyOpenedAsync
-  name: NotifyOpenedAsync()
-  href: api/Material.Blazor.MBDialog.html#Material_Blazor_MBDialog_NotifyOpenedAsync
-  commentId: M:Material.Blazor.MBDialog.NotifyOpenedAsync
-  fullName: Material.Blazor.MBDialog.NotifyOpenedAsync()
-  nameWithType: MBDialog.NotifyOpenedAsync()
-- uid: Material.Blazor.MBDialog.NotifyOpenedAsync*
-  name: NotifyOpenedAsync
-  href: api/Material.Blazor.MBDialog.html#Material_Blazor_MBDialog_NotifyOpenedAsync_
-  commentId: Overload:Material.Blazor.MBDialog.NotifyOpenedAsync
+- uid: Material.Blazor.MBDialog.NotifyOpened
+  name: NotifyOpened()
+  href: api/Material.Blazor.MBDialog.html#Material_Blazor_MBDialog_NotifyOpened
+  commentId: M:Material.Blazor.MBDialog.NotifyOpened
+  fullName: Material.Blazor.MBDialog.NotifyOpened()
+  nameWithType: MBDialog.NotifyOpened()
+- uid: Material.Blazor.MBDialog.NotifyOpened*
+  name: NotifyOpened
+  href: api/Material.Blazor.MBDialog.html#Material_Blazor_MBDialog_NotifyOpened_
+  commentId: Overload:Material.Blazor.MBDialog.NotifyOpened
   isSpec: "True"
-  fullName: Material.Blazor.MBDialog.NotifyOpenedAsync
-  nameWithType: MBDialog.NotifyOpenedAsync
+  fullName: Material.Blazor.MBDialog.NotifyOpened
+  nameWithType: MBDialog.NotifyOpened
 - uid: Material.Blazor.MBDialog.OnAfterRenderAsync(System.Boolean)
   name: OnAfterRenderAsync(Boolean)
   href: api/Material.Blazor.MBDialog.html#Material_Blazor_MBDialog_OnAfterRenderAsync_System_Boolean_
@@ -5288,6 +5356,19 @@ references:
   isSpec: "True"
   fullName: Material.Blazor.MBFloatingActionButton.OnInitializedAsync
   nameWithType: MBFloatingActionButton.OnInitializedAsync
+- uid: Material.Blazor.MBFloatingActionButton.TouchTarget
+  name: TouchTarget
+  href: api/Material.Blazor.MBFloatingActionButton.html#Material_Blazor_MBFloatingActionButton_TouchTarget
+  commentId: P:Material.Blazor.MBFloatingActionButton.TouchTarget
+  fullName: Material.Blazor.MBFloatingActionButton.TouchTarget
+  nameWithType: MBFloatingActionButton.TouchTarget
+- uid: Material.Blazor.MBFloatingActionButton.TouchTarget*
+  name: TouchTarget
+  href: api/Material.Blazor.MBFloatingActionButton.html#Material_Blazor_MBFloatingActionButton_TouchTarget_
+  commentId: Overload:Material.Blazor.MBFloatingActionButton.TouchTarget
+  isSpec: "True"
+  fullName: Material.Blazor.MBFloatingActionButton.TouchTarget
+  nameWithType: MBFloatingActionButton.TouchTarget
 - uid: Material.Blazor.MBFloatingActionButton.Type
   name: Type
   href: api/Material.Blazor.MBFloatingActionButton.html#Material_Blazor_MBFloatingActionButton_Type
@@ -6167,12 +6248,12 @@ references:
   isSpec: "True"
   fullName: Material.Blazor.MBIconButtonToggle.IconOn
   nameWithType: MBIconButtonToggle.IconOn
-- uid: Material.Blazor.MBIconButtonToggle.OnDisabledSetCallback(System.Object,System.EventArgs)
-  name: OnDisabledSetCallback(Object, EventArgs)
-  href: api/Material.Blazor.MBIconButtonToggle.html#Material_Blazor_MBIconButtonToggle_OnDisabledSetCallback_System_Object_System_EventArgs_
-  commentId: M:Material.Blazor.MBIconButtonToggle.OnDisabledSetCallback(System.Object,System.EventArgs)
-  fullName: Material.Blazor.MBIconButtonToggle.OnDisabledSetCallback(System.Object, System.EventArgs)
-  nameWithType: MBIconButtonToggle.OnDisabledSetCallback(Object, EventArgs)
+- uid: Material.Blazor.MBIconButtonToggle.OnDisabledSetCallback
+  name: OnDisabledSetCallback()
+  href: api/Material.Blazor.MBIconButtonToggle.html#Material_Blazor_MBIconButtonToggle_OnDisabledSetCallback
+  commentId: M:Material.Blazor.MBIconButtonToggle.OnDisabledSetCallback
+  fullName: Material.Blazor.MBIconButtonToggle.OnDisabledSetCallback()
+  nameWithType: MBIconButtonToggle.OnDisabledSetCallback()
 - uid: Material.Blazor.MBIconButtonToggle.OnDisabledSetCallback*
   name: OnDisabledSetCallback
   href: api/Material.Blazor.MBIconButtonToggle.html#Material_Blazor_MBIconButtonToggle_OnDisabledSetCallback_
@@ -6193,12 +6274,12 @@ references:
   isSpec: "True"
   fullName: Material.Blazor.MBIconButtonToggle.OnInitializedAsync
   nameWithType: MBIconButtonToggle.OnInitializedAsync
-- uid: Material.Blazor.MBIconButtonToggle.OnValueSetCallback(System.Object,System.EventArgs)
-  name: OnValueSetCallback(Object, EventArgs)
-  href: api/Material.Blazor.MBIconButtonToggle.html#Material_Blazor_MBIconButtonToggle_OnValueSetCallback_System_Object_System_EventArgs_
-  commentId: M:Material.Blazor.MBIconButtonToggle.OnValueSetCallback(System.Object,System.EventArgs)
-  fullName: Material.Blazor.MBIconButtonToggle.OnValueSetCallback(System.Object, System.EventArgs)
-  nameWithType: MBIconButtonToggle.OnValueSetCallback(Object, EventArgs)
+- uid: Material.Blazor.MBIconButtonToggle.OnValueSetCallback
+  name: OnValueSetCallback()
+  href: api/Material.Blazor.MBIconButtonToggle.html#Material_Blazor_MBIconButtonToggle_OnValueSetCallback
+  commentId: M:Material.Blazor.MBIconButtonToggle.OnValueSetCallback
+  fullName: Material.Blazor.MBIconButtonToggle.OnValueSetCallback()
+  nameWithType: MBIconButtonToggle.OnValueSetCallback()
 - uid: Material.Blazor.MBIconButtonToggle.OnValueSetCallback*
   name: OnValueSetCallback
   href: api/Material.Blazor.MBIconButtonToggle.html#Material_Blazor_MBIconButtonToggle_OnValueSetCallback_
@@ -6545,12 +6626,12 @@ references:
   isSpec: "True"
   fullName: Material.Blazor.MBLinearProgress.OnInitializedAsync
   nameWithType: MBLinearProgress.OnInitializedAsync
-- uid: Material.Blazor.MBLinearProgress.OnValueSetCallback(System.Object,System.EventArgs)
-  name: OnValueSetCallback(Object, EventArgs)
-  href: api/Material.Blazor.MBLinearProgress.html#Material_Blazor_MBLinearProgress_OnValueSetCallback_System_Object_System_EventArgs_
-  commentId: M:Material.Blazor.MBLinearProgress.OnValueSetCallback(System.Object,System.EventArgs)
-  fullName: Material.Blazor.MBLinearProgress.OnValueSetCallback(System.Object, System.EventArgs)
-  nameWithType: MBLinearProgress.OnValueSetCallback(Object, EventArgs)
+- uid: Material.Blazor.MBLinearProgress.OnValueSetCallback
+  name: OnValueSetCallback()
+  href: api/Material.Blazor.MBLinearProgress.html#Material_Blazor_MBLinearProgress_OnValueSetCallback
+  commentId: M:Material.Blazor.MBLinearProgress.OnValueSetCallback
+  fullName: Material.Blazor.MBLinearProgress.OnValueSetCallback()
+  nameWithType: MBLinearProgress.OnValueSetCallback()
 - uid: Material.Blazor.MBLinearProgress.OnValueSetCallback*
   name: OnValueSetCallback
   href: api/Material.Blazor.MBLinearProgress.html#Material_Blazor_MBLinearProgress_OnValueSetCallback_
@@ -6818,14 +6899,14 @@ references:
   fullName.vb: Material.Blazor.MBList(Of TItem).OnClick
   nameWithType: MBList<TItem>.OnClick
   nameWithType.vb: MBList(Of TItem).OnClick
-- uid: Material.Blazor.MBList`1.OnDisabledSetCallback(System.Object,System.EventArgs)
-  name: OnDisabledSetCallback(Object, EventArgs)
-  href: api/Material.Blazor.MBList-1.html#Material_Blazor_MBList_1_OnDisabledSetCallback_System_Object_System_EventArgs_
-  commentId: M:Material.Blazor.MBList`1.OnDisabledSetCallback(System.Object,System.EventArgs)
-  fullName: Material.Blazor.MBList<TItem>.OnDisabledSetCallback(System.Object, System.EventArgs)
-  fullName.vb: Material.Blazor.MBList(Of TItem).OnDisabledSetCallback(System.Object, System.EventArgs)
-  nameWithType: MBList<TItem>.OnDisabledSetCallback(Object, EventArgs)
-  nameWithType.vb: MBList(Of TItem).OnDisabledSetCallback(Object, EventArgs)
+- uid: Material.Blazor.MBList`1.OnDisabledSetCallback
+  name: OnDisabledSetCallback()
+  href: api/Material.Blazor.MBList-1.html#Material_Blazor_MBList_1_OnDisabledSetCallback
+  commentId: M:Material.Blazor.MBList`1.OnDisabledSetCallback
+  fullName: Material.Blazor.MBList<TItem>.OnDisabledSetCallback()
+  fullName.vb: Material.Blazor.MBList(Of TItem).OnDisabledSetCallback()
+  nameWithType: MBList<TItem>.OnDisabledSetCallback()
+  nameWithType.vb: MBList(Of TItem).OnDisabledSetCallback()
 - uid: Material.Blazor.MBList`1.OnDisabledSetCallback*
   name: OnDisabledSetCallback
   href: api/Material.Blazor.MBList-1.html#Material_Blazor_MBList_1_OnDisabledSetCallback_
@@ -7169,19 +7250,19 @@ references:
   isSpec: "True"
   fullName: Material.Blazor.MBMenu.MenuSurfacePositioning
   nameWithType: MBMenu.MenuSurfacePositioning
-- uid: Material.Blazor.MBMenu.NotifyClosedAsync
-  name: NotifyClosedAsync()
-  href: api/Material.Blazor.MBMenu.html#Material_Blazor_MBMenu_NotifyClosedAsync
-  commentId: M:Material.Blazor.MBMenu.NotifyClosedAsync
-  fullName: Material.Blazor.MBMenu.NotifyClosedAsync()
-  nameWithType: MBMenu.NotifyClosedAsync()
-- uid: Material.Blazor.MBMenu.NotifyClosedAsync*
-  name: NotifyClosedAsync
-  href: api/Material.Blazor.MBMenu.html#Material_Blazor_MBMenu_NotifyClosedAsync_
-  commentId: Overload:Material.Blazor.MBMenu.NotifyClosedAsync
+- uid: Material.Blazor.MBMenu.NotifyClosed
+  name: NotifyClosed()
+  href: api/Material.Blazor.MBMenu.html#Material_Blazor_MBMenu_NotifyClosed
+  commentId: M:Material.Blazor.MBMenu.NotifyClosed
+  fullName: Material.Blazor.MBMenu.NotifyClosed()
+  nameWithType: MBMenu.NotifyClosed()
+- uid: Material.Blazor.MBMenu.NotifyClosed*
+  name: NotifyClosed
+  href: api/Material.Blazor.MBMenu.html#Material_Blazor_MBMenu_NotifyClosed_
+  commentId: Overload:Material.Blazor.MBMenu.NotifyClosed
   isSpec: "True"
-  fullName: Material.Blazor.MBMenu.NotifyClosedAsync
-  nameWithType: MBMenu.NotifyClosedAsync
+  fullName: Material.Blazor.MBMenu.NotifyClosed
+  nameWithType: MBMenu.NotifyClosed
 - uid: Material.Blazor.MBMenu.OnInitializedAsync
   name: OnInitializedAsync()
   href: api/Material.Blazor.MBMenu.html#Material_Blazor_MBMenu_OnInitializedAsync
@@ -7227,6 +7308,90 @@ references:
   isSpec: "True"
   fullName: Material.Blazor.MBMenuSelectionGroup.ChildContent
   nameWithType: MBMenuSelectionGroup.ChildContent
+- uid: Material.Blazor.MBMenuSurface
+  name: MBMenuSurface
+  href: api/Material.Blazor.MBMenuSurface.html
+  commentId: T:Material.Blazor.MBMenuSurface
+  fullName: Material.Blazor.MBMenuSurface
+  nameWithType: MBMenuSurface
+- uid: Material.Blazor.MBMenuSurface.ChildContent
+  name: ChildContent
+  href: api/Material.Blazor.MBMenuSurface.html#Material_Blazor_MBMenuSurface_ChildContent
+  commentId: P:Material.Blazor.MBMenuSurface.ChildContent
+  fullName: Material.Blazor.MBMenuSurface.ChildContent
+  nameWithType: MBMenuSurface.ChildContent
+- uid: Material.Blazor.MBMenuSurface.ChildContent*
+  name: ChildContent
+  href: api/Material.Blazor.MBMenuSurface.html#Material_Blazor_MBMenuSurface_ChildContent_
+  commentId: Overload:Material.Blazor.MBMenuSurface.ChildContent
+  isSpec: "True"
+  fullName: Material.Blazor.MBMenuSurface.ChildContent
+  nameWithType: MBMenuSurface.ChildContent
+- uid: Material.Blazor.MBMenuSurface.Dispose(System.Boolean)
+  name: Dispose(Boolean)
+  href: api/Material.Blazor.MBMenuSurface.html#Material_Blazor_MBMenuSurface_Dispose_System_Boolean_
+  commentId: M:Material.Blazor.MBMenuSurface.Dispose(System.Boolean)
+  fullName: Material.Blazor.MBMenuSurface.Dispose(System.Boolean)
+  nameWithType: MBMenuSurface.Dispose(Boolean)
+- uid: Material.Blazor.MBMenuSurface.Dispose*
+  name: Dispose
+  href: api/Material.Blazor.MBMenuSurface.html#Material_Blazor_MBMenuSurface_Dispose_
+  commentId: Overload:Material.Blazor.MBMenuSurface.Dispose
+  isSpec: "True"
+  fullName: Material.Blazor.MBMenuSurface.Dispose
+  nameWithType: MBMenuSurface.Dispose
+- uid: Material.Blazor.MBMenuSurface.MenuSurfacePositioning
+  name: MenuSurfacePositioning
+  href: api/Material.Blazor.MBMenuSurface.html#Material_Blazor_MBMenuSurface_MenuSurfacePositioning
+  commentId: P:Material.Blazor.MBMenuSurface.MenuSurfacePositioning
+  fullName: Material.Blazor.MBMenuSurface.MenuSurfacePositioning
+  nameWithType: MBMenuSurface.MenuSurfacePositioning
+- uid: Material.Blazor.MBMenuSurface.MenuSurfacePositioning*
+  name: MenuSurfacePositioning
+  href: api/Material.Blazor.MBMenuSurface.html#Material_Blazor_MBMenuSurface_MenuSurfacePositioning_
+  commentId: Overload:Material.Blazor.MBMenuSurface.MenuSurfacePositioning
+  isSpec: "True"
+  fullName: Material.Blazor.MBMenuSurface.MenuSurfacePositioning
+  nameWithType: MBMenuSurface.MenuSurfacePositioning
+- uid: Material.Blazor.MBMenuSurface.NotifyClosed
+  name: NotifyClosed()
+  href: api/Material.Blazor.MBMenuSurface.html#Material_Blazor_MBMenuSurface_NotifyClosed
+  commentId: M:Material.Blazor.MBMenuSurface.NotifyClosed
+  fullName: Material.Blazor.MBMenuSurface.NotifyClosed()
+  nameWithType: MBMenuSurface.NotifyClosed()
+- uid: Material.Blazor.MBMenuSurface.NotifyClosed*
+  name: NotifyClosed
+  href: api/Material.Blazor.MBMenuSurface.html#Material_Blazor_MBMenuSurface_NotifyClosed_
+  commentId: Overload:Material.Blazor.MBMenuSurface.NotifyClosed
+  isSpec: "True"
+  fullName: Material.Blazor.MBMenuSurface.NotifyClosed
+  nameWithType: MBMenuSurface.NotifyClosed
+- uid: Material.Blazor.MBMenuSurface.OnInitializedAsync
+  name: OnInitializedAsync()
+  href: api/Material.Blazor.MBMenuSurface.html#Material_Blazor_MBMenuSurface_OnInitializedAsync
+  commentId: M:Material.Blazor.MBMenuSurface.OnInitializedAsync
+  fullName: Material.Blazor.MBMenuSurface.OnInitializedAsync()
+  nameWithType: MBMenuSurface.OnInitializedAsync()
+- uid: Material.Blazor.MBMenuSurface.OnInitializedAsync*
+  name: OnInitializedAsync
+  href: api/Material.Blazor.MBMenuSurface.html#Material_Blazor_MBMenuSurface_OnInitializedAsync_
+  commentId: Overload:Material.Blazor.MBMenuSurface.OnInitializedAsync
+  isSpec: "True"
+  fullName: Material.Blazor.MBMenuSurface.OnInitializedAsync
+  nameWithType: MBMenuSurface.OnInitializedAsync
+- uid: Material.Blazor.MBMenuSurface.ToggleAsync
+  name: ToggleAsync()
+  href: api/Material.Blazor.MBMenuSurface.html#Material_Blazor_MBMenuSurface_ToggleAsync
+  commentId: M:Material.Blazor.MBMenuSurface.ToggleAsync
+  fullName: Material.Blazor.MBMenuSurface.ToggleAsync()
+  nameWithType: MBMenuSurface.ToggleAsync()
+- uid: Material.Blazor.MBMenuSurface.ToggleAsync*
+  name: ToggleAsync
+  href: api/Material.Blazor.MBMenuSurface.html#Material_Blazor_MBMenuSurface_ToggleAsync_
+  commentId: Overload:Material.Blazor.MBMenuSurface.ToggleAsync
+  isSpec: "True"
+  fullName: Material.Blazor.MBMenuSurface.ToggleAsync
+  nameWithType: MBMenuSurface.ToggleAsync
 - uid: Material.Blazor.MBMenuSurfacePositioning
   name: MBMenuSurfacePositioning
   href: api/Material.Blazor.MBMenuSurfacePositioning.html
@@ -8445,14 +8610,14 @@ references:
   fullName.vb: Material.Blazor.MBRadioButton(Of TItem).Label
   nameWithType: MBRadioButton<TItem>.Label
   nameWithType.vb: MBRadioButton(Of TItem).Label
-- uid: Material.Blazor.MBRadioButton`1.OnDisabledSetCallback(System.Object,System.EventArgs)
-  name: OnDisabledSetCallback(Object, EventArgs)
-  href: api/Material.Blazor.MBRadioButton-1.html#Material_Blazor_MBRadioButton_1_OnDisabledSetCallback_System_Object_System_EventArgs_
-  commentId: M:Material.Blazor.MBRadioButton`1.OnDisabledSetCallback(System.Object,System.EventArgs)
-  fullName: Material.Blazor.MBRadioButton<TItem>.OnDisabledSetCallback(System.Object, System.EventArgs)
-  fullName.vb: Material.Blazor.MBRadioButton(Of TItem).OnDisabledSetCallback(System.Object, System.EventArgs)
-  nameWithType: MBRadioButton<TItem>.OnDisabledSetCallback(Object, EventArgs)
-  nameWithType.vb: MBRadioButton(Of TItem).OnDisabledSetCallback(Object, EventArgs)
+- uid: Material.Blazor.MBRadioButton`1.OnDisabledSetCallback
+  name: OnDisabledSetCallback()
+  href: api/Material.Blazor.MBRadioButton-1.html#Material_Blazor_MBRadioButton_1_OnDisabledSetCallback
+  commentId: M:Material.Blazor.MBRadioButton`1.OnDisabledSetCallback
+  fullName: Material.Blazor.MBRadioButton<TItem>.OnDisabledSetCallback()
+  fullName.vb: Material.Blazor.MBRadioButton(Of TItem).OnDisabledSetCallback()
+  nameWithType: MBRadioButton<TItem>.OnDisabledSetCallback()
+  nameWithType.vb: MBRadioButton(Of TItem).OnDisabledSetCallback()
 - uid: Material.Blazor.MBRadioButton`1.OnDisabledSetCallback*
   name: OnDisabledSetCallback
   href: api/Material.Blazor.MBRadioButton-1.html#Material_Blazor_MBRadioButton_1_OnDisabledSetCallback_
@@ -8496,14 +8661,14 @@ references:
   fullName.vb: Material.Blazor.MBRadioButton(Of TItem).OnParametersSetAsync
   nameWithType: MBRadioButton<TItem>.OnParametersSetAsync
   nameWithType.vb: MBRadioButton(Of TItem).OnParametersSetAsync
-- uid: Material.Blazor.MBRadioButton`1.OnValueSetCallback(System.Object,System.EventArgs)
-  name: OnValueSetCallback(Object, EventArgs)
-  href: api/Material.Blazor.MBRadioButton-1.html#Material_Blazor_MBRadioButton_1_OnValueSetCallback_System_Object_System_EventArgs_
-  commentId: M:Material.Blazor.MBRadioButton`1.OnValueSetCallback(System.Object,System.EventArgs)
-  fullName: Material.Blazor.MBRadioButton<TItem>.OnValueSetCallback(System.Object, System.EventArgs)
-  fullName.vb: Material.Blazor.MBRadioButton(Of TItem).OnValueSetCallback(System.Object, System.EventArgs)
-  nameWithType: MBRadioButton<TItem>.OnValueSetCallback(Object, EventArgs)
-  nameWithType.vb: MBRadioButton(Of TItem).OnValueSetCallback(Object, EventArgs)
+- uid: Material.Blazor.MBRadioButton`1.OnValueSetCallback
+  name: OnValueSetCallback()
+  href: api/Material.Blazor.MBRadioButton-1.html#Material_Blazor_MBRadioButton_1_OnValueSetCallback
+  commentId: M:Material.Blazor.MBRadioButton`1.OnValueSetCallback
+  fullName: Material.Blazor.MBRadioButton<TItem>.OnValueSetCallback()
+  fullName.vb: Material.Blazor.MBRadioButton(Of TItem).OnValueSetCallback()
+  nameWithType: MBRadioButton<TItem>.OnValueSetCallback()
+  nameWithType.vb: MBRadioButton(Of TItem).OnValueSetCallback()
 - uid: Material.Blazor.MBRadioButton`1.OnValueSetCallback*
   name: OnValueSetCallback
   href: api/Material.Blazor.MBRadioButton-1.html#Material_Blazor_MBRadioButton_1_OnValueSetCallback_
@@ -8650,49 +8815,49 @@ references:
   fullName.vb: Material.Blazor.MBSegmentedButtonMulti(Of TItem).Dispose
   nameWithType: MBSegmentedButtonMulti<TItem>.Dispose
   nameWithType.vb: MBSegmentedButtonMulti(Of TItem).Dispose
-- uid: Material.Blazor.MBSegmentedButtonMulti`1.NotifyMultiSelectedAsync(System.Boolean[])
-  name: NotifyMultiSelectedAsync(Boolean[])
-  href: api/Material.Blazor.MBSegmentedButtonMulti-1.html#Material_Blazor_MBSegmentedButtonMulti_1_NotifyMultiSelectedAsync_System_Boolean___
-  commentId: M:Material.Blazor.MBSegmentedButtonMulti`1.NotifyMultiSelectedAsync(System.Boolean[])
-  name.vb: NotifyMultiSelectedAsync(Boolean())
-  fullName: Material.Blazor.MBSegmentedButtonMulti<TItem>.NotifyMultiSelectedAsync(System.Boolean[])
-  fullName.vb: Material.Blazor.MBSegmentedButtonMulti(Of TItem).NotifyMultiSelectedAsync(System.Boolean())
-  nameWithType: MBSegmentedButtonMulti<TItem>.NotifyMultiSelectedAsync(Boolean[])
-  nameWithType.vb: MBSegmentedButtonMulti(Of TItem).NotifyMultiSelectedAsync(Boolean())
-- uid: Material.Blazor.MBSegmentedButtonMulti`1.NotifyMultiSelectedAsync*
-  name: NotifyMultiSelectedAsync
-  href: api/Material.Blazor.MBSegmentedButtonMulti-1.html#Material_Blazor_MBSegmentedButtonMulti_1_NotifyMultiSelectedAsync_
-  commentId: Overload:Material.Blazor.MBSegmentedButtonMulti`1.NotifyMultiSelectedAsync
+- uid: Material.Blazor.MBSegmentedButtonMulti`1.NotifyMultiSelected(System.Boolean[])
+  name: NotifyMultiSelected(Boolean[])
+  href: api/Material.Blazor.MBSegmentedButtonMulti-1.html#Material_Blazor_MBSegmentedButtonMulti_1_NotifyMultiSelected_System_Boolean___
+  commentId: M:Material.Blazor.MBSegmentedButtonMulti`1.NotifyMultiSelected(System.Boolean[])
+  name.vb: NotifyMultiSelected(Boolean())
+  fullName: Material.Blazor.MBSegmentedButtonMulti<TItem>.NotifyMultiSelected(System.Boolean[])
+  fullName.vb: Material.Blazor.MBSegmentedButtonMulti(Of TItem).NotifyMultiSelected(System.Boolean())
+  nameWithType: MBSegmentedButtonMulti<TItem>.NotifyMultiSelected(Boolean[])
+  nameWithType.vb: MBSegmentedButtonMulti(Of TItem).NotifyMultiSelected(Boolean())
+- uid: Material.Blazor.MBSegmentedButtonMulti`1.NotifyMultiSelected*
+  name: NotifyMultiSelected
+  href: api/Material.Blazor.MBSegmentedButtonMulti-1.html#Material_Blazor_MBSegmentedButtonMulti_1_NotifyMultiSelected_
+  commentId: Overload:Material.Blazor.MBSegmentedButtonMulti`1.NotifyMultiSelected
   isSpec: "True"
-  fullName: Material.Blazor.MBSegmentedButtonMulti<TItem>.NotifyMultiSelectedAsync
-  fullName.vb: Material.Blazor.MBSegmentedButtonMulti(Of TItem).NotifyMultiSelectedAsync
-  nameWithType: MBSegmentedButtonMulti<TItem>.NotifyMultiSelectedAsync
-  nameWithType.vb: MBSegmentedButtonMulti(Of TItem).NotifyMultiSelectedAsync
-- uid: Material.Blazor.MBSegmentedButtonMulti`1.NotifySingleSelectedAsync(System.Int32)
-  name: NotifySingleSelectedAsync(Int32)
-  href: api/Material.Blazor.MBSegmentedButtonMulti-1.html#Material_Blazor_MBSegmentedButtonMulti_1_NotifySingleSelectedAsync_System_Int32_
-  commentId: M:Material.Blazor.MBSegmentedButtonMulti`1.NotifySingleSelectedAsync(System.Int32)
-  fullName: Material.Blazor.MBSegmentedButtonMulti<TItem>.NotifySingleSelectedAsync(System.Int32)
-  fullName.vb: Material.Blazor.MBSegmentedButtonMulti(Of TItem).NotifySingleSelectedAsync(System.Int32)
-  nameWithType: MBSegmentedButtonMulti<TItem>.NotifySingleSelectedAsync(Int32)
-  nameWithType.vb: MBSegmentedButtonMulti(Of TItem).NotifySingleSelectedAsync(Int32)
-- uid: Material.Blazor.MBSegmentedButtonMulti`1.NotifySingleSelectedAsync*
-  name: NotifySingleSelectedAsync
-  href: api/Material.Blazor.MBSegmentedButtonMulti-1.html#Material_Blazor_MBSegmentedButtonMulti_1_NotifySingleSelectedAsync_
-  commentId: Overload:Material.Blazor.MBSegmentedButtonMulti`1.NotifySingleSelectedAsync
+  fullName: Material.Blazor.MBSegmentedButtonMulti<TItem>.NotifyMultiSelected
+  fullName.vb: Material.Blazor.MBSegmentedButtonMulti(Of TItem).NotifyMultiSelected
+  nameWithType: MBSegmentedButtonMulti<TItem>.NotifyMultiSelected
+  nameWithType.vb: MBSegmentedButtonMulti(Of TItem).NotifyMultiSelected
+- uid: Material.Blazor.MBSegmentedButtonMulti`1.NotifySingleSelected(System.Int32)
+  name: NotifySingleSelected(Int32)
+  href: api/Material.Blazor.MBSegmentedButtonMulti-1.html#Material_Blazor_MBSegmentedButtonMulti_1_NotifySingleSelected_System_Int32_
+  commentId: M:Material.Blazor.MBSegmentedButtonMulti`1.NotifySingleSelected(System.Int32)
+  fullName: Material.Blazor.MBSegmentedButtonMulti<TItem>.NotifySingleSelected(System.Int32)
+  fullName.vb: Material.Blazor.MBSegmentedButtonMulti(Of TItem).NotifySingleSelected(System.Int32)
+  nameWithType: MBSegmentedButtonMulti<TItem>.NotifySingleSelected(Int32)
+  nameWithType.vb: MBSegmentedButtonMulti(Of TItem).NotifySingleSelected(Int32)
+- uid: Material.Blazor.MBSegmentedButtonMulti`1.NotifySingleSelected*
+  name: NotifySingleSelected
+  href: api/Material.Blazor.MBSegmentedButtonMulti-1.html#Material_Blazor_MBSegmentedButtonMulti_1_NotifySingleSelected_
+  commentId: Overload:Material.Blazor.MBSegmentedButtonMulti`1.NotifySingleSelected
   isSpec: "True"
-  fullName: Material.Blazor.MBSegmentedButtonMulti<TItem>.NotifySingleSelectedAsync
-  fullName.vb: Material.Blazor.MBSegmentedButtonMulti(Of TItem).NotifySingleSelectedAsync
-  nameWithType: MBSegmentedButtonMulti<TItem>.NotifySingleSelectedAsync
-  nameWithType.vb: MBSegmentedButtonMulti(Of TItem).NotifySingleSelectedAsync
-- uid: Material.Blazor.MBSegmentedButtonMulti`1.OnDisabledSetCallback(System.Object,System.EventArgs)
-  name: OnDisabledSetCallback(Object, EventArgs)
-  href: api/Material.Blazor.MBSegmentedButtonMulti-1.html#Material_Blazor_MBSegmentedButtonMulti_1_OnDisabledSetCallback_System_Object_System_EventArgs_
-  commentId: M:Material.Blazor.MBSegmentedButtonMulti`1.OnDisabledSetCallback(System.Object,System.EventArgs)
-  fullName: Material.Blazor.MBSegmentedButtonMulti<TItem>.OnDisabledSetCallback(System.Object, System.EventArgs)
-  fullName.vb: Material.Blazor.MBSegmentedButtonMulti(Of TItem).OnDisabledSetCallback(System.Object, System.EventArgs)
-  nameWithType: MBSegmentedButtonMulti<TItem>.OnDisabledSetCallback(Object, EventArgs)
-  nameWithType.vb: MBSegmentedButtonMulti(Of TItem).OnDisabledSetCallback(Object, EventArgs)
+  fullName: Material.Blazor.MBSegmentedButtonMulti<TItem>.NotifySingleSelected
+  fullName.vb: Material.Blazor.MBSegmentedButtonMulti(Of TItem).NotifySingleSelected
+  nameWithType: MBSegmentedButtonMulti<TItem>.NotifySingleSelected
+  nameWithType.vb: MBSegmentedButtonMulti(Of TItem).NotifySingleSelected
+- uid: Material.Blazor.MBSegmentedButtonMulti`1.OnDisabledSetCallback
+  name: OnDisabledSetCallback()
+  href: api/Material.Blazor.MBSegmentedButtonMulti-1.html#Material_Blazor_MBSegmentedButtonMulti_1_OnDisabledSetCallback
+  commentId: M:Material.Blazor.MBSegmentedButtonMulti`1.OnDisabledSetCallback
+  fullName: Material.Blazor.MBSegmentedButtonMulti<TItem>.OnDisabledSetCallback()
+  fullName.vb: Material.Blazor.MBSegmentedButtonMulti(Of TItem).OnDisabledSetCallback()
+  nameWithType: MBSegmentedButtonMulti<TItem>.OnDisabledSetCallback()
+  nameWithType.vb: MBSegmentedButtonMulti(Of TItem).OnDisabledSetCallback()
 - uid: Material.Blazor.MBSegmentedButtonMulti`1.OnDisabledSetCallback*
   name: OnDisabledSetCallback
   href: api/Material.Blazor.MBSegmentedButtonMulti-1.html#Material_Blazor_MBSegmentedButtonMulti_1_OnDisabledSetCallback_
@@ -8719,14 +8884,14 @@ references:
   fullName.vb: Material.Blazor.MBSegmentedButtonMulti(Of TItem).OnInitializedAsync
   nameWithType: MBSegmentedButtonMulti<TItem>.OnInitializedAsync
   nameWithType.vb: MBSegmentedButtonMulti(Of TItem).OnInitializedAsync
-- uid: Material.Blazor.MBSegmentedButtonMulti`1.OnValueSetCallback(System.Object,System.EventArgs)
-  name: OnValueSetCallback(Object, EventArgs)
-  href: api/Material.Blazor.MBSegmentedButtonMulti-1.html#Material_Blazor_MBSegmentedButtonMulti_1_OnValueSetCallback_System_Object_System_EventArgs_
-  commentId: M:Material.Blazor.MBSegmentedButtonMulti`1.OnValueSetCallback(System.Object,System.EventArgs)
-  fullName: Material.Blazor.MBSegmentedButtonMulti<TItem>.OnValueSetCallback(System.Object, System.EventArgs)
-  fullName.vb: Material.Blazor.MBSegmentedButtonMulti(Of TItem).OnValueSetCallback(System.Object, System.EventArgs)
-  nameWithType: MBSegmentedButtonMulti<TItem>.OnValueSetCallback(Object, EventArgs)
-  nameWithType.vb: MBSegmentedButtonMulti(Of TItem).OnValueSetCallback(Object, EventArgs)
+- uid: Material.Blazor.MBSegmentedButtonMulti`1.OnValueSetCallback
+  name: OnValueSetCallback()
+  href: api/Material.Blazor.MBSegmentedButtonMulti-1.html#Material_Blazor_MBSegmentedButtonMulti_1_OnValueSetCallback
+  commentId: M:Material.Blazor.MBSegmentedButtonMulti`1.OnValueSetCallback
+  fullName: Material.Blazor.MBSegmentedButtonMulti<TItem>.OnValueSetCallback()
+  fullName.vb: Material.Blazor.MBSegmentedButtonMulti(Of TItem).OnValueSetCallback()
+  nameWithType: MBSegmentedButtonMulti<TItem>.OnValueSetCallback()
+  nameWithType.vb: MBSegmentedButtonMulti(Of TItem).OnValueSetCallback()
 - uid: Material.Blazor.MBSegmentedButtonMulti`1.OnValueSetCallback*
   name: OnValueSetCallback
   href: api/Material.Blazor.MBSegmentedButtonMulti-1.html#Material_Blazor_MBSegmentedButtonMulti_1_OnValueSetCallback_
@@ -8736,6 +8901,23 @@ references:
   fullName.vb: Material.Blazor.MBSegmentedButtonMulti(Of TItem).OnValueSetCallback
   nameWithType: MBSegmentedButtonMulti<TItem>.OnValueSetCallback
   nameWithType.vb: MBSegmentedButtonMulti(Of TItem).OnValueSetCallback
+- uid: Material.Blazor.MBSegmentedButtonMulti`1.TouchTarget
+  name: TouchTarget
+  href: api/Material.Blazor.MBSegmentedButtonMulti-1.html#Material_Blazor_MBSegmentedButtonMulti_1_TouchTarget
+  commentId: P:Material.Blazor.MBSegmentedButtonMulti`1.TouchTarget
+  fullName: Material.Blazor.MBSegmentedButtonMulti<TItem>.TouchTarget
+  fullName.vb: Material.Blazor.MBSegmentedButtonMulti(Of TItem).TouchTarget
+  nameWithType: MBSegmentedButtonMulti<TItem>.TouchTarget
+  nameWithType.vb: MBSegmentedButtonMulti(Of TItem).TouchTarget
+- uid: Material.Blazor.MBSegmentedButtonMulti`1.TouchTarget*
+  name: TouchTarget
+  href: api/Material.Blazor.MBSegmentedButtonMulti-1.html#Material_Blazor_MBSegmentedButtonMulti_1_TouchTarget_
+  commentId: Overload:Material.Blazor.MBSegmentedButtonMulti`1.TouchTarget
+  isSpec: "True"
+  fullName: Material.Blazor.MBSegmentedButtonMulti<TItem>.TouchTarget
+  fullName.vb: Material.Blazor.MBSegmentedButtonMulti(Of TItem).TouchTarget
+  nameWithType: MBSegmentedButtonMulti<TItem>.TouchTarget
+  nameWithType.vb: MBSegmentedButtonMulti(Of TItem).TouchTarget
 - uid: Material.Blazor.MBSegmentedButtonSingle`1
   name: MBSegmentedButtonSingle<TItem>
   href: api/Material.Blazor.MBSegmentedButtonSingle-1.html
@@ -8779,14 +8961,14 @@ references:
   fullName.vb: Material.Blazor.MBSegmentedButtonSingle(Of TItem).OnInitializedAsync
   nameWithType: MBSegmentedButtonSingle<TItem>.OnInitializedAsync
   nameWithType.vb: MBSegmentedButtonSingle(Of TItem).OnInitializedAsync
-- uid: Material.Blazor.MBSegmentedButtonSingle`1.OnValueSetCallback(System.Object,System.EventArgs)
-  name: OnValueSetCallback(Object, EventArgs)
-  href: api/Material.Blazor.MBSegmentedButtonSingle-1.html#Material_Blazor_MBSegmentedButtonSingle_1_OnValueSetCallback_System_Object_System_EventArgs_
-  commentId: M:Material.Blazor.MBSegmentedButtonSingle`1.OnValueSetCallback(System.Object,System.EventArgs)
-  fullName: Material.Blazor.MBSegmentedButtonSingle<TItem>.OnValueSetCallback(System.Object, System.EventArgs)
-  fullName.vb: Material.Blazor.MBSegmentedButtonSingle(Of TItem).OnValueSetCallback(System.Object, System.EventArgs)
-  nameWithType: MBSegmentedButtonSingle<TItem>.OnValueSetCallback(Object, EventArgs)
-  nameWithType.vb: MBSegmentedButtonSingle(Of TItem).OnValueSetCallback(Object, EventArgs)
+- uid: Material.Blazor.MBSegmentedButtonSingle`1.OnValueSetCallback
+  name: OnValueSetCallback()
+  href: api/Material.Blazor.MBSegmentedButtonSingle-1.html#Material_Blazor_MBSegmentedButtonSingle_1_OnValueSetCallback
+  commentId: M:Material.Blazor.MBSegmentedButtonSingle`1.OnValueSetCallback
+  fullName: Material.Blazor.MBSegmentedButtonSingle<TItem>.OnValueSetCallback()
+  fullName.vb: Material.Blazor.MBSegmentedButtonSingle(Of TItem).OnValueSetCallback()
+  nameWithType: MBSegmentedButtonSingle<TItem>.OnValueSetCallback()
+  nameWithType.vb: MBSegmentedButtonSingle(Of TItem).OnValueSetCallback()
 - uid: Material.Blazor.MBSegmentedButtonSingle`1.OnValueSetCallback*
   name: OnValueSetCallback
   href: api/Material.Blazor.MBSegmentedButtonSingle-1.html#Material_Blazor_MBSegmentedButtonSingle_1_OnValueSetCallback_
@@ -8907,31 +9089,31 @@ references:
   fullName.vb: Material.Blazor.MBSelect(Of TItem).MenuSurfacePositioning
   nameWithType: MBSelect<TItem>.MenuSurfacePositioning
   nameWithType.vb: MBSelect(Of TItem).MenuSurfacePositioning
-- uid: Material.Blazor.MBSelect`1.NotifySelectedAsync(System.Int32)
-  name: NotifySelectedAsync(Int32)
-  href: api/Material.Blazor.MBSelect-1.html#Material_Blazor_MBSelect_1_NotifySelectedAsync_System_Int32_
-  commentId: M:Material.Blazor.MBSelect`1.NotifySelectedAsync(System.Int32)
-  fullName: Material.Blazor.MBSelect<TItem>.NotifySelectedAsync(System.Int32)
-  fullName.vb: Material.Blazor.MBSelect(Of TItem).NotifySelectedAsync(System.Int32)
-  nameWithType: MBSelect<TItem>.NotifySelectedAsync(Int32)
-  nameWithType.vb: MBSelect(Of TItem).NotifySelectedAsync(Int32)
-- uid: Material.Blazor.MBSelect`1.NotifySelectedAsync*
-  name: NotifySelectedAsync
-  href: api/Material.Blazor.MBSelect-1.html#Material_Blazor_MBSelect_1_NotifySelectedAsync_
-  commentId: Overload:Material.Blazor.MBSelect`1.NotifySelectedAsync
+- uid: Material.Blazor.MBSelect`1.NotifySelected(System.Int32)
+  name: NotifySelected(Int32)
+  href: api/Material.Blazor.MBSelect-1.html#Material_Blazor_MBSelect_1_NotifySelected_System_Int32_
+  commentId: M:Material.Blazor.MBSelect`1.NotifySelected(System.Int32)
+  fullName: Material.Blazor.MBSelect<TItem>.NotifySelected(System.Int32)
+  fullName.vb: Material.Blazor.MBSelect(Of TItem).NotifySelected(System.Int32)
+  nameWithType: MBSelect<TItem>.NotifySelected(Int32)
+  nameWithType.vb: MBSelect(Of TItem).NotifySelected(Int32)
+- uid: Material.Blazor.MBSelect`1.NotifySelected*
+  name: NotifySelected
+  href: api/Material.Blazor.MBSelect-1.html#Material_Blazor_MBSelect_1_NotifySelected_
+  commentId: Overload:Material.Blazor.MBSelect`1.NotifySelected
   isSpec: "True"
-  fullName: Material.Blazor.MBSelect<TItem>.NotifySelectedAsync
-  fullName.vb: Material.Blazor.MBSelect(Of TItem).NotifySelectedAsync
-  nameWithType: MBSelect<TItem>.NotifySelectedAsync
-  nameWithType.vb: MBSelect(Of TItem).NotifySelectedAsync
-- uid: Material.Blazor.MBSelect`1.OnDisabledSetCallback(System.Object,System.EventArgs)
-  name: OnDisabledSetCallback(Object, EventArgs)
-  href: api/Material.Blazor.MBSelect-1.html#Material_Blazor_MBSelect_1_OnDisabledSetCallback_System_Object_System_EventArgs_
-  commentId: M:Material.Blazor.MBSelect`1.OnDisabledSetCallback(System.Object,System.EventArgs)
-  fullName: Material.Blazor.MBSelect<TItem>.OnDisabledSetCallback(System.Object, System.EventArgs)
-  fullName.vb: Material.Blazor.MBSelect(Of TItem).OnDisabledSetCallback(System.Object, System.EventArgs)
-  nameWithType: MBSelect<TItem>.OnDisabledSetCallback(Object, EventArgs)
-  nameWithType.vb: MBSelect(Of TItem).OnDisabledSetCallback(Object, EventArgs)
+  fullName: Material.Blazor.MBSelect<TItem>.NotifySelected
+  fullName.vb: Material.Blazor.MBSelect(Of TItem).NotifySelected
+  nameWithType: MBSelect<TItem>.NotifySelected
+  nameWithType.vb: MBSelect(Of TItem).NotifySelected
+- uid: Material.Blazor.MBSelect`1.OnDisabledSetCallback
+  name: OnDisabledSetCallback()
+  href: api/Material.Blazor.MBSelect-1.html#Material_Blazor_MBSelect_1_OnDisabledSetCallback
+  commentId: M:Material.Blazor.MBSelect`1.OnDisabledSetCallback
+  fullName: Material.Blazor.MBSelect<TItem>.OnDisabledSetCallback()
+  fullName.vb: Material.Blazor.MBSelect(Of TItem).OnDisabledSetCallback()
+  nameWithType: MBSelect<TItem>.OnDisabledSetCallback()
+  nameWithType.vb: MBSelect(Of TItem).OnDisabledSetCallback()
 - uid: Material.Blazor.MBSelect`1.OnDisabledSetCallback*
   name: OnDisabledSetCallback
   href: api/Material.Blazor.MBSelect-1.html#Material_Blazor_MBSelect_1_OnDisabledSetCallback_
@@ -8975,14 +9157,14 @@ references:
   fullName.vb: Material.Blazor.MBSelect(Of TItem).OnParametersSetAsync
   nameWithType: MBSelect<TItem>.OnParametersSetAsync
   nameWithType.vb: MBSelect(Of TItem).OnParametersSetAsync
-- uid: Material.Blazor.MBSelect`1.OnValueSetCallback(System.Object,System.EventArgs)
-  name: OnValueSetCallback(Object, EventArgs)
-  href: api/Material.Blazor.MBSelect-1.html#Material_Blazor_MBSelect_1_OnValueSetCallback_System_Object_System_EventArgs_
-  commentId: M:Material.Blazor.MBSelect`1.OnValueSetCallback(System.Object,System.EventArgs)
-  fullName: Material.Blazor.MBSelect<TItem>.OnValueSetCallback(System.Object, System.EventArgs)
-  fullName.vb: Material.Blazor.MBSelect(Of TItem).OnValueSetCallback(System.Object, System.EventArgs)
-  nameWithType: MBSelect<TItem>.OnValueSetCallback(Object, EventArgs)
-  nameWithType.vb: MBSelect(Of TItem).OnValueSetCallback(Object, EventArgs)
+- uid: Material.Blazor.MBSelect`1.OnValueSetCallback
+  name: OnValueSetCallback()
+  href: api/Material.Blazor.MBSelect-1.html#Material_Blazor_MBSelect_1_OnValueSetCallback
+  commentId: M:Material.Blazor.MBSelect`1.OnValueSetCallback
+  fullName: Material.Blazor.MBSelect<TItem>.OnValueSetCallback()
+  fullName.vb: Material.Blazor.MBSelect(Of TItem).OnValueSetCallback()
+  nameWithType: MBSelect<TItem>.OnValueSetCallback()
+  nameWithType.vb: MBSelect(Of TItem).OnValueSetCallback()
 - uid: Material.Blazor.MBSelect`1.OnValueSetCallback*
   name: OnValueSetCallback
   href: api/Material.Blazor.MBSelect-1.html#Material_Blazor_MBSelect_1_OnValueSetCallback_
@@ -9348,19 +9530,19 @@ references:
   isSpec: "True"
   fullName: Material.Blazor.MBSlider.EventType
   nameWithType: MBSlider.EventType
-- uid: Material.Blazor.MBSlider.NotifyChangedAsync(System.Double)
-  name: NotifyChangedAsync(Double)
-  href: api/Material.Blazor.MBSlider.html#Material_Blazor_MBSlider_NotifyChangedAsync_System_Double_
-  commentId: M:Material.Blazor.MBSlider.NotifyChangedAsync(System.Double)
-  fullName: Material.Blazor.MBSlider.NotifyChangedAsync(System.Double)
-  nameWithType: MBSlider.NotifyChangedAsync(Double)
-- uid: Material.Blazor.MBSlider.NotifyChangedAsync*
-  name: NotifyChangedAsync
-  href: api/Material.Blazor.MBSlider.html#Material_Blazor_MBSlider_NotifyChangedAsync_
-  commentId: Overload:Material.Blazor.MBSlider.NotifyChangedAsync
+- uid: Material.Blazor.MBSlider.NotifyChanged(System.Double)
+  name: NotifyChanged(Double)
+  href: api/Material.Blazor.MBSlider.html#Material_Blazor_MBSlider_NotifyChanged_System_Double_
+  commentId: M:Material.Blazor.MBSlider.NotifyChanged(System.Double)
+  fullName: Material.Blazor.MBSlider.NotifyChanged(System.Double)
+  nameWithType: MBSlider.NotifyChanged(Double)
+- uid: Material.Blazor.MBSlider.NotifyChanged*
+  name: NotifyChanged
+  href: api/Material.Blazor.MBSlider.html#Material_Blazor_MBSlider_NotifyChanged_
+  commentId: Overload:Material.Blazor.MBSlider.NotifyChanged
   isSpec: "True"
-  fullName: Material.Blazor.MBSlider.NotifyChangedAsync
-  nameWithType: MBSlider.NotifyChangedAsync
+  fullName: Material.Blazor.MBSlider.NotifyChanged
+  nameWithType: MBSlider.NotifyChanged
 - uid: Material.Blazor.MBSlider.NumSteps
   name: NumSteps
   href: api/Material.Blazor.MBSlider.html#Material_Blazor_MBSlider_NumSteps
@@ -9374,12 +9556,12 @@ references:
   isSpec: "True"
   fullName: Material.Blazor.MBSlider.NumSteps
   nameWithType: MBSlider.NumSteps
-- uid: Material.Blazor.MBSlider.OnDisabledSetCallback(System.Object,System.EventArgs)
-  name: OnDisabledSetCallback(Object, EventArgs)
-  href: api/Material.Blazor.MBSlider.html#Material_Blazor_MBSlider_OnDisabledSetCallback_System_Object_System_EventArgs_
-  commentId: M:Material.Blazor.MBSlider.OnDisabledSetCallback(System.Object,System.EventArgs)
-  fullName: Material.Blazor.MBSlider.OnDisabledSetCallback(System.Object, System.EventArgs)
-  nameWithType: MBSlider.OnDisabledSetCallback(Object, EventArgs)
+- uid: Material.Blazor.MBSlider.OnDisabledSetCallback
+  name: OnDisabledSetCallback()
+  href: api/Material.Blazor.MBSlider.html#Material_Blazor_MBSlider_OnDisabledSetCallback
+  commentId: M:Material.Blazor.MBSlider.OnDisabledSetCallback
+  fullName: Material.Blazor.MBSlider.OnDisabledSetCallback()
+  nameWithType: MBSlider.OnDisabledSetCallback()
 - uid: Material.Blazor.MBSlider.OnDisabledSetCallback*
   name: OnDisabledSetCallback
   href: api/Material.Blazor.MBSlider.html#Material_Blazor_MBSlider_OnDisabledSetCallback_
@@ -9400,12 +9582,12 @@ references:
   isSpec: "True"
   fullName: Material.Blazor.MBSlider.OnInitializedAsync
   nameWithType: MBSlider.OnInitializedAsync
-- uid: Material.Blazor.MBSlider.OnValueSetCallback(System.Object,System.EventArgs)
-  name: OnValueSetCallback(Object, EventArgs)
-  href: api/Material.Blazor.MBSlider.html#Material_Blazor_MBSlider_OnValueSetCallback_System_Object_System_EventArgs_
-  commentId: M:Material.Blazor.MBSlider.OnValueSetCallback(System.Object,System.EventArgs)
-  fullName: Material.Blazor.MBSlider.OnValueSetCallback(System.Object, System.EventArgs)
-  nameWithType: MBSlider.OnValueSetCallback(Object, EventArgs)
+- uid: Material.Blazor.MBSlider.OnValueSetCallback
+  name: OnValueSetCallback()
+  href: api/Material.Blazor.MBSlider.html#Material_Blazor_MBSlider_OnValueSetCallback
+  commentId: M:Material.Blazor.MBSlider.OnValueSetCallback
+  fullName: Material.Blazor.MBSlider.OnValueSetCallback()
+  nameWithType: MBSlider.OnValueSetCallback()
 - uid: Material.Blazor.MBSlider.OnValueSetCallback*
   name: OnValueSetCallback
   href: api/Material.Blazor.MBSlider.html#Material_Blazor_MBSlider_OnValueSetCallback_
@@ -9949,12 +10131,12 @@ references:
   isSpec: "True"
   fullName: Material.Blazor.MBSwitch.Label
   nameWithType: MBSwitch.Label
-- uid: Material.Blazor.MBSwitch.OnDisabledSetCallback(System.Object,System.EventArgs)
-  name: OnDisabledSetCallback(Object, EventArgs)
-  href: api/Material.Blazor.MBSwitch.html#Material_Blazor_MBSwitch_OnDisabledSetCallback_System_Object_System_EventArgs_
-  commentId: M:Material.Blazor.MBSwitch.OnDisabledSetCallback(System.Object,System.EventArgs)
-  fullName: Material.Blazor.MBSwitch.OnDisabledSetCallback(System.Object, System.EventArgs)
-  nameWithType: MBSwitch.OnDisabledSetCallback(Object, EventArgs)
+- uid: Material.Blazor.MBSwitch.OnDisabledSetCallback
+  name: OnDisabledSetCallback()
+  href: api/Material.Blazor.MBSwitch.html#Material_Blazor_MBSwitch_OnDisabledSetCallback
+  commentId: M:Material.Blazor.MBSwitch.OnDisabledSetCallback
+  fullName: Material.Blazor.MBSwitch.OnDisabledSetCallback()
+  nameWithType: MBSwitch.OnDisabledSetCallback()
 - uid: Material.Blazor.MBSwitch.OnDisabledSetCallback*
   name: OnDisabledSetCallback
   href: api/Material.Blazor.MBSwitch.html#Material_Blazor_MBSwitch_OnDisabledSetCallback_
@@ -9975,12 +10157,12 @@ references:
   isSpec: "True"
   fullName: Material.Blazor.MBSwitch.OnInitializedAsync
   nameWithType: MBSwitch.OnInitializedAsync
-- uid: Material.Blazor.MBSwitch.OnValueSetCallback(System.Object,System.EventArgs)
-  name: OnValueSetCallback(Object, EventArgs)
-  href: api/Material.Blazor.MBSwitch.html#Material_Blazor_MBSwitch_OnValueSetCallback_System_Object_System_EventArgs_
-  commentId: M:Material.Blazor.MBSwitch.OnValueSetCallback(System.Object,System.EventArgs)
-  fullName: Material.Blazor.MBSwitch.OnValueSetCallback(System.Object, System.EventArgs)
-  nameWithType: MBSwitch.OnValueSetCallback(Object, EventArgs)
+- uid: Material.Blazor.MBSwitch.OnValueSetCallback
+  name: OnValueSetCallback()
+  href: api/Material.Blazor.MBSwitch.html#Material_Blazor_MBSwitch_OnValueSetCallback
+  commentId: M:Material.Blazor.MBSwitch.OnValueSetCallback
+  fullName: Material.Blazor.MBSwitch.OnValueSetCallback()
+  nameWithType: MBSwitch.OnValueSetCallback()
 - uid: Material.Blazor.MBSwitch.OnValueSetCallback*
   name: OnValueSetCallback
   href: api/Material.Blazor.MBSwitch.html#Material_Blazor_MBSwitch_OnValueSetCallback_
@@ -10099,23 +10281,23 @@ references:
   fullName.vb: Material.Blazor.MBTabBar(Of TItem).Label
   nameWithType: MBTabBar<TItem>.Label
   nameWithType.vb: MBTabBar(Of TItem).Label
-- uid: Material.Blazor.MBTabBar`1.NotifyActivatedAsync(System.Int32)
-  name: NotifyActivatedAsync(Int32)
-  href: api/Material.Blazor.MBTabBar-1.html#Material_Blazor_MBTabBar_1_NotifyActivatedAsync_System_Int32_
-  commentId: M:Material.Blazor.MBTabBar`1.NotifyActivatedAsync(System.Int32)
-  fullName: Material.Blazor.MBTabBar<TItem>.NotifyActivatedAsync(System.Int32)
-  fullName.vb: Material.Blazor.MBTabBar(Of TItem).NotifyActivatedAsync(System.Int32)
-  nameWithType: MBTabBar<TItem>.NotifyActivatedAsync(Int32)
-  nameWithType.vb: MBTabBar(Of TItem).NotifyActivatedAsync(Int32)
-- uid: Material.Blazor.MBTabBar`1.NotifyActivatedAsync*
-  name: NotifyActivatedAsync
-  href: api/Material.Blazor.MBTabBar-1.html#Material_Blazor_MBTabBar_1_NotifyActivatedAsync_
-  commentId: Overload:Material.Blazor.MBTabBar`1.NotifyActivatedAsync
+- uid: Material.Blazor.MBTabBar`1.NotifyActivated(System.Int32)
+  name: NotifyActivated(Int32)
+  href: api/Material.Blazor.MBTabBar-1.html#Material_Blazor_MBTabBar_1_NotifyActivated_System_Int32_
+  commentId: M:Material.Blazor.MBTabBar`1.NotifyActivated(System.Int32)
+  fullName: Material.Blazor.MBTabBar<TItem>.NotifyActivated(System.Int32)
+  fullName.vb: Material.Blazor.MBTabBar(Of TItem).NotifyActivated(System.Int32)
+  nameWithType: MBTabBar<TItem>.NotifyActivated(Int32)
+  nameWithType.vb: MBTabBar(Of TItem).NotifyActivated(Int32)
+- uid: Material.Blazor.MBTabBar`1.NotifyActivated*
+  name: NotifyActivated
+  href: api/Material.Blazor.MBTabBar-1.html#Material_Blazor_MBTabBar_1_NotifyActivated_
+  commentId: Overload:Material.Blazor.MBTabBar`1.NotifyActivated
   isSpec: "True"
-  fullName: Material.Blazor.MBTabBar<TItem>.NotifyActivatedAsync
-  fullName.vb: Material.Blazor.MBTabBar(Of TItem).NotifyActivatedAsync
-  nameWithType: MBTabBar<TItem>.NotifyActivatedAsync
-  nameWithType.vb: MBTabBar(Of TItem).NotifyActivatedAsync
+  fullName: Material.Blazor.MBTabBar<TItem>.NotifyActivated
+  fullName.vb: Material.Blazor.MBTabBar(Of TItem).NotifyActivated
+  nameWithType: MBTabBar<TItem>.NotifyActivated
+  nameWithType.vb: MBTabBar(Of TItem).NotifyActivated
 - uid: Material.Blazor.MBTabBar`1.OnInitializedAsync
   name: OnInitializedAsync()
   href: api/Material.Blazor.MBTabBar-1.html#Material_Blazor_MBTabBar_1_OnInitializedAsync
@@ -10150,14 +10332,14 @@ references:
   fullName.vb: Material.Blazor.MBTabBar(Of TItem).OnParametersSetAsync
   nameWithType: MBTabBar<TItem>.OnParametersSetAsync
   nameWithType.vb: MBTabBar(Of TItem).OnParametersSetAsync
-- uid: Material.Blazor.MBTabBar`1.OnValueSetCallback(System.Object,System.EventArgs)
-  name: OnValueSetCallback(Object, EventArgs)
-  href: api/Material.Blazor.MBTabBar-1.html#Material_Blazor_MBTabBar_1_OnValueSetCallback_System_Object_System_EventArgs_
-  commentId: M:Material.Blazor.MBTabBar`1.OnValueSetCallback(System.Object,System.EventArgs)
-  fullName: Material.Blazor.MBTabBar<TItem>.OnValueSetCallback(System.Object, System.EventArgs)
-  fullName.vb: Material.Blazor.MBTabBar(Of TItem).OnValueSetCallback(System.Object, System.EventArgs)
-  nameWithType: MBTabBar<TItem>.OnValueSetCallback(Object, EventArgs)
-  nameWithType.vb: MBTabBar(Of TItem).OnValueSetCallback(Object, EventArgs)
+- uid: Material.Blazor.MBTabBar`1.OnValueSetCallback
+  name: OnValueSetCallback()
+  href: api/Material.Blazor.MBTabBar-1.html#Material_Blazor_MBTabBar_1_OnValueSetCallback
+  commentId: M:Material.Blazor.MBTabBar`1.OnValueSetCallback
+  fullName: Material.Blazor.MBTabBar<TItem>.OnValueSetCallback()
+  fullName.vb: Material.Blazor.MBTabBar(Of TItem).OnValueSetCallback()
+  nameWithType: MBTabBar<TItem>.OnValueSetCallback()
+  nameWithType.vb: MBTabBar(Of TItem).OnValueSetCallback()
 - uid: Material.Blazor.MBTabBar`1.OnValueSetCallback*
   name: OnValueSetCallback
   href: api/Material.Blazor.MBTabBar-1.html#Material_Blazor_MBTabBar_1_OnValueSetCallback_
@@ -10285,12 +10467,12 @@ references:
   isSpec: "True"
   fullName: Material.Blazor.MBTextArea.Label
   nameWithType: MBTextArea.Label
-- uid: Material.Blazor.MBTextArea.OnDisabledSetCallback(System.Object,System.EventArgs)
-  name: OnDisabledSetCallback(Object, EventArgs)
-  href: api/Material.Blazor.MBTextArea.html#Material_Blazor_MBTextArea_OnDisabledSetCallback_System_Object_System_EventArgs_
-  commentId: M:Material.Blazor.MBTextArea.OnDisabledSetCallback(System.Object,System.EventArgs)
-  fullName: Material.Blazor.MBTextArea.OnDisabledSetCallback(System.Object, System.EventArgs)
-  nameWithType: MBTextArea.OnDisabledSetCallback(Object, EventArgs)
+- uid: Material.Blazor.MBTextArea.OnDisabledSetCallback
+  name: OnDisabledSetCallback()
+  href: api/Material.Blazor.MBTextArea.html#Material_Blazor_MBTextArea_OnDisabledSetCallback
+  commentId: M:Material.Blazor.MBTextArea.OnDisabledSetCallback
+  fullName: Material.Blazor.MBTextArea.OnDisabledSetCallback()
+  nameWithType: MBTextArea.OnDisabledSetCallback()
 - uid: Material.Blazor.MBTextArea.OnDisabledSetCallback*
   name: OnDisabledSetCallback
   href: api/Material.Blazor.MBTextArea.html#Material_Blazor_MBTextArea_OnDisabledSetCallback_
@@ -10311,12 +10493,12 @@ references:
   isSpec: "True"
   fullName: Material.Blazor.MBTextArea.OnInitializedAsync
   nameWithType: MBTextArea.OnInitializedAsync
-- uid: Material.Blazor.MBTextArea.OnValueSetCallback(System.Object,System.EventArgs)
-  name: OnValueSetCallback(Object, EventArgs)
-  href: api/Material.Blazor.MBTextArea.html#Material_Blazor_MBTextArea_OnValueSetCallback_System_Object_System_EventArgs_
-  commentId: M:Material.Blazor.MBTextArea.OnValueSetCallback(System.Object,System.EventArgs)
-  fullName: Material.Blazor.MBTextArea.OnValueSetCallback(System.Object, System.EventArgs)
-  nameWithType: MBTextArea.OnValueSetCallback(Object, EventArgs)
+- uid: Material.Blazor.MBTextArea.OnValueSetCallback
+  name: OnValueSetCallback()
+  href: api/Material.Blazor.MBTextArea.html#Material_Blazor_MBTextArea_OnValueSetCallback
+  commentId: M:Material.Blazor.MBTextArea.OnValueSetCallback
+  fullName: Material.Blazor.MBTextArea.OnValueSetCallback()
+  nameWithType: MBTextArea.OnValueSetCallback()
 - uid: Material.Blazor.MBTextArea.OnValueSetCallback*
   name: OnValueSetCallback
   href: api/Material.Blazor.MBTextArea.html#Material_Blazor_MBTextArea_OnValueSetCallback_
@@ -10473,12 +10655,12 @@ references:
   isSpec: "True"
   fullName: Material.Blazor.MBTextField.LeadingIcon
   nameWithType: MBTextField.LeadingIcon
-- uid: Material.Blazor.MBTextField.OnDisabledSetCallback(System.Object,System.EventArgs)
-  name: OnDisabledSetCallback(Object, EventArgs)
-  href: api/Material.Blazor.MBTextField.html#Material_Blazor_MBTextField_OnDisabledSetCallback_System_Object_System_EventArgs_
-  commentId: M:Material.Blazor.MBTextField.OnDisabledSetCallback(System.Object,System.EventArgs)
-  fullName: Material.Blazor.MBTextField.OnDisabledSetCallback(System.Object, System.EventArgs)
-  nameWithType: MBTextField.OnDisabledSetCallback(Object, EventArgs)
+- uid: Material.Blazor.MBTextField.OnDisabledSetCallback
+  name: OnDisabledSetCallback()
+  href: api/Material.Blazor.MBTextField.html#Material_Blazor_MBTextField_OnDisabledSetCallback
+  commentId: M:Material.Blazor.MBTextField.OnDisabledSetCallback
+  fullName: Material.Blazor.MBTextField.OnDisabledSetCallback()
+  nameWithType: MBTextField.OnDisabledSetCallback()
 - uid: Material.Blazor.MBTextField.OnDisabledSetCallback*
   name: OnDisabledSetCallback
   href: api/Material.Blazor.MBTextField.html#Material_Blazor_MBTextField_OnDisabledSetCallback_
@@ -10499,12 +10681,12 @@ references:
   isSpec: "True"
   fullName: Material.Blazor.MBTextField.OnInitializedAsync
   nameWithType: MBTextField.OnInitializedAsync
-- uid: Material.Blazor.MBTextField.OnValueSetCallback(System.Object,System.EventArgs)
-  name: OnValueSetCallback(Object, EventArgs)
-  href: api/Material.Blazor.MBTextField.html#Material_Blazor_MBTextField_OnValueSetCallback_System_Object_System_EventArgs_
-  commentId: M:Material.Blazor.MBTextField.OnValueSetCallback(System.Object,System.EventArgs)
-  fullName: Material.Blazor.MBTextField.OnValueSetCallback(System.Object, System.EventArgs)
-  nameWithType: MBTextField.OnValueSetCallback(Object, EventArgs)
+- uid: Material.Blazor.MBTextField.OnValueSetCallback
+  name: OnValueSetCallback()
+  href: api/Material.Blazor.MBTextField.html#Material_Blazor_MBTextField_OnValueSetCallback
+  commentId: M:Material.Blazor.MBTextField.OnValueSetCallback
+  fullName: Material.Blazor.MBTextField.OnValueSetCallback()
+  nameWithType: MBTextField.OnValueSetCallback()
 - uid: Material.Blazor.MBTextField.OnValueSetCallback*
   name: OnValueSetCallback
   href: api/Material.Blazor.MBTextField.html#Material_Blazor_MBTextField_OnValueSetCallback_
@@ -11292,6 +11474,51 @@ references:
   commentId: F:Material.Blazor.MBTopAppBarType.Standard
   fullName: Material.Blazor.MBTopAppBarType.Standard
   nameWithType: MBTopAppBarType.Standard
+- uid: Material.Blazor.MBTouchTargetWrapper
+  name: MBTouchTargetWrapper
+  href: api/Material.Blazor.MBTouchTargetWrapper.html
+  commentId: T:Material.Blazor.MBTouchTargetWrapper
+  fullName: Material.Blazor.MBTouchTargetWrapper
+  nameWithType: MBTouchTargetWrapper
+- uid: Material.Blazor.MBTouchTargetWrapper.ApplyTouchTargetWrapper
+  name: ApplyTouchTargetWrapper
+  href: api/Material.Blazor.MBTouchTargetWrapper.html#Material_Blazor_MBTouchTargetWrapper_ApplyTouchTargetWrapper
+  commentId: P:Material.Blazor.MBTouchTargetWrapper.ApplyTouchTargetWrapper
+  fullName: Material.Blazor.MBTouchTargetWrapper.ApplyTouchTargetWrapper
+  nameWithType: MBTouchTargetWrapper.ApplyTouchTargetWrapper
+- uid: Material.Blazor.MBTouchTargetWrapper.ApplyTouchTargetWrapper*
+  name: ApplyTouchTargetWrapper
+  href: api/Material.Blazor.MBTouchTargetWrapper.html#Material_Blazor_MBTouchTargetWrapper_ApplyTouchTargetWrapper_
+  commentId: Overload:Material.Blazor.MBTouchTargetWrapper.ApplyTouchTargetWrapper
+  isSpec: "True"
+  fullName: Material.Blazor.MBTouchTargetWrapper.ApplyTouchTargetWrapper
+  nameWithType: MBTouchTargetWrapper.ApplyTouchTargetWrapper
+- uid: Material.Blazor.MBTouchTargetWrapper.BuildRenderTree(RenderTreeBuilder)
+  name: BuildRenderTree(RenderTreeBuilder)
+  href: api/Material.Blazor.MBTouchTargetWrapper.html#Material_Blazor_MBTouchTargetWrapper_BuildRenderTree_RenderTreeBuilder_
+  commentId: M:Material.Blazor.MBTouchTargetWrapper.BuildRenderTree(RenderTreeBuilder)
+  fullName: Material.Blazor.MBTouchTargetWrapper.BuildRenderTree(RenderTreeBuilder)
+  nameWithType: MBTouchTargetWrapper.BuildRenderTree(RenderTreeBuilder)
+- uid: Material.Blazor.MBTouchTargetWrapper.BuildRenderTree*
+  name: BuildRenderTree
+  href: api/Material.Blazor.MBTouchTargetWrapper.html#Material_Blazor_MBTouchTargetWrapper_BuildRenderTree_
+  commentId: Overload:Material.Blazor.MBTouchTargetWrapper.BuildRenderTree
+  isSpec: "True"
+  fullName: Material.Blazor.MBTouchTargetWrapper.BuildRenderTree
+  nameWithType: MBTouchTargetWrapper.BuildRenderTree
+- uid: Material.Blazor.MBTouchTargetWrapper.ChildContent
+  name: ChildContent
+  href: api/Material.Blazor.MBTouchTargetWrapper.html#Material_Blazor_MBTouchTargetWrapper_ChildContent
+  commentId: P:Material.Blazor.MBTouchTargetWrapper.ChildContent
+  fullName: Material.Blazor.MBTouchTargetWrapper.ChildContent
+  nameWithType: MBTouchTargetWrapper.ChildContent
+- uid: Material.Blazor.MBTouchTargetWrapper.ChildContent*
+  name: ChildContent
+  href: api/Material.Blazor.MBTouchTargetWrapper.html#Material_Blazor_MBTouchTargetWrapper_ChildContent_
+  commentId: Overload:Material.Blazor.MBTouchTargetWrapper.ChildContent
+  isSpec: "True"
+  fullName: Material.Blazor.MBTouchTargetWrapper.ChildContent
+  nameWithType: MBTouchTargetWrapper.ChildContent
 - uid: Material.Blazor.MBVersion
   name: MBVersion
   href: api/Material.Blazor.MBVersion.html

@@ -6151,6 +6151,13 @@
             init: () => MBMenu_init,
             show: () => MBMenu_show
         });
+        var MBMenuSurface_namespaceObject = {};
+        __webpack_require__.r(MBMenuSurface_namespaceObject);
+        __webpack_require__.d(MBMenuSurface_namespaceObject, {
+            hide: () => MBMenuSurface_hide,
+            init: () => MBMenuSurface_init,
+            show: () => MBMenuSurface_show
+        });
         var MBRadioButton_namespaceObject = {};
         __webpack_require__.r(MBRadioButton_namespaceObject);
         __webpack_require__.d(MBRadioButton_namespaceObject, {
@@ -12017,13 +12024,13 @@ PERFORMANCE OF THIS SOFTWARE.
             menuElem._menu = MDCMenu.attachTo(menuElem);
             menuElem._menu.foundation.handleItemAction = function(listItem) {
                 menuElem._menu.open = false;
-                dotNetObject.invokeMethodAsync("NotifySelectedAsync", listItem.innerText);
+                dotNetObject.invokeMethodAsync("NotifySelected", listItem.innerText);
             };
             menuElem._menu.foundation.adapter.handleMenuSurfaceOpened = function() {
                 menuElem._menu.foundation.setDefaultFocusState(0);
             };
             var closedCallback = function closedCallback() {
-                dotNetObject.invokeMethodAsync("NotifyClosedAsync");
+                dotNetObject.invokeMethodAsync("NotifyClosed");
             };
             menuElem._menu.listen("MDCMenuSurface:closed", closedCallback);
         }
@@ -13605,14 +13612,14 @@ PERFORMANCE OF THIS SOFTWARE.
                         return x.foundation.isSelected();
                     }));
                     if (selectedChips.length == 0) {
-                        dotNetObject.invokeMethodAsync("NotifySingleSelectedAsync", -1);
+                        dotNetObject.invokeMethodAsync("NotifySingleSelected", -1);
                     } else {
-                        dotNetObject.invokeMethodAsync("NotifySingleSelectedAsync", elem._chipSet.chips.findIndex((function(x) {
+                        dotNetObject.invokeMethodAsync("NotifySingleSelected", elem._chipSet.chips.findIndex((function(x) {
                             return x.id === selectedChips[0].id;
                         })));
                     }
                 } else {
-                    dotNetObject.invokeMethodAsync("NotifyMultiSelectedAsync", elem._chipSet.chips.map((function(x) {
+                    dotNetObject.invokeMethodAsync("NotifyMultiSelected", elem._chipSet.chips.map((function(x) {
                         return x.foundation.isSelected();
                     })));
                 }
@@ -17739,7 +17746,7 @@ PERFORMANCE OF THIS SOFTWARE.
             var dialog = elem._dialog;
             var openedCallback = function openedCallback() {
                 dialog.unlisten("MDCDialog:opened", openedCallback);
-                dotNetObject.invokeMethodAsync("NotifyOpenedAsync");
+                dotNetObject.invokeMethodAsync("NotifyOpened");
             };
             dialog.listen("MDCDialog:opened", openedCallback);
             dialog.escapeKeyAction = escapeKeyAction;
@@ -18516,7 +18523,7 @@ PERFORMANCE OF THIS SOFTWARE.
         function MBMenu_init(elem, dotNetObject) {
             elem._menu = MDCMenu.attachTo(elem);
             var closedCallback = function closedCallback() {
-                dotNetObject.invokeMethodAsync("NotifyClosedAsync");
+                dotNetObject.invokeMethodAsync("NotifyClosed");
             };
             elem._menu.listen("MDCMenuSurface:closed", closedCallback);
         }
@@ -18528,6 +18535,23 @@ PERFORMANCE OF THIS SOFTWARE.
         function MBMenu_hide(elem) {
             if (elem._menu) {
                 elem._menu.open = false;
+            }
+        }
+        function MBMenuSurface_init(elem, dotNetObject) {
+            elem._menu = MDCMenuSurface.attachTo(elem);
+            var closedCallback = function closedCallback() {
+                dotNetObject.invokeMethodAsync("NotifyClosed");
+            };
+            elem._menu.listen("MDCMenuSurface:closed", closedCallback);
+        }
+        function MBMenuSurface_show(elem) {
+            if (elem._menu) {
+                elem._menu.open();
+            }
+        }
+        function MBMenuSurface_hide(elem) {
+            if (elem._menu) {
+                elem._menu.close();
             }
         }
         /**
@@ -19293,9 +19317,9 @@ PERFORMANCE OF THIS SOFTWARE.
             elem._isSingleSelect = isSingleSelect;
             elem._segmentedButton.foundation.adapter.notifySelectedChange = function(detail) {
                 if (elem._isSingleSelect) {
-                    dotNetObject.invokeMethodAsync("NotifySingleSelectedAsync", detail.index);
+                    dotNetObject.invokeMethodAsync("NotifySingleSelected", detail.index);
                 } else {
-                    dotNetObject.invokeMethodAsync("NotifyMultiSelectedAsync", elem._segmentedButton.segments.map((function(x) {
+                    dotNetObject.invokeMethodAsync("NotifyMultiSelected", elem._segmentedButton.segments.map((function(x) {
                         return x.isSelected();
                     })));
                 }
@@ -19315,10 +19339,9 @@ PERFORMANCE OF THIS SOFTWARE.
         }
         function MBSelect_init(elem, dotNetObject) {
             elem._select = MDCSelect.attachTo(elem);
-            elem._select.foundation.handleMenuItemAction = function(index) {
-                elem._select.foundation.setSelectedIndex(index);
-                dotNetObject.invokeMethodAsync("NotifySelectedAsync", index);
-            };
+            elem._select.listen("MDCSelect:change", (function() {
+                dotNetObject.invokeMethodAsync("NotifySelected", elem._select.selectedIndex);
+            }));
         }
         function MBSelect_setDisabled(elem, value) {
             elem._select.disabled = value;
@@ -20422,13 +20445,13 @@ PERFORMANCE OF THIS SOFTWARE.
             elem._slider = MDCSlider.attachTo(elem);
             elem._eventType = eventType;
             var debounceNotify = lodash.debounce((function() {
-                dotNetObject.invokeMethodAsync("NotifyChangedAsync", elem._slider.getValue());
+                dotNetObject.invokeMethodAsync("NotifyChanged", elem._slider.getValue());
             }), delay);
             var throttleNotify = lodash.throttle((function() {
-                dotNetObject.invokeMethodAsync("NotifyChangedAsync", elem._slider.getValue());
+                dotNetObject.invokeMethodAsync("NotifyChanged", elem._slider.getValue());
             }), delay);
             var thumbUpCallback = function thumbUpCallback() {
-                dotNetObject.invokeMethodAsync("NotifyChangedAsync", elem._slider.getValue());
+                dotNetObject.invokeMethodAsync("NotifyChanged", elem._slider.getValue());
             };
             var debounceCallback = function debounceCallback() {
                 debounceNotify();
@@ -22975,7 +22998,7 @@ PERFORMANCE OF THIS SOFTWARE.
             elem._tabBar = MDCTabBar.attachTo(elem);
             elem._callback = function() {
                 var index = elem._tabBar.foundation.adapter.getFocusedTabIndex();
-                dotNetObject.invokeMethodAsync("NotifyActivatedAsync", index);
+                dotNetObject.invokeMethodAsync("NotifyActivated", index);
             };
             elem._tabBar.listen("MDCTabBar:activated", elem._callback);
         }
@@ -24422,6 +24445,7 @@ PERFORMANCE OF THIS SOFTWARE.
             MBLinearProgress: MBLinearProgress_namespaceObject,
             MBList: MBList_namespaceObject,
             MBMenu: MBMenu_namespaceObject,
+            MBMenuSurface: MBMenuSurface_namespaceObject,
             MBRadioButton: MBRadioButton_namespaceObject,
             MBSegmentedButtonMulti: MBSegmentedButtonMulti_namespaceObject,
             MBSelect: MBSelect_namespaceObject,
