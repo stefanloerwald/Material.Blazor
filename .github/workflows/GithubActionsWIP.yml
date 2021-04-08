@@ -478,6 +478,7 @@ jobs:
         name: report
         path: all_reports.md
     - name: Create issue from file
+      id: ciff
       uses: peter-evans/create-issue-from-file@v2
       with:
         title: Comparison of ${{ steps.baselineprefix.outputs.prefix }} and ${{github.actor}}.github.io/Material.Blazor
