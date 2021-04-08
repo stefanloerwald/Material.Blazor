@@ -84,12 +84,14 @@
 <ul>
 <li>Deploy releases to nuget</li>
 <li>Deploy the demo page (<a href="https://material-blazor.com">https://material-blazor.com</a>) for every release</li>
+<li>Deploy a demo page (<a href="https://material-blazor.com">https://material-blazor.com</a>) for the most recent state of the project (i.e. the state the <code>main</code> branch)</li>
 <li>Perform basic sanity checks for pull requests</li>
 <li>Perform side-by-side comparison checks for pull requests against the current state of Material.Blazor</li>
 </ul>
 <h1 id="difference-between-official-demo-pages">Difference between official demo pages</h1>
 <p>There are two demo pages for Material.Blazor: <a href="https://material-blazor.com">https://material-blazor.com</a> and <a href="https://material-blazor.github.io/Material.Blazor.Current">https://material-blazor.github.io/Material.Blazor.Current</a>.
-<a href="https://material-blazor.com">https://material-blazor.com</a> reflects the state of the most recent release of Material.Blazor. Use this as a reference when designing your website. <a href="https://material-blazor.github.io/Material.Blazor.Current">https://material-blazor.github.io/Material.Blazor.Current</a> reflects the state of the main branch of the Material.Blazor repo. Its main purpose is to facilitate the development of the library.</p>
+<a href="https://material-blazor.com">https://material-blazor.com</a> reflects the state of the most recent release of Material.Blazor. Use this as a reference when designing your website.
+<a href="https://material-blazor.github.io/Material.Blazor.Current">https://material-blazor.github.io/Material.Blazor.Current</a> reflects the state of the main branch of the Material.Blazor repo. Its main purpose is to facilitate the development of the library.</p>
 <h1 id="side-by-side-comparisons">Side-by-side comparisons</h1>
 <p>One of the key principles behind Material.Blazor is correctness. Components should create the exact markup specified by the material components web project. To detect regressions, we perform side-by-side comparisons of new versions against the current version.</p>
 <p>We crawl all pages of the demo website for both forks and PRs and compare them against the most recent version of Material.Blazor.</p>
@@ -103,7 +105,7 @@ For pull requests against the Material.Blazor repo, a comment will be added to t
 <li>The Material.Blazor NuGet package</li>
 <li>The Material.Blazor Side-by-side Comparison report</li>
 </ul>
-<p>The gh-pages branch is created in the repository  of either Material.Blazor or Material.Blazor.Current;</p>
+<p>The gh-pages branch is created in the repository of either Material.Blazor or Material.Blazor.Current;</p>
 <p>The NuGet package is published as a GitHub package (CI) or a NuGet.org package (Release).</p>
 <p>The Side by Side report is actually packaged as a GitHub artifact of the build.</p>
 <h3 id="wip-workflow">WIP Workflow</h3>
