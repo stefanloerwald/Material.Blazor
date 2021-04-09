@@ -130,7 +130,7 @@
     <MakeDir Directories="wwwroot" />
 
     <Message Importance="high" Text="***** npm install" />
-    <Exec Command="npm install --prefer-offline --no-audit" />
+    <Exec Command="npm install --prefer-offline --no-audit --no-fund" />
 
     <!--<Message Importance="high" Text="***** downloadfiles" />
     <DownloadFile SourceUrl="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" DestinationFolder="$(MSBuildProjectDirectory)\wwwroot" DestinationFilename="material-components-icons.css">
