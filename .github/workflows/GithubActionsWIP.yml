@@ -204,7 +204,7 @@ jobs:
     - uses: actions/cache@v2
       with:
         path: '**/node_modules'
-        key: ${{ runner.os }}-modules-${{ hashFiles('**/yarn.lock') }}
+        key: ${{ runner.os }}-modules-${{ hashFiles('**/*.json') }}
 
     - name: Build assets (library) 🔧
       run: |
@@ -595,7 +595,8 @@ jobs:
         issue_number: ${{github.event.number}}
         body: |
           |
-          Closes #${{steps.ciff.outputs.issue-number}} (comparison report issue)
+          Closes #${{steps.ciff.outputs.issue-number}}
+          (comparison report issue)
         # in the body above, the two dashes are an absolute necessity! https://github.com/octokit/request-action/issues/79
       env:
         GITHUB_TOKEN: ${{ secrets.GH_PAT }}
