@@ -105,7 +105,7 @@
     <MakeDir Directories="wwwroot" />
 
     <Message Importance="high" Text="***** npm install" />
-    <Exec Command="npm install" />
+    <Exec Command="npm install --prefer-offline --no-audit" />
 
     <Delete Files="node_modules\@material\segmented-button\segment\adapter.ts;node_modules\@material\segmented-button\segment\component.ts;node_modules\@material\segmented-button\segment\constants.ts;node_modules\@material\segmented-button\segment\foundation.ts;node_modules\@material\segmented-button\segment\index.ts" />
     <Delete Files="node_modules\@material\segmented-button\segmented-button\adapter.ts;node_modules\@material\segmented-button\segmented-button\component.ts;node_modules\@material\segmented-button\segmented-button\constants.ts;node_modules\@material\segmented-button\segmented-button\foundation.ts;node_modules\@material\segmented-button\segmented-button\index.ts" />
@@ -130,7 +130,7 @@
     <MakeDir Directories="wwwroot" />
 
     <Message Importance="high" Text="***** npm install" />
-    <Exec Command="npm install" />
+    <Exec Command="npm install --prefer-offline --no-audit" />
 
     <!--<Message Importance="high" Text="***** downloadfiles" />
     <DownloadFile SourceUrl="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" DestinationFolder="$(MSBuildProjectDirectory)\wwwroot" DestinationFilename="material-components-icons.css">

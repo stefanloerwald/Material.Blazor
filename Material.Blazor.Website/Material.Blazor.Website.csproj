@@ -73,7 +73,7 @@
     <Exec Command="mkdir wwwroot\css" IgnoreExitCode="true" />
 
     <Message Importance="high" Text="***** npm install" />
-    <Exec Command="npm install" />
+    <Exec Command="npm install --prefer-offline --no-audit" />
     <!-- Don't build unminified themes -->
     <Message Importance="high" Text="***** build material default theme" />
     <Exec Command="npm run build-min-material-default" />
