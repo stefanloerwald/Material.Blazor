@@ -167,8 +167,8 @@ jobs:
       run: echo "::set-output name=filesHash::${{hashFiles('Material*/**/*')}}"
     - uses: actions/cache@v2
       with:
-        path: '**/[bo][ib][nj]/*'
-        key: ${{ runner.os }}-dotnet-bin-obj-test1-${{ steps.hash-key.outputs.filesHash }}
+        path: '**/[bo][ib][nj]/**/*'
+        key: ${{ runner.os }}-dotnet-bin-obj-test2-${{ steps.hash-key.outputs.filesHash }}
 
     - name: Build Website 🔧
       run: dotnet build --configuration ${env:buildConfiguration} --version-suffix ${{needs.ci-identifier.outputs.ciSuffix}} ${env:projectWeb} -p:"SkipNpm=1"
@@ -244,8 +244,8 @@ jobs:
       run: echo "::set-output name=filesHash::${{hashFiles('Material*/**/*')}}"
     - uses: actions/cache@v2
       with:
-        path: '**/[bo][ib][nj]/*'
-        key: ${{ runner.os }}-dotnet-bin-obj-test1-${{ steps.hash-key.outputs.filesHash }}
+        path: '**/[bo][ib][nj]/**/*'
+        key: ${{ runner.os }}-dotnet-bin-obj-test2-${{ steps.hash-key.outputs.filesHash }}
 
     - name: Download Artifacts 🔻
       uses: actions/download-artifact@v2
