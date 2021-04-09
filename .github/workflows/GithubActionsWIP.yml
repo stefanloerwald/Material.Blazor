@@ -161,17 +161,16 @@ jobs:
       with:
         persist-credentials: false
       if: github.event_name != 'workflow_dispatch'
-        
+
+    - name: Create key
+      id: hash-key
+      run: echo "::set-output name=filesHash::${{hashFiles('Material*/**/*')}}"
     - uses: actions/cache@v2
       with:
         path: |
-          'Material.Blazor/bin/**/*'
-          'Material.Blazor/obj/**/*'
-          'Material.Blazor.Website/bin/**/*'
-          'Material.Blazor.Website/obj/**/*'
-          'Material.Blazor.Website.WebAssembly/bin/**/*'
-          'Material.Blazor.Website.WebAssembly/obj/**/*'
-        key: ${{ runner.os }}-full-mb-${{ hashFiles('Material*/**/*.cs Material*/**/*.razor Material*/**/*.ts Material*/**/*.scss Material*/**/*.js') }}
+          '**/bin/**/*'
+          '**/obj/**/*'
+        key: ${{ runner.os }}-full-mb-${{ steps.hash-key.outputs.filesHash }}
 
     - name: Build Website 🔧
       run: dotnet build --configuration ${env:buildConfiguration} --version-suffix ${{needs.ci-identifier.outputs.ciSuffix}} ${env:projectWeb} -p:"SkipNpm=1"
@@ -241,17 +240,16 @@ jobs:
       uses: actions/checkout@v2
       with:
         persist-credentials: false
-        
+
+    - name: Create key
+      id: hash-key
+      run: echo "::set-output name=filesHash::${{hashFiles('Material*/**/*')}}"
     - uses: actions/cache@v2
       with:
         path: |
-          'Material.Blazor/bin/**/*'
-          'Material.Blazor/obj/**/*'
-          'Material.Blazor.Website/bin/**/*'
-          'Material.Blazor.Website/obj/**/*'
-          'Material.Blazor.Website.WebAssembly/bin/**/*'
-          'Material.Blazor.Website.WebAssembly/obj/**/*'
-        key: ${{ runner.os }}-full-mb-${{ hashFiles('Material*/**/*.cs Material*/**/*.razor Material*/**/*.ts Material*/**/*.scss Material*/**/*.js') }}
+          '**/bin/**/*'
+          '**/obj/**/*'
+        key: ${{ runner.os }}-full-mb-${{ steps.hash-key.outputs.filesHash }}
 
     - name: Download Artifacts 🔻
       uses: actions/download-artifact@v2
