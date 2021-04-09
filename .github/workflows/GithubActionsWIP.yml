@@ -165,8 +165,8 @@ jobs:
     - uses: actions/cache@v2
       with:
         path: |
-          '**/bin/'
-          '**/obj/'
+          '**/bin/**/*'
+          '**/obj/**/*'
         key: ${{ runner.os }}-full-mb-${{ hashFiles('**/*') }}
 
     - name: Build Website 🔧
@@ -243,8 +243,8 @@ jobs:
     - uses: actions/cache@v2
       with:
         path: |
-          '**/bin/'
-          '**/obj/'
+          '**/bin/**/*'
+          '**/obj/**/*'
         key: ${{ runner.os }}-full-mb-${{ hashFiles('**/*') }}
 
     - name: Download Artifacts 🔻
