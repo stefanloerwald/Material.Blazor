@@ -150,8 +150,35 @@ jobs:
 # This is soft-skipped when we only want to perform a comparison (github.event_name != 'workflow_dispatch')
 # A soft-skip is necessary, because the comparison job has to occur after build-website, if it is built.
 ############################################################################################################
-  build-website-dotnet-only:
+  dotnet-restore:
     needs: [ci-identifier]
+    name: Restore nuget packages
+    runs-on: windows-latest
+
+    steps:
+    - name: Checkout repository under $GITHUB_WORKSPACE so the job can access it 🛎️
+      uses: actions/checkout@v2
+      with:
+        persist-credentials: false
+      if: github.event_name != 'workflow_dispatch'
+      
+    - uses: actions/cache@v2
+      with:
+        path: '~/.nuget/packages/**/*'
+        key: ${{ runner.os }}-nuget-${{hashFiles('Material*/**/*.csproj')}}
+      if: github.event_name != 'workflow_dispatch'
+
+    - name: Run restore 🔧
+      run: dotnet restore
+      if: github.event_name != 'workflow_dispatch'
+
+############################################################################################################
+# Build website
+# This is soft-skipped when we only want to perform a comparison (github.event_name != 'workflow_dispatch')
+# A soft-skip is necessary, because the comparison job has to occur after build-website, if it is built.
+############################################################################################################
+  build-website-dotnet-only:
+    needs: [ci-identifier, dotnet-restore]
     name: Build website (.NET)
     runs-on: windows-latest
 
@@ -165,10 +192,17 @@ jobs:
     - name: Create key
       id: hash-key
       run: echo "::set-output name=filesHash::${{hashFiles('Material*/**/*')}}"
+      if: github.event_name != 'workflow_dispatch'
     - uses: actions/cache@v2
       with:
         path: '**/[bo][ib][nj]/**/*'
         key: ${{ runner.os }}-dotnet-bin-obj-${{ steps.hash-key.outputs.filesHash }}
+      if: github.event_name != 'workflow_dispatch'
+    - uses: actions/cache@v2
+      with:
+        path: '~/.nuget/packages/**/*'
+        key: ${{ runner.os }}-nuget-${{hashFiles('Material*/**/*.csproj')}}
+      if: github.event_name != 'workflow_dispatch'
 
     - name: Build Website 🔧
       run: dotnet build --configuration ${env:buildConfiguration} --version-suffix ${{needs.ci-identifier.outputs.ciSuffix}} ${env:projectWeb} -p:"SkipNpm=1"
@@ -258,9 +292,11 @@ jobs:
       with:
         path: '**/wwwroot/**/*'
         key: ${{ runner.os }}-wwwroot-${{ steps.hash-key.outputs.filesHash }}
-
-    - name: Restore Material.Blazor 🔧
-      run: dotnet restore ${env:projectWeb}
+    - uses: actions/cache@v2
+      with:
+        path: '~/.nuget/packages/**/*'
+        key: ${{ runner.os }}-nuget-${{hashFiles('Material*/**/*.csproj')}}
+      if: github.event_name != 'workflow_dispatch'
       
     - name: Publish Website 🔧
       run: dotnet publish --no-build --configuration ${env:buildConfiguration} --output ${env:outputWeb} --version-suffix ${{needs.ci-identifier.outputs.ciSuffix}} ${env:projectWeb} -p:BlazorEnableCompression=false
