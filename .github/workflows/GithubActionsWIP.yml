@@ -616,20 +616,3 @@ jobs:
         content-filepath: meta_report.md
         labels: report, automated issue
         token: ${{secrets.GH_PAT}}
-    - name: Leave a comment to auto-close the issue when this PR is closed, if this is a PR
-      uses: octokit/request-action@v2.x
-      if: (github.event_name == 'pull_request')
-      with:
-        route: POST /repos/{org}/{repo}/issues/{issue_number}/comments
-        org: ${{github.actor}}
-        repo: Material.Blazor
-        accept: 'application/vnd.github.v3+json'
-        issue_number: ${{github.event.number}}
-        body: |
-          |
-          Closes #${{steps.ciff.outputs.issue-number}}
-          (comparison report issue)
-        # in the body above, the two dashes are an absolute necessity! https://github.com/octokit/request-action/issues/79
-      env:
-        GITHUB_TOKEN: ${{ secrets.GH_PAT }}
-
