@@ -153,7 +153,7 @@ jobs:
   build-website-dotnet-only:
     needs: [ci-identifier]
     name: Build website (.NET)
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
 
     steps:
     - name: Checkout repository under $GITHUB_WORKSPACE so the job can access it 🛎️
@@ -171,8 +171,8 @@ jobs:
 
     - name: Build Website 🔧
       run: |
-        dotnet build --configuration ${{env.buildConfiguration}} --version-suffix ${{needs.ci-identifier.outputs.ciSuffix}} ${{env.projectMB}} -p:"SkipNpm=1"
-        dotnet build --configuration ${{env.buildConfiguration}} --version-suffix ${{needs.ci-identifier.outputs.ciSuffix}} ${{env.projectWeb}} -p:"SkipNpm=1"
+        dotnet build --configuration ${env:buildConfiguration} --version-suffix ${{needs.ci-identifier.outputs.ciSuffix}} ${env:projectMB} -p:"SkipNpm=1"
+        dotnet build --configuration ${env:buildConfiguration} --version-suffix ${{needs.ci-identifier.outputs.ciSuffix}} ${env:projectWeb} -p:"SkipNpm=1"
       if: github.event_name != 'workflow_dispatch'
 
 ############################################################################################################
