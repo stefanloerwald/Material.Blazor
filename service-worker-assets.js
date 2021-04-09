@@ -73,6 +73,26 @@
       "url": "_content\/Material.Blazor.Website\/background.png"
     },
     {
+      "hash": "sha256-7CSvyRx+ddf3X8K2vrKEdRgpq0R4IYNYDhlW9pXMvI0=",
+      "url": "_content\/Material.Blazor.Website\/css\/asymmetric-theme.min.css"
+    },
+    {
+      "hash": "sha256-czzbloZ6C6qmH1KNH8nM91l\/6owgl\/BXVQjUyLL5GMs=",
+      "url": "_content\/Material.Blazor.Website\/css\/dark-square-theme.min.css"
+    },
+    {
+      "hash": "sha256-CpPwwiP+OMPvufpmXYHpYm3nb0TwFzIEE3gsNH\/18wc=",
+      "url": "_content\/Material.Blazor.Website\/css\/light-square-theme.min.css"
+    },
+    {
+      "hash": "sha256-717eZcRJAliG3Iutj0GDhaScqR157Ox3lbtlCQMBfbw=",
+      "url": "_content\/Material.Blazor.Website\/css\/material-default-theme.min.css"
+    },
+    {
+      "hash": "sha256-c4OwlDADKUAyAFMDm1sxePGpdD4Gb\/w62zTpA98H1KE=",
+      "url": "_content\/Material.Blazor.Website\/css\/rounded-theme.min.css"
+    },
+    {
       "hash": "sha256-uy4mYulZhVVhXKU+6YXTgFrWMMFbNPmaF80ytkP9D8A=",
       "url": "_content\/Material.Blazor.Website\/favicon-16x16.png"
     },
@@ -157,6 +177,22 @@
       "url": "_content\/Material.Blazor.Website\/videos\/coverr-someone-is-checking-emails-there_s-an-old-globe-on-the-table-0186.mp4"
     },
     {
+      "hash": "sha256-p6pPZsC+AJpv3TH+4oxYUumO\/PAN8UDUmXqQl0Cy6kk=",
+      "url": "_content\/Material.Blazor\/Material.min.css"
+    },
+    {
+      "hash": "sha256-ftpgw\/DgpkNDcspjMyi2UHdD43s0ZuFazPH9KiFS2ZE=",
+      "url": "_content\/Material.Blazor\/MaterialBlazor.js"
+    },
+    {
+      "hash": "sha256-hX7XqNeX8mjCsbXrbom\/sP1RrzWBn0cta6+iAiYueEM=",
+      "url": "_content\/Material.Blazor\/MaterialBlazor.min.css"
+    },
+    {
+      "hash": "sha256-2aIMI0XfYesc0z+PtHXQyqm5M\/jyaK4C2At4Lu0ut94=",
+      "url": "_content\/Material.Blazor\/MaterialBlazor.min.js"
+    },
+    {
       "hash": "sha256-rJmwfWf7998cj7fW6HgQu3oEFnaoCimGgH5Y1jYZBX8=",
       "url": "_framework\/Microsoft.AspNetCore.Components.dll"
     },
@@ -225,15 +261,15 @@
       "url": "_framework\/System.IO.Pipelines.dll"
     },
     {
-      "hash": "sha256-3ECTSBDX2lNRCYL77nn8FzhEyNM6IIyXmG2bihej2Zk=",
+      "hash": "sha256-rn3Z\/muRAt0fjXpyI6vvjHcBr8JdF728OpbdepXtbWk=",
       "url": "_framework\/Material.Blazor.dll"
     },
     {
-      "hash": "sha256-jClYtll8BL7w5FsNMpYoEWC9IIiJ2IEuPSI+niSr9wQ=",
+      "hash": "sha256-4q0cIwRF\/jZ9gPGi88MpFdo+Oc\/Ousgu8ntM1MgDneo=",
       "url": "_framework\/Material.Blazor.Website.dll"
     },
     {
-      "hash": "sha256-1NrO2f46bqGy6vi+0bl1UKJKzPknJcUBmWzFkOhYsyM=",
+      "hash": "sha256-zfatgSTDlgm9LDpoPzxDgCX\/eEilu9cCeWrLAbGC3Ck=",
       "url": "_framework\/Material.Blazor.Website.WebAssembly.dll"
     },
     {
@@ -337,7 +373,7 @@
       "url": "_framework\/System.Private.CoreLib.dll"
     },
     {
-      "hash": "sha256-vjAJJYx0dh\/waK46Sm5l\/ZQbqDeK8X2btrB9374X7MY=",
+      "hash": "sha256-rB56TZl52\/GZupgimJ7IbimoR40IK2Oya6MaC87oerI=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -345,5 +381,5 @@
       "url": "_framework\/blazor.webassembly.js"
     }
   ],
-  "version": "xmtlct+C"
+  "version": "UOnMNLot"
 };
