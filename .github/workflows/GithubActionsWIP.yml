@@ -165,8 +165,12 @@ jobs:
     - uses: actions/cache@v2
       with:
         path: |
-          '**/bin/**/*'
-          '**/obj/**/*'
+          'Material.Blazor/bin/**/*'
+          'Material.Blazor/obj/**/*'
+          'Material.Blazor.Website/bin/**/*'
+          'Material.Blazor.Website/obj/**/*'
+          'Material.Blazor.Website.WebAssembly/bin/**/*'
+          'Material.Blazor.Website.WebAssembly/obj/**/*'
         key: ${{ runner.os }}-full-mb-${{ hashFiles('Material*/**/*') }}
 
     - name: Build Website 🔧
@@ -243,8 +247,12 @@ jobs:
     - uses: actions/cache@v2
       with:
         path: |
-          '**/bin/**/*'
-          '**/obj/**/*'
+          'Material.Blazor/bin/**/*'
+          'Material.Blazor/obj/**/*'
+          'Material.Blazor.Website/bin/**/*'
+          'Material.Blazor.Website/obj/**/*'
+          'Material.Blazor.Website.WebAssembly/bin/**/*'
+          'Material.Blazor.Website.WebAssembly/obj/**/*'
         key: ${{ runner.os }}-full-mb-${{ hashFiles('Material*/**/*') }}
 
     - name: Download Artifacts 🔻
