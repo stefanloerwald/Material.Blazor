@@ -41,6 +41,7 @@ jobs:
     - name: Nothing to see here
       run: echo ""
   ci-identifier:
+    name: Create CI identifier
     runs-on: ubuntu-latest
     steps:
     - name: Create CI suffix
