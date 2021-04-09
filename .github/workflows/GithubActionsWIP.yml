@@ -167,7 +167,7 @@ jobs:
         path: |
           '**/bin/**/*'
           '**/obj/**/*'
-        key: ${{ runner.os }}-full-mb-${{ hashFiles('**/*') }}
+        key: ${{ runner.os }}-full-mb-${{ hashFiles('Material*/**/*') }}
 
     - name: Build Website 🔧
       run: |
@@ -245,7 +245,7 @@ jobs:
         path: |
           '**/bin/**/*'
           '**/obj/**/*'
-        key: ${{ runner.os }}-full-mb-${{ hashFiles('**/*') }}
+        key: ${{ runner.os }}-full-mb-${{ hashFiles('Material*/**/*') }}
 
     - name: Download Artifacts 🔻
       uses: actions/download-artifact@v2
