@@ -174,9 +174,7 @@ jobs:
         key: ${{ runner.os }}-full-mb-${{ hashFiles('Material*/**/*') }}
 
     - name: Build Website 🔧
-      run: |
-        dotnet build --configuration ${env:buildConfiguration} --version-suffix ${{needs.ci-identifier.outputs.ciSuffix}} ${env:projectMB} -p:"SkipNpm=1"
-        dotnet build --configuration ${env:buildConfiguration} --version-suffix ${{needs.ci-identifier.outputs.ciSuffix}} ${env:projectWeb} -p:"SkipNpm=1"
+      run: dotnet build --configuration ${env:buildConfiguration} --version-suffix ${{needs.ci-identifier.outputs.ciSuffix}} ${env:projectWeb} -p:"SkipNpm=1"
       if: github.event_name != 'workflow_dispatch'
 
 ############################################################################################################
