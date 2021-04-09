@@ -170,7 +170,7 @@ jobs:
         path: |
           '**/bin/**/*'
           '**/obj/**/*'
-        key: ${{ runner.os }}-full-mb-${{ steps.hash-key.outputs.filesHash }}
+        key: ${{ runner.os }}-dotnet-${{ steps.hash-key.outputs.filesHash }}
 
     - name: Build Website 🔧
       run: dotnet build --configuration ${env:buildConfiguration} --version-suffix ${{needs.ci-identifier.outputs.ciSuffix}} ${env:projectWeb} -p:"SkipNpm=1"
