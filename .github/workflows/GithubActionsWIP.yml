@@ -168,7 +168,7 @@ jobs:
     - uses: actions/cache@v2
       with:
         path: '**/[bo][ib][nj]/**/*'
-        key: ${{ runner.os }}-dotnet-bin-obj-test2-${{ steps.hash-key.outputs.filesHash }}
+        key: ${{ runner.os }}-dotnet-bin-obj-${{ steps.hash-key.outputs.filesHash }}
 
     - name: Build Website 🔧
       run: dotnet build --configuration ${env:buildConfiguration} --version-suffix ${{needs.ci-identifier.outputs.ciSuffix}} ${env:projectWeb} -p:"SkipNpm=1"
@@ -203,6 +203,14 @@ jobs:
       with:
         path: '**/node_modules'
         key: ${{ runner.os }}-modules-${{ hashFiles('**/*.json') }}
+
+    - name: Create key
+      id: hash-key
+      run: echo "::set-output name=filesHash::${{hashFiles('Material*/**/*')}}"
+    - uses: actions/cache@v2
+      with:
+        path: '**/wwwroot/**/*'
+        key: ${{ runner.os }}-wwwroot-${{ steps.hash-key.outputs.filesHash }}
 
     - name: Build assets (library) 🔧
       run: |
@@ -245,23 +253,11 @@ jobs:
     - uses: actions/cache@v2
       with:
         path: '**/[bo][ib][nj]/**/*'
-        key: ${{ runner.os }}-dotnet-bin-obj-test2-${{ steps.hash-key.outputs.filesHash }}
-
-    - name: Download Artifacts 🔻
-      uses: actions/download-artifact@v2
+        key: ${{ runner.os }}-dotnet-bin-obj-${{ steps.hash-key.outputs.filesHash }}
+    - uses: actions/cache@v2
       with:
-        name: static_assets
-        path: static_assets
-      if: github.event_name != 'workflow_dispatch'
-
-    - name: Copy files to appropriate locations
-      run: |
-        mkdir ./Material.Blazor/wwwroot/ || true
-        cp static_assets/library/* ./Material.Blazor/wwwroot/
-        mkdir ./Material.Blazor.Website/wwwroot/css/ || true
-        cp static_assets/demo/* ./Material.Blazor.Website/wwwroot/css/
-      shell: bash
-      if: github.event_name != 'workflow_dispatch'
+        path: '**/wwwroot/**/*'
+        key: ${{ runner.os }}-wwwroot-${{ steps.hash-key.outputs.filesHash }}
 
     - name: Restore Material.Blazor 🔧
       run: dotnet restore ${env:projectWeb}
@@ -270,7 +266,7 @@ jobs:
       run: dotnet publish --no-build --configuration ${env:buildConfiguration} --output ${env:outputWeb} --version-suffix ${{needs.ci-identifier.outputs.ciSuffix}} ${env:projectWeb} -p:BlazorEnableCompression=false
       if: github.event_name != 'workflow_dispatch'
 
-    - name: Reupload Website Artifacts 🔺 # The website is then uploaded as an artifact named 'siteWeb'.
+    - name: Upload Website Artifacts 🔺 # The website is then uploaded as an artifact named 'siteWeb'.
       uses: actions/upload-artifact@v2
       with:
         name: siteWeb
