@@ -105,7 +105,7 @@
     <MakeDir Directories="wwwroot" />
 
     <Message Importance="high" Text="***** npm install" />
-    <Exec Command="npm install --prefer-offline --no-audit" />
+    <Exec Command="npm install --prefer-offline --no-audit --no-fund" />
 
     <Delete Files="node_modules\@material\segmented-button\segment\adapter.ts;node_modules\@material\segmented-button\segment\component.ts;node_modules\@material\segmented-button\segment\constants.ts;node_modules\@material\segmented-button\segment\foundation.ts;node_modules\@material\segmented-button\segment\index.ts" />
     <Delete Files="node_modules\@material\segmented-button\segmented-button\adapter.ts;node_modules\@material\segmented-button\segmented-button\component.ts;node_modules\@material\segmented-button\segmented-button\constants.ts;node_modules\@material\segmented-button\segmented-button\foundation.ts;node_modules\@material\segmented-button\segmented-button\index.ts" />
