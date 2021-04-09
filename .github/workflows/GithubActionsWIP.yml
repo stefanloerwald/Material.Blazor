@@ -171,7 +171,7 @@ jobs:
           'Material.Blazor.Website/obj/**/*'
           'Material.Blazor.Website.WebAssembly/bin/**/*'
           'Material.Blazor.Website.WebAssembly/obj/**/*'
-        key: ${{ runner.os }}-full-mb-${{ hashFiles('Material*/**/*') }}
+        key: ${{ runner.os }}-full-mb-${{ hashFiles('Material*/**/*.cs Material*/**/*.razor Material*/**/*.ts Material*/**/*.scss Material*/**/*.js') }}
 
     - name: Build Website 🔧
       run: dotnet build --configuration ${env:buildConfiguration} --version-suffix ${{needs.ci-identifier.outputs.ciSuffix}} ${env:projectWeb} -p:"SkipNpm=1"
@@ -251,7 +251,7 @@ jobs:
           'Material.Blazor.Website/obj/**/*'
           'Material.Blazor.Website.WebAssembly/bin/**/*'
           'Material.Blazor.Website.WebAssembly/obj/**/*'
-        key: ${{ runner.os }}-full-mb-${{ hashFiles('Material*/**/*') }}
+        key: ${{ runner.os }}-full-mb-${{ hashFiles('Material*/**/*.cs Material*/**/*.razor Material*/**/*.ts Material*/**/*.scss Material*/**/*.js') }}
 
     - name: Download Artifacts 🔻
       uses: actions/download-artifact@v2
