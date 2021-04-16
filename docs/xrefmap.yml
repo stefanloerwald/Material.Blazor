@@ -643,15 +643,15 @@ references:
   commentId: E:Material.Blazor.IMBSnackbarService.OnTriggerStateHasChanged
   fullName: Material.Blazor.IMBSnackbarService.OnTriggerStateHasChanged
   nameWithType: IMBSnackbarService.OnTriggerStateHasChanged
-- uid: Material.Blazor.IMBSnackbarService.ShowSnackbar(System.String,System.Action,System.String,System.Nullable{Material.Blazor.MBNotifierCloseMethod},System.Boolean,System.Boolean,System.Nullable{System.Int32},System.Boolean)
-  name: ShowSnackbar(String, Action, String, Nullable<MBNotifierCloseMethod>, Boolean, Boolean, Nullable<Int32>, Boolean)
-  href: api/Material.Blazor.IMBSnackbarService.html#Material_Blazor_IMBSnackbarService_ShowSnackbar_System_String_System_Action_System_String_System_Nullable_Material_Blazor_MBNotifierCloseMethod__System_Boolean_System_Boolean_System_Nullable_System_Int32__System_Boolean_
-  commentId: M:Material.Blazor.IMBSnackbarService.ShowSnackbar(System.String,System.Action,System.String,System.Nullable{Material.Blazor.MBNotifierCloseMethod},System.Boolean,System.Boolean,System.Nullable{System.Int32},System.Boolean)
-  name.vb: ShowSnackbar(String, Action, String, Nullable(Of MBNotifierCloseMethod), Boolean, Boolean, Nullable(Of Int32), Boolean)
-  fullName: Material.Blazor.IMBSnackbarService.ShowSnackbar(System.String, System.Action, System.String, System.Nullable<Material.Blazor.MBNotifierCloseMethod>, System.Boolean, System.Boolean, System.Nullable<System.Int32>, System.Boolean)
-  fullName.vb: Material.Blazor.IMBSnackbarService.ShowSnackbar(System.String, System.Action, System.String, System.Nullable(Of Material.Blazor.MBNotifierCloseMethod), System.Boolean, System.Boolean, System.Nullable(Of System.Int32), System.Boolean)
-  nameWithType: IMBSnackbarService.ShowSnackbar(String, Action, String, Nullable<MBNotifierCloseMethod>, Boolean, Boolean, Nullable<Int32>, Boolean)
-  nameWithType.vb: IMBSnackbarService.ShowSnackbar(String, Action, String, Nullable(Of MBNotifierCloseMethod), Boolean, Boolean, Nullable(Of Int32), Boolean)
+- uid: Material.Blazor.IMBSnackbarService.ShowSnackbar(System.String,System.Action,System.String,System.String,System.Nullable{Material.Blazor.MBNotifierCloseMethod},System.Boolean,System.Boolean,System.Nullable{System.Int32},System.Boolean)
+  name: ShowSnackbar(String, Action, String, String, Nullable<MBNotifierCloseMethod>, Boolean, Boolean, Nullable<Int32>, Boolean)
+  href: api/Material.Blazor.IMBSnackbarService.html#Material_Blazor_IMBSnackbarService_ShowSnackbar_System_String_System_Action_System_String_System_String_System_Nullable_Material_Blazor_MBNotifierCloseMethod__System_Boolean_System_Boolean_System_Nullable_System_Int32__System_Boolean_
+  commentId: M:Material.Blazor.IMBSnackbarService.ShowSnackbar(System.String,System.Action,System.String,System.String,System.Nullable{Material.Blazor.MBNotifierCloseMethod},System.Boolean,System.Boolean,System.Nullable{System.Int32},System.Boolean)
+  name.vb: ShowSnackbar(String, Action, String, String, Nullable(Of MBNotifierCloseMethod), Boolean, Boolean, Nullable(Of Int32), Boolean)
+  fullName: Material.Blazor.IMBSnackbarService.ShowSnackbar(System.String, System.Action, System.String, System.String, System.Nullable<Material.Blazor.MBNotifierCloseMethod>, System.Boolean, System.Boolean, System.Nullable<System.Int32>, System.Boolean)
+  fullName.vb: Material.Blazor.IMBSnackbarService.ShowSnackbar(System.String, System.Action, System.String, System.String, System.Nullable(Of Material.Blazor.MBNotifierCloseMethod), System.Boolean, System.Boolean, System.Nullable(Of System.Int32), System.Boolean)
+  nameWithType: IMBSnackbarService.ShowSnackbar(String, Action, String, String, Nullable<MBNotifierCloseMethod>, Boolean, Boolean, Nullable<Int32>, Boolean)
+  nameWithType.vb: IMBSnackbarService.ShowSnackbar(String, Action, String, String, Nullable(Of MBNotifierCloseMethod), Boolean, Boolean, Nullable(Of Int32), Boolean)
 - uid: Material.Blazor.IMBSnackbarService.ShowSnackbar*
   name: ShowSnackbar
   href: api/Material.Blazor.IMBSnackbarService.html#Material_Blazor_IMBSnackbarService_ShowSnackbar_
@@ -2275,19 +2275,6 @@ references:
   isSpec: "True"
   fullName: Material.Blazor.Internal.SnackbarInstance.Settings
   nameWithType: SnackbarInstance.Settings
-- uid: Material.Blazor.Internal.SnackbarInstance.TimeStamp
-  name: TimeStamp
-  href: api/Material.Blazor.Internal.SnackbarInstance.html#Material_Blazor_Internal_SnackbarInstance_TimeStamp
-  commentId: P:Material.Blazor.Internal.SnackbarInstance.TimeStamp
-  fullName: Material.Blazor.Internal.SnackbarInstance.TimeStamp
-  nameWithType: SnackbarInstance.TimeStamp
-- uid: Material.Blazor.Internal.SnackbarInstance.TimeStamp*
-  name: TimeStamp
-  href: api/Material.Blazor.Internal.SnackbarInstance.html#Material_Blazor_Internal_SnackbarInstance_TimeStamp_
-  commentId: Overload:Material.Blazor.Internal.SnackbarInstance.TimeStamp
-  isSpec: "True"
-  fullName: Material.Blazor.Internal.SnackbarInstance.TimeStamp
-  nameWithType: SnackbarInstance.TimeStamp
 - uid: Material.Blazor.MB_Grid_ColumnType
   name: MB_Grid_ColumnType
   href: api/Material.Blazor.MB_Grid_ColumnType.html
@@ -3391,6 +3378,19 @@ references:
   isSpec: "True"
   fullName: Material.Blazor.MBCascadingDefaults.DataTableDensity
   nameWithType: MBCascadingDefaults.DataTableDensity
+- uid: Material.Blazor.MBCascadingDefaults.DateFormat
+  name: DateFormat
+  href: api/Material.Blazor.MBCascadingDefaults.html#Material_Blazor_MBCascadingDefaults_DateFormat
+  commentId: P:Material.Blazor.MBCascadingDefaults.DateFormat
+  fullName: Material.Blazor.MBCascadingDefaults.DateFormat
+  nameWithType: MBCascadingDefaults.DateFormat
+- uid: Material.Blazor.MBCascadingDefaults.DateFormat*
+  name: DateFormat
+  href: api/Material.Blazor.MBCascadingDefaults.html#Material_Blazor_MBCascadingDefaults_DateFormat_
+  commentId: Overload:Material.Blazor.MBCascadingDefaults.DateFormat
+  isSpec: "True"
+  fullName: Material.Blazor.MBCascadingDefaults.DateFormat
+  nameWithType: MBCascadingDefaults.DateFormat
 - uid: Material.Blazor.MBCascadingDefaults.DateSelectionCriteria
   name: DateSelectionCriteria
   href: api/Material.Blazor.MBCascadingDefaults.html#Material_Blazor_MBCascadingDefaults_DateSelectionCriteria
@@ -10034,6 +10034,19 @@ references:
   isSpec: "True"
   fullName: Material.Blazor.MBSnackbarSettings.ActionText
   nameWithType: MBSnackbarSettings.ActionText
+- uid: Material.Blazor.MBSnackbarSettings.AdditionalClass
+  name: AdditionalClass
+  href: api/Material.Blazor.MBSnackbarSettings.html#Material_Blazor_MBSnackbarSettings_AdditionalClass
+  commentId: P:Material.Blazor.MBSnackbarSettings.AdditionalClass
+  fullName: Material.Blazor.MBSnackbarSettings.AdditionalClass
+  nameWithType: MBSnackbarSettings.AdditionalClass
+- uid: Material.Blazor.MBSnackbarSettings.AdditionalClass*
+  name: AdditionalClass
+  href: api/Material.Blazor.MBSnackbarSettings.html#Material_Blazor_MBSnackbarSettings_AdditionalClass_
+  commentId: Overload:Material.Blazor.MBSnackbarSettings.AdditionalClass
+  isSpec: "True"
+  fullName: Material.Blazor.MBSnackbarSettings.AdditionalClass
+  nameWithType: MBSnackbarSettings.AdditionalClass
 - uid: Material.Blazor.MBSnackbarSettings.CloseMethod
   name: CloseMethod
   href: api/Material.Blazor.MBSnackbarSettings.html#Material_Blazor_MBSnackbarSettings_CloseMethod
@@ -10844,6 +10857,24 @@ references:
   commentId: F:Material.Blazor.MBToastPosition.BottomRight
   fullName: Material.Blazor.MBToastPosition.BottomRight
   nameWithType: MBToastPosition.BottomRight
+- uid: Material.Blazor.MBToastPosition.CenterCenter
+  name: CenterCenter
+  href: api/Material.Blazor.MBToastPosition.html#Material_Blazor_MBToastPosition_CenterCenter
+  commentId: F:Material.Blazor.MBToastPosition.CenterCenter
+  fullName: Material.Blazor.MBToastPosition.CenterCenter
+  nameWithType: MBToastPosition.CenterCenter
+- uid: Material.Blazor.MBToastPosition.CenterLeft
+  name: CenterLeft
+  href: api/Material.Blazor.MBToastPosition.html#Material_Blazor_MBToastPosition_CenterLeft
+  commentId: F:Material.Blazor.MBToastPosition.CenterLeft
+  fullName: Material.Blazor.MBToastPosition.CenterLeft
+  nameWithType: MBToastPosition.CenterLeft
+- uid: Material.Blazor.MBToastPosition.CenterRight
+  name: CenterRight
+  href: api/Material.Blazor.MBToastPosition.html#Material_Blazor_MBToastPosition_CenterRight
+  commentId: F:Material.Blazor.MBToastPosition.CenterRight
+  fullName: Material.Blazor.MBToastPosition.CenterRight
+  nameWithType: MBToastPosition.CenterRight
 - uid: Material.Blazor.MBToastPosition.TopCenter
   name: TopCenter
   href: api/Material.Blazor.MBToastPosition.html#Material_Blazor_MBToastPosition_TopCenter
