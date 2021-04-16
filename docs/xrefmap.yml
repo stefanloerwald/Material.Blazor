@@ -712,18 +712,18 @@ references:
   commentId: T:Material.Blazor.IMBTooltipService
   fullName: Material.Blazor.IMBTooltipService
   nameWithType: IMBTooltipService
-- uid: Material.Blazor.IMBTooltipService.AddTooltip(System.Guid,MarkupString)
-  name: AddTooltip(Guid, MarkupString)
-  href: api/Material.Blazor.IMBTooltipService.html#Material_Blazor_IMBTooltipService_AddTooltip_System_Guid_MarkupString_
-  commentId: M:Material.Blazor.IMBTooltipService.AddTooltip(System.Guid,MarkupString)
-  fullName: Material.Blazor.IMBTooltipService.AddTooltip(System.Guid, MarkupString)
-  nameWithType: IMBTooltipService.AddTooltip(Guid, MarkupString)
-- uid: Material.Blazor.IMBTooltipService.AddTooltip(System.Guid,RenderFragment)
-  name: AddTooltip(Guid, RenderFragment)
-  href: api/Material.Blazor.IMBTooltipService.html#Material_Blazor_IMBTooltipService_AddTooltip_System_Guid_RenderFragment_
-  commentId: M:Material.Blazor.IMBTooltipService.AddTooltip(System.Guid,RenderFragment)
-  fullName: Material.Blazor.IMBTooltipService.AddTooltip(System.Guid, RenderFragment)
-  nameWithType: IMBTooltipService.AddTooltip(Guid, RenderFragment)
+- uid: Material.Blazor.IMBTooltipService.AddTooltip(System.Int64,MarkupString)
+  name: AddTooltip(Int64, MarkupString)
+  href: api/Material.Blazor.IMBTooltipService.html#Material_Blazor_IMBTooltipService_AddTooltip_System_Int64_MarkupString_
+  commentId: M:Material.Blazor.IMBTooltipService.AddTooltip(System.Int64,MarkupString)
+  fullName: Material.Blazor.IMBTooltipService.AddTooltip(System.Int64, MarkupString)
+  nameWithType: IMBTooltipService.AddTooltip(Int64, MarkupString)
+- uid: Material.Blazor.IMBTooltipService.AddTooltip(System.Int64,RenderFragment)
+  name: AddTooltip(Int64, RenderFragment)
+  href: api/Material.Blazor.IMBTooltipService.html#Material_Blazor_IMBTooltipService_AddTooltip_System_Int64_RenderFragment_
+  commentId: M:Material.Blazor.IMBTooltipService.AddTooltip(System.Int64,RenderFragment)
+  fullName: Material.Blazor.IMBTooltipService.AddTooltip(System.Int64, RenderFragment)
+  nameWithType: IMBTooltipService.AddTooltip(Int64, RenderFragment)
 - uid: Material.Blazor.IMBTooltipService.AddTooltip*
   name: AddTooltip
   href: api/Material.Blazor.IMBTooltipService.html#Material_Blazor_IMBTooltipService_AddTooltip_
@@ -749,12 +749,12 @@ references:
   commentId: E:Material.Blazor.IMBTooltipService.OnRemove
   fullName: Material.Blazor.IMBTooltipService.OnRemove
   nameWithType: IMBTooltipService.OnRemove
-- uid: Material.Blazor.IMBTooltipService.RemoveTooltip(System.Guid)
-  name: RemoveTooltip(Guid)
-  href: api/Material.Blazor.IMBTooltipService.html#Material_Blazor_IMBTooltipService_RemoveTooltip_System_Guid_
-  commentId: M:Material.Blazor.IMBTooltipService.RemoveTooltip(System.Guid)
-  fullName: Material.Blazor.IMBTooltipService.RemoveTooltip(System.Guid)
-  nameWithType: IMBTooltipService.RemoveTooltip(Guid)
+- uid: Material.Blazor.IMBTooltipService.RemoveTooltip(System.Int64)
+  name: RemoveTooltip(Int64)
+  href: api/Material.Blazor.IMBTooltipService.html#Material_Blazor_IMBTooltipService_RemoveTooltip_System_Int64_
+  commentId: M:Material.Blazor.IMBTooltipService.RemoveTooltip(System.Int64)
+  fullName: Material.Blazor.IMBTooltipService.RemoveTooltip(System.Int64)
+  nameWithType: IMBTooltipService.RemoveTooltip(Int64)
 - uid: Material.Blazor.IMBTooltipService.RemoveTooltip*
   name: RemoveTooltip
   href: api/Material.Blazor.IMBTooltipService.html#Material_Blazor_IMBTooltipService_RemoveTooltip_
