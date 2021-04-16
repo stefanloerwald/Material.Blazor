@@ -1345,14 +1345,6 @@ references:
   fullName.vb: Material.Blazor.Internal.InputComponent(Of T)
   nameWithType: InputComponent<T>
   nameWithType.vb: InputComponent(Of T)
-- uid: Material.Blazor.Internal.InputComponent`1._instantiate
-  name: _instantiate
-  href: api/Material.Blazor.Internal.InputComponent-1.html#Material_Blazor_Internal_InputComponent_1__instantiate
-  commentId: F:Material.Blazor.Internal.InputComponent`1._instantiate
-  fullName: Material.Blazor.Internal.InputComponent<T>._instantiate
-  fullName.vb: Material.Blazor.Internal.InputComponent(Of T)._instantiate
-  nameWithType: InputComponent<T>._instantiate
-  nameWithType.vb: InputComponent(Of T)._instantiate
 - uid: Material.Blazor.Internal.InputComponent`1.ComponentValueAsString
   name: ComponentValueAsString
   href: api/Material.Blazor.Internal.InputComponent-1.html#Material_Blazor_Internal_InputComponent_1_ComponentValueAsString
@@ -2225,13 +2217,13 @@ references:
   fullName.vb: Material.Blazor.Internal.SingleSelectComponent(Of T, TListElement).ItemValidation
   nameWithType: SingleSelectComponent<T, TListElement>.ItemValidation
   nameWithType.vb: SingleSelectComponent(Of T, TListElement).ItemValidation
-- uid: Material.Blazor.Internal.SingleSelectComponent`2.ValidateItemList(System.Collections.Generic.IEnumerable{Material.Blazor.MBSelectElement{`0}},Material.Blazor.MBItemValidation)
+- uid: Material.Blazor.Internal.SingleSelectComponent`2.ValidateItemList(System.Collections.Generic.IEnumerable{MBSelectElement{`0}},Material.Blazor.MBItemValidation)
   name: ValidateItemList(IEnumerable<MBSelectElement<T>>, MBItemValidation)
-  href: api/Material.Blazor.Internal.SingleSelectComponent-2.html#Material_Blazor_Internal_SingleSelectComponent_2_ValidateItemList_System_Collections_Generic_IEnumerable_Material_Blazor_MBSelectElement__0___Material_Blazor_MBItemValidation_
-  commentId: M:Material.Blazor.Internal.SingleSelectComponent`2.ValidateItemList(System.Collections.Generic.IEnumerable{Material.Blazor.MBSelectElement{`0}},Material.Blazor.MBItemValidation)
+  href: api/Material.Blazor.Internal.SingleSelectComponent-2.html#Material_Blazor_Internal_SingleSelectComponent_2_ValidateItemList_System_Collections_Generic_IEnumerable_MBSelectElement__0___Material_Blazor_MBItemValidation_
+  commentId: M:Material.Blazor.Internal.SingleSelectComponent`2.ValidateItemList(System.Collections.Generic.IEnumerable{MBSelectElement{`0}},Material.Blazor.MBItemValidation)
   name.vb: ValidateItemList(IEnumerable(Of MBSelectElement(Of T)), MBItemValidation)
-  fullName: Material.Blazor.Internal.SingleSelectComponent<T, TListElement>.ValidateItemList(System.Collections.Generic.IEnumerable<Material.Blazor.MBSelectElement<T>>, Material.Blazor.MBItemValidation)
-  fullName.vb: Material.Blazor.Internal.SingleSelectComponent(Of T, TListElement).ValidateItemList(System.Collections.Generic.IEnumerable(Of Material.Blazor.MBSelectElement(Of T)), Material.Blazor.MBItemValidation)
+  fullName: Material.Blazor.Internal.SingleSelectComponent<T, TListElement>.ValidateItemList(System.Collections.Generic.IEnumerable<MBSelectElement<T>>, Material.Blazor.MBItemValidation)
+  fullName.vb: Material.Blazor.Internal.SingleSelectComponent(Of T, TListElement).ValidateItemList(System.Collections.Generic.IEnumerable(Of MBSelectElement(Of T)), Material.Blazor.MBItemValidation)
   nameWithType: SingleSelectComponent<T, TListElement>.ValidateItemList(IEnumerable<MBSelectElement<T>>, MBItemValidation)
   nameWithType.vb: SingleSelectComponent(Of T, TListElement).ValidateItemList(IEnumerable(Of MBSelectElement(Of T)), MBItemValidation)
 - uid: Material.Blazor.Internal.SingleSelectComponent`2.ValidateItemList*
@@ -6106,32 +6098,6 @@ references:
   isSpec: "True"
   fullName: Material.Blazor.MBIcon.OnParametersSetAsync
   nameWithType: MBIcon.OnParametersSetAsync
-- uid: Material.Blazor.MBIconBearingSelectElement`1
-  name: MBIconBearingSelectElement<T>
-  href: api/Material.Blazor.MBIconBearingSelectElement-1.html
-  commentId: T:Material.Blazor.MBIconBearingSelectElement`1
-  name.vb: MBIconBearingSelectElement(Of T)
-  fullName: Material.Blazor.MBIconBearingSelectElement<T>
-  fullName.vb: Material.Blazor.MBIconBearingSelectElement(Of T)
-  nameWithType: MBIconBearingSelectElement<T>
-  nameWithType.vb: MBIconBearingSelectElement(Of T)
-- uid: Material.Blazor.MBIconBearingSelectElement`1.Icon
-  name: Icon
-  href: api/Material.Blazor.MBIconBearingSelectElement-1.html#Material_Blazor_MBIconBearingSelectElement_1_Icon
-  commentId: P:Material.Blazor.MBIconBearingSelectElement`1.Icon
-  fullName: Material.Blazor.MBIconBearingSelectElement<T>.Icon
-  fullName.vb: Material.Blazor.MBIconBearingSelectElement(Of T).Icon
-  nameWithType: MBIconBearingSelectElement<T>.Icon
-  nameWithType.vb: MBIconBearingSelectElement(Of T).Icon
-- uid: Material.Blazor.MBIconBearingSelectElement`1.Icon*
-  name: Icon
-  href: api/Material.Blazor.MBIconBearingSelectElement-1.html#Material_Blazor_MBIconBearingSelectElement_1_Icon_
-  commentId: Overload:Material.Blazor.MBIconBearingSelectElement`1.Icon
-  isSpec: "True"
-  fullName: Material.Blazor.MBIconBearingSelectElement<T>.Icon
-  fullName.vb: Material.Blazor.MBIconBearingSelectElement(Of T).Icon
-  nameWithType: MBIconBearingSelectElement<T>.Icon
-  nameWithType.vb: MBIconBearingSelectElement(Of T).Icon
 - uid: Material.Blazor.MBIconButton
   name: MBIconButton
   href: api/Material.Blazor.MBIconButton.html
@@ -9208,66 +9174,6 @@ references:
   fullName.vb: Material.Blazor.MBSelect(Of TItem).TextAlignStyle
   nameWithType: MBSelect<TItem>.TextAlignStyle
   nameWithType.vb: MBSelect(Of TItem).TextAlignStyle
-- uid: Material.Blazor.MBSelectElement`1
-  name: MBSelectElement<T>
-  href: api/Material.Blazor.MBSelectElement-1.html
-  commentId: T:Material.Blazor.MBSelectElement`1
-  name.vb: MBSelectElement(Of T)
-  fullName: Material.Blazor.MBSelectElement<T>
-  fullName.vb: Material.Blazor.MBSelectElement(Of T)
-  nameWithType: MBSelectElement<T>
-  nameWithType.vb: MBSelectElement(Of T)
-- uid: Material.Blazor.MBSelectElement`1.Disabled
-  name: Disabled
-  href: api/Material.Blazor.MBSelectElement-1.html#Material_Blazor_MBSelectElement_1_Disabled
-  commentId: P:Material.Blazor.MBSelectElement`1.Disabled
-  fullName: Material.Blazor.MBSelectElement<T>.Disabled
-  fullName.vb: Material.Blazor.MBSelectElement(Of T).Disabled
-  nameWithType: MBSelectElement<T>.Disabled
-  nameWithType.vb: MBSelectElement(Of T).Disabled
-- uid: Material.Blazor.MBSelectElement`1.Disabled*
-  name: Disabled
-  href: api/Material.Blazor.MBSelectElement-1.html#Material_Blazor_MBSelectElement_1_Disabled_
-  commentId: Overload:Material.Blazor.MBSelectElement`1.Disabled
-  isSpec: "True"
-  fullName: Material.Blazor.MBSelectElement<T>.Disabled
-  fullName.vb: Material.Blazor.MBSelectElement(Of T).Disabled
-  nameWithType: MBSelectElement<T>.Disabled
-  nameWithType.vb: MBSelectElement(Of T).Disabled
-- uid: Material.Blazor.MBSelectElement`1.Label
-  name: Label
-  href: api/Material.Blazor.MBSelectElement-1.html#Material_Blazor_MBSelectElement_1_Label
-  commentId: P:Material.Blazor.MBSelectElement`1.Label
-  fullName: Material.Blazor.MBSelectElement<T>.Label
-  fullName.vb: Material.Blazor.MBSelectElement(Of T).Label
-  nameWithType: MBSelectElement<T>.Label
-  nameWithType.vb: MBSelectElement(Of T).Label
-- uid: Material.Blazor.MBSelectElement`1.Label*
-  name: Label
-  href: api/Material.Blazor.MBSelectElement-1.html#Material_Blazor_MBSelectElement_1_Label_
-  commentId: Overload:Material.Blazor.MBSelectElement`1.Label
-  isSpec: "True"
-  fullName: Material.Blazor.MBSelectElement<T>.Label
-  fullName.vb: Material.Blazor.MBSelectElement(Of T).Label
-  nameWithType: MBSelectElement<T>.Label
-  nameWithType.vb: MBSelectElement(Of T).Label
-- uid: Material.Blazor.MBSelectElement`1.SelectedValue
-  name: SelectedValue
-  href: api/Material.Blazor.MBSelectElement-1.html#Material_Blazor_MBSelectElement_1_SelectedValue
-  commentId: P:Material.Blazor.MBSelectElement`1.SelectedValue
-  fullName: Material.Blazor.MBSelectElement<T>.SelectedValue
-  fullName.vb: Material.Blazor.MBSelectElement(Of T).SelectedValue
-  nameWithType: MBSelectElement<T>.SelectedValue
-  nameWithType.vb: MBSelectElement(Of T).SelectedValue
-- uid: Material.Blazor.MBSelectElement`1.SelectedValue*
-  name: SelectedValue
-  href: api/Material.Blazor.MBSelectElement-1.html#Material_Blazor_MBSelectElement_1_SelectedValue_
-  commentId: Overload:Material.Blazor.MBSelectElement`1.SelectedValue
-  isSpec: "True"
-  fullName: Material.Blazor.MBSelectElement<T>.SelectedValue
-  fullName.vb: Material.Blazor.MBSelectElement(Of T).SelectedValue
-  nameWithType: MBSelectElement<T>.SelectedValue
-  nameWithType.vb: MBSelectElement(Of T).SelectedValue
 - uid: Material.Blazor.MBSelectInputStyle
   name: MBSelectInputStyle
   href: api/Material.Blazor.MBSelectInputStyle.html
@@ -9530,12 +9436,12 @@ references:
   isSpec: "True"
   fullName: Material.Blazor.MBSlider.EventType
   nameWithType: MBSlider.EventType
-- uid: Material.Blazor.MBSlider.NotifyChanged(System.Double)
-  name: NotifyChanged(Double)
-  href: api/Material.Blazor.MBSlider.html#Material_Blazor_MBSlider_NotifyChanged_System_Double_
-  commentId: M:Material.Blazor.MBSlider.NotifyChanged(System.Double)
-  fullName: Material.Blazor.MBSlider.NotifyChanged(System.Double)
-  nameWithType: MBSlider.NotifyChanged(Double)
+- uid: Material.Blazor.MBSlider.NotifyChanged(System.Decimal)
+  name: NotifyChanged(Decimal)
+  href: api/Material.Blazor.MBSlider.html#Material_Blazor_MBSlider_NotifyChanged_System_Decimal_
+  commentId: M:Material.Blazor.MBSlider.NotifyChanged(System.Decimal)
+  fullName: Material.Blazor.MBSlider.NotifyChanged(System.Decimal)
+  nameWithType: MBSlider.NotifyChanged(Decimal)
 - uid: Material.Blazor.MBSlider.NotifyChanged*
   name: NotifyChanged
   href: api/Material.Blazor.MBSlider.html#Material_Blazor_MBSlider_NotifyChanged_
