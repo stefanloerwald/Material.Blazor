@@ -17040,9 +17040,9 @@ PERFORMANCE OF THIS SOFTWARE.
         function scrollToYear(id) {
             var element = document.getElementById(id);
             element === null || element === void 0 ? void 0 : element.scrollIntoView({
-                behavior: "auto",
-                block: "nearest",
-                inline: "nearest"
+                behavior: "smooth",
+                block: "center",
+                inline: "start"
             });
         }
         /**
