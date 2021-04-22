@@ -4880,6 +4880,19 @@ references:
   isSpec: "True"
   fullName: Material.Blazor.MBDialog.Dispose
   nameWithType: MBDialog.Dispose
+- uid: Material.Blazor.MBDialog.EagerRendering
+  name: EagerRendering
+  href: api/Material.Blazor.MBDialog.html#Material_Blazor_MBDialog_EagerRendering
+  commentId: P:Material.Blazor.MBDialog.EagerRendering
+  fullName: Material.Blazor.MBDialog.EagerRendering
+  nameWithType: MBDialog.EagerRendering
+- uid: Material.Blazor.MBDialog.EagerRendering*
+  name: EagerRendering
+  href: api/Material.Blazor.MBDialog.html#Material_Blazor_MBDialog_EagerRendering_
+  commentId: Overload:Material.Blazor.MBDialog.EagerRendering
+  isSpec: "True"
+  fullName: Material.Blazor.MBDialog.EagerRendering
+  nameWithType: MBDialog.EagerRendering
 - uid: Material.Blazor.MBDialog.EscapeKeyAction
   name: EscapeKeyAction
   href: api/Material.Blazor.MBDialog.html#Material_Blazor_MBDialog_EscapeKeyAction
@@ -4932,6 +4945,19 @@ references:
   isSpec: "True"
   fullName: Material.Blazor.MBDialog.NotifyOpened
   nameWithType: MBDialog.NotifyOpened
+- uid: Material.Blazor.MBDialog.OnAfterRenderAsync(System.Boolean)
+  name: OnAfterRenderAsync(Boolean)
+  href: api/Material.Blazor.MBDialog.html#Material_Blazor_MBDialog_OnAfterRenderAsync_System_Boolean_
+  commentId: M:Material.Blazor.MBDialog.OnAfterRenderAsync(System.Boolean)
+  fullName: Material.Blazor.MBDialog.OnAfterRenderAsync(System.Boolean)
+  nameWithType: MBDialog.OnAfterRenderAsync(Boolean)
+- uid: Material.Blazor.MBDialog.OnAfterRenderAsync*
+  name: OnAfterRenderAsync
+  href: api/Material.Blazor.MBDialog.html#Material_Blazor_MBDialog_OnAfterRenderAsync_
+  commentId: Overload:Material.Blazor.MBDialog.OnAfterRenderAsync
+  isSpec: "True"
+  fullName: Material.Blazor.MBDialog.OnAfterRenderAsync
+  nameWithType: MBDialog.OnAfterRenderAsync
 - uid: Material.Blazor.MBDialog.OnInitializedAsync
   name: OnInitializedAsync()
   href: api/Material.Blazor.MBDialog.html#Material_Blazor_MBDialog_OnInitializedAsync
