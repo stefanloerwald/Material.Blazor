@@ -132,7 +132,7 @@ jobs:
 ############################################################################################################
   build-documentation:
     name: Build documentation
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
 
     steps:
     - name: Checkout repository under $GITHUB_WORKSPACE so the job can access it 🛎️
@@ -140,11 +140,14 @@ jobs:
       with:
         persist-credentials: false
       if: github.event_name != 'workflow_dispatch'
+      
+    - name: Setup .NET Core
+      uses: actions/setup-dotnet@v1
 
-    - name: Create documentation 🔧
-      run: .\docfx\docfx docfx.json
-      env:
-        DOCFX_SOURCE_BRANCH_NAME: main
+    - uses: nikeee/docfx-action@v1.0.0
+      name: Build Documentation
+      with:
+        args: docfx.json
       if: github.event_name != 'workflow_dispatch'
 
     - name: Upload Documentation Artifacts 🔺 # The project is then uploaded as an artifact named 'siteDocFx'.
