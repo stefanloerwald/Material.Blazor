@@ -189,7 +189,7 @@
       "url": "_content\/Material.Blazor\/MaterialBlazor.css"
     },
     {
-      "hash": "sha256-\/KST49qpxEIQEjdDEEaw388\/oTZDbQbgWMY4\/u7cbfI=",
+      "hash": "sha256-\/kAoFXDHMgDS+Xql938C4Cgt75s2d58ffsZf5wyOx+w=",
       "url": "_content\/Material.Blazor\/MaterialBlazor.js"
     },
     {
@@ -197,7 +197,7 @@
       "url": "_content\/Material.Blazor\/MaterialBlazor.min.css"
     },
     {
-      "hash": "sha256-hUFS9vFkYYqyX33Nds4bHbqrH5oogsSyDl3pbtslXcE=",
+      "hash": "sha256-3ZHUcvoYfDkFIRIMyr76zxVMVA2NI532+5O9ygVH0ZI=",
       "url": "_content\/Material.Blazor\/MaterialBlazor.min.js"
     },
     {
@@ -241,7 +241,7 @@
       "url": "_framework\/Microsoft.Extensions.Logging.dll"
     },
     {
-      "hash": "sha256-Evl9TDWCkrqkrvxWs5wjYcwRqMOl+mjRN4jaxdyx61M=",
+      "hash": "sha256-Ikn\/wOeof9rfxTbKFa+ozsF1jRblv+Qb2YYCscarqgc=",
       "url": "_framework\/Microsoft.Extensions.Logging.Abstractions.dll"
     },
     {
@@ -269,15 +269,15 @@
       "url": "_framework\/System.IO.Pipelines.dll"
     },
     {
-      "hash": "sha256-alSCS8Ag7myfAiAZERrS\/e\/YFU+1Xuiey1y42LvZRsA=",
+      "hash": "sha256-e\/+gDJnqrfSlWewjkc85iLcoPA5wFcP1brCpZZe32Fc=",
       "url": "_framework\/Material.Blazor.dll"
     },
     {
-      "hash": "sha256-lEcZ+p0JQ3jx2YP2p9ouzS+8rAhMWwpNUJD4mCByA6U=",
+      "hash": "sha256-ru91hrdvUpRnF9AHWK81sXj6462BvlmCklBbFfHdu1Y=",
       "url": "_framework\/Material.Blazor.Website.dll"
     },
     {
-      "hash": "sha256-hkXqqls46RfESoeH474OZO5EcEiO1NzsZ+1skwje+oc=",
+      "hash": "sha256-ozekP6YcgbhTeesLkVYDBUEfUJqs0GrTg2iZ5v16YMs=",
       "url": "_framework\/Material.Blazor.Website.WebAssembly.dll"
     },
     {
@@ -381,7 +381,7 @@
       "url": "_framework\/System.Private.CoreLib.dll"
     },
     {
-      "hash": "sha256-jg5EY1UfTZn6J8ofpTNykGnpSAlPubFcjLvG2A5OYKc=",
+      "hash": "sha256-\/aiW75iHsNHJQZT91ziBVoGjAFoty0TficZtiJ6ewGk=",
       "url": "_framework\/blazor.boot.json"
     },
     {
@@ -389,5 +389,5 @@
       "url": "_framework\/blazor.webassembly.js"
     }
   ],
-  "version": "lpA97meb"
+  "version": "+b55BGs4"
 };
