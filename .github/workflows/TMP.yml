@@ -30,13 +30,13 @@ jobs:
       id: comparison
       uses: stefanloerwald/ImageMagick-action@0.1.0
       with:
-        command: compare -compose src fork.png current.png diff.png
+        command: compare -compose src screenshots/fork.png screenshots/current.png screenshots/diff.png
     - name: 'ImageMagick action: trim if different'
       id: trim
       if: ${{steps.comparison.outputs.exit_code != 0}}
       uses: stefanloerwald/ImageMagick-action@0.1.0
       with:
-        command: convert -trim diff.png diff.png
+        command: convert -trim screenshots/diff.png screenshots/diff.png
     - name: Display result
       run: echo ${{steps.comparison.outputs.exit_code}}
     - name: Upload artifacts
