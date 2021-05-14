@@ -25,7 +25,7 @@ namespace Material.Blazor.Internal
         public override string ToString() => string.Join(" ", Items.Select(i => i()));
 
         /// <summary>
-        /// Adds a CSS class, whenever the <param name="func"> method returns true.
+        /// Adds a CSS class, whenever the method (second argument) returns true.
         /// </summary>
         /// <param name="name">The string to be conditionally returned</param>
         /// <param name="func">The function to be executed to determine if the string is included</param>

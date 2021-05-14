@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 namespace Material.Blazor
 {
     /// <summary>
-    /// A component added to a blade via <see cref="MBBladeSet.AddBladeAsync{TComponent, TParameters}(string, TParameters, string, string, System.Action{string})"/>
+    /// A component added to a blade via <see cref="MBBladeSet.AddBladeAsync{TComponent, TParameters}(string, TParameters, string, string, Action{string})"/>
     /// must implement this interface.
     /// </summary>
     public abstract class MBBladeComponent<TParam> : ComponentBase where TParam : MBBladeComponentParameters
