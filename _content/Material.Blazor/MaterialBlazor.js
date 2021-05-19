@@ -15275,27 +15275,21 @@ PERFORMANCE OF THIS SOFTWARE.
         function MBSlider_init(elem, dotNetObject, eventType, delay) {
             elem._slider = MDCSlider.attachTo(elem);
             elem._eventType = eventType;
-            var debounceNotify = debounce((function() {
-                dotNetObject.invokeMethodAsync("NotifyChanged", elem._slider.getValue());
-            }), delay, {});
-            var throttleNotify = throttle((function() {
-                dotNetObject.invokeMethodAsync("NotifyChanged", elem._slider.getValue());
-            }), delay, {});
-            var thumbUpCallback = function thumbUpCallback() {
-                dotNetObject.invokeMethodAsync("NotifyChanged", elem._slider.getValue());
-            };
-            var debounceCallback = function debounceCallback() {
-                debounceNotify();
-            };
-            var throttleCallback = function throttleCallback() {
-                throttleNotify();
-            };
             if (eventType == 0) {
+                var thumbUpCallback = function thumbUpCallback() {
+                    dotNetObject.invokeMethodAsync("NotifyChanged", elem._slider.getValue());
+                };
                 elem._slider.listen("MDCSlider:change", thumbUpCallback);
             } else if (eventType == 1) {
-                elem._slider.listen("MDCSlider:input", debounceCallback);
+                var debounceNotify = debounce((function() {
+                    dotNetObject.invokeMethodAsync("NotifyChanged", elem._slider.getValue());
+                }), delay, {});
+                elem._slider.listen("MDCSlider:input", debounceNotify);
             } else {
-                elem._slider.listen("MDCSlider:input", throttleCallback);
+                var throttleNotify = throttle((function() {
+                    dotNetObject.invokeMethodAsync("NotifyChanged", elem._slider.getValue());
+                }), delay, {});
+                elem._slider.listen("MDCSlider:input", throttleNotify);
             }
         }
         function MBSlider_setValue(elem, value) {
